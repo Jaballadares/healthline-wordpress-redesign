@@ -1,0 +1,356 @@
+/* ==========================================================================
+  Callout
+========================================================================== */
+
+
+.callout {
+  color: $purple;
+  padding: 170px 0 60px;
+  position: relative;
+
+  &.bg-img {
+    background: #E9E8E8 url(../img/structure/bg-callout.png) no-repeat center bottom;
+  }
+
+  &.bg-blog {
+    background-image: url(../img/structure/bg-blog.png);
+  }
+  &.bg-about {
+    background-image: url(../img/structure/bg-about.png);
+  }
+  &.bg-developers {
+    background-image: url(../img/structure/bg-developers.png);
+  }
+  &.bg-solutions {
+    background-image: url(../img/structure/bg-solutions.png);
+  }
+  &.bg-solutions-b {
+    background-image: url(../img/structure/bg-solutions-b.png);
+  }
+  &.bg-solutions-c {
+    background-image: url(../img/structure/bg-solutions-c.png);
+  }
+  &.bg-solutions-d {
+    background-image: url(../img/structure/bg-solutions-d.png);
+  }
+  &.bg-platform {
+    background-image: url(../img/structure/bg-platform.png);
+    background-color: #ECECEC;
+  }
+  &.bg-border {
+    &:after {
+      content: " ";
+      display: block;
+      background: url(../img/structure/bg-callout-border.png) repeat-x center center;
+      width: 100%;
+      height: 29px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      z-index: 2;
+    }
+  }
+
+  &.narrow {
+    padding: 140px 0 25px;
+    h2 {
+      font-size: 57px;
+    }
+  }
+
+
+  h1, .h1, h2, .h2 {
+    color: $purple;
+    font-size: 37px;
+    line-height: 1.2;
+    strong {
+      display: block;
+      font-size: 64px;
+    }
+    .subpage & {
+      margin: 0;
+    }
+    &.large {
+      font-size: 44px;
+      strong {
+        font-size: 44px;
+      }
+    }
+    &.small {
+      strong {
+        font-size: 55px;
+      }
+    }
+    @include breakpoint(large) {
+      &.small {
+        strong {
+          font-size: 50px;
+        }
+      }
+    }
+    @include breakpoint(medium) {
+      &.small {
+        strong {
+          font-size: 40px;
+        }
+      }
+    }
+    @include breakpoint(small) {
+      &.small {
+        strong {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .lead {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+
+  .border-top {
+    border-top: 1px solid #c9c4c3;
+    padding-top: 25px;
+    margin-top: 20px;
+  }
+
+  li {
+    margin: 0 0 5px;
+  }
+
+  @include breakpoint(large) {
+    h1, .h1, h2, .h2 {
+      font-size: 35px;
+      strong {
+        font-size: 50px;
+      }
+      &.large {
+        font-size: 40px;
+      strong {
+        font-size: 40px;
+      }
+    }
+    }
+    .lead {
+      font-size: 19px;
+      &.list-spacing {
+        font-size: 18px;
+      }
+    }
+  }
+  @include breakpoint(medium) {
+    padding: $padding 0;
+    &.no-nav,
+    &.page-template-page-get-started-php,
+    &.page-template-page-thanks-php,
+    &.page-template-page-form-template-php,
+    &.page-template-page-form-submit-template-php {
+      padding-top: $padding;
+    }
+    &.narrow {
+      padding: 50px 0;
+    }
+    h1, .h1, h2, .h2 {
+      font-size: 33px;
+      strong {
+        font-size: 47px;
+      }
+      &.large {
+        font-size: 38px;
+        strong {
+          font-size: 38px;
+        }
+      }
+    }
+    .lead {
+      font-size: 18px;
+      &.list-spacing {
+        font-size: 16px;
+      }
+    }
+  }
+  @include breakpoint(small) {
+    padding: 0;
+    &.no-nav,
+    &.page-template-page-get-started-php,
+    &.page-template-page-thanks-php,
+    &.page-template-page-form-template-php,
+    &.page-template-page-form-submit-template-php {
+      padding-top: 0;
+    }
+    &.narrow {
+      padding: 10px 0 0;
+    }
+    .span10 {
+      padding: 10px;
+    }
+    h1, .h1, h2, .h2 {
+      font-size: 24px;
+      strong {
+        font-size: 32px;
+      }
+      &.large {
+        font-size: 30px;
+        strong {
+          font-size: 30px;
+        }
+      }
+    }
+    .lead {
+      font-size: 18px;
+      margin: 17px 0 0 0;
+      padding-top: 20px
+    }
+    hr, .nav-scroll {
+      display: none;
+    }
+  }
+
+}
+
+.list-points {
+  display: block;
+  margin: 70px 0 -30px 0;
+  font-size: 16px;
+  li {
+    display: inline-block;
+    width: 24%;
+    padding: 0 20px;
+    @include clearfix();
+    &:first-of-type {
+      span {
+        margin-top: -8px;
+      }
+    }
+  }
+  a {
+    color: #2d2925;
+    &:hover,
+    &:focus {
+      span {
+        color: $blue;
+      }
+    }
+  }
+  span {
+    line-height: 1.2;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    float: right;
+    transition: color .15s ease-in-out;
+  }
+  strong {
+    display: block;
+    text-transform: uppercase;
+  }
+  i {
+    position: relative;
+    top: -22px;
+  }
+
+  @include breakpoint(large) {
+    li {
+      padding: 0 10px;
+    }
+  }
+  @include breakpoint(medium) {
+    margin-top: 20px;
+    li {
+      padding: 0;
+      width: 24%;
+    }
+    i {
+      display: none;
+    }
+    span {
+      float: none;
+      width: 80%;
+    }
+  }
+  @include breakpoint(small) {
+    li {
+      padding: 0 1px;
+      &:first-of-type {
+        span {
+          margin-top: 0;
+        }
+      }
+    }
+    span {
+      text-align: center;
+      width: 100%;
+      float: none;
+      font-size: 13px;
+    }
+    i {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+.btn-scroll {
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  li {
+    margin: 0 16px;
+  }
+  a {
+    color: $purple;
+    border: 2px solid #dbdbdb;
+    letter-spacing: 1px;
+    padding: 12px 42px 10px;
+    border-radius: 2px;
+    @include medium-font();
+    &:hover,
+    &:focus {
+      color: $brown;
+      border: 2px solid #aaa;
+    }
+  }
+
+  @include breakpoint(large) {
+    a {
+      padding: 12px 20px 10px;
+    }
+  }
+  @include breakpoint(medium) {
+    font-size: 12px;
+    li {
+      margin: 0 4px;
+    }
+    a {
+      padding: 12px 10px 10px;
+    }
+  }
+  @include breakpoint(small) {
+    li {
+      display: block;
+      width: 50%;
+      float: left;
+      padding: 0 5px;
+      margin: 0 0 10px;
+    }
+    a {
+      display: block;
+      width: 100%;
+      padding: 12px 0 10px;
+    }
+  }
+  @include breakpoint(xSmall) {
+    li {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+

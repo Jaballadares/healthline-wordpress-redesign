@@ -1,0 +1,60 @@
+/* ==========================================================================
+  Home
+========================================================================== */
+
+
+
+.list-stats {
+  display: block;
+  background: #fff;
+  @include medium-font();
+  li {
+    display: inline-block;
+    margin: 0 40px;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  span {
+    font-size: 40px;
+    display: block;
+    @include bold-font();
+  }
+
+  @include breakpoint(large) {
+    li {
+      margin: 0 30px;
+    }
+  }
+
+  @include breakpoint(medium) {
+    li {
+      margin: 0 15px;
+    }
+    span {
+      font-size: 34px;
+    }
+  }
+
+  @include breakpoint(small) {
+    padding: 25px 0 5px;
+    li {
+      margin: 0 0 20px;
+      width: 45%;
+      font-size: 12px;
+    }
+    span {
+      font-size: 26px;
+    }
+  }
+
+}
+
+.home {
+  @include breakpoint(small) {
+    .pad-b--0 {
+
+    }
+  }
+}

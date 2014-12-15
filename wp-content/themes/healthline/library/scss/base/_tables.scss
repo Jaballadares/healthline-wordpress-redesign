@@ -1,0 +1,105 @@
+/* ==========================================================================
+  Tables
+========================================================================== */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+@include breakpoint(small) {
+
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 1px solid #ddd;
+    > .table {
+      margin-bottom: 0;
+      background-color: #fff;
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          th, td {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.table-striped {
+  table {
+    width: 100%;
+  }
+  tr {
+    border: 1px solid #c9c7c2;
+    background: #fff;
+    &:nth-child(odd) {
+      background: #f8f8f8;
+    }
+    &:nth-child(1) {
+      background: #fff;
+      border-bottom: none;
+    }
+    &:nth-child(2) {
+      border-top: none;
+    }
+  }
+  th {
+    padding: 25px 10px 10px;
+  }
+  td {
+    padding: 10px 20px;
+    &:first-of-type {
+      padding-left: 40px;
+    }
+    &:last-of-type {
+      padding-right: 40px;
+    }
+    &.tall {
+      padding: 30px 20px;
+    }
+  }
+  .fa-arrows-h {
+    font-size: 24px;
+    bottom: -2px;
+    position: relative;
+  }
+
+  &.table-no-head {
+    tr {
+      &:nth-child(1) {
+        background: #f8f8f8;
+        border: 1px solid #c9c7c2;
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    td {
+      &.tall {
+        padding: 10px 20px;
+      }
+    }
+  }
+  @include breakpoint(medium) {
+    td {
+      &.tall {
+        padding: 10px 20px;
+      }
+    }
+  }
+  @include breakpoint(small) {
+    td {
+      &.tall {
+        padding: 10px 20px;
+      }
+    }
+  }
+}

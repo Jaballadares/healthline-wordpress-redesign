@@ -1,0 +1,18 @@
+/* ==========================================================================
+  Main
+========================================================================== */
+
+
+section {
+  padding: $padding 0;
+
+  @include breakpoint(small) {
+    padding: 0;
+  }
+}
+
+.bg-icons {
+  background-image: url(../img/structure/bg-icons.png);
+  background-repeat: no-repeat;
+  background-position: 101% 7%;
+}

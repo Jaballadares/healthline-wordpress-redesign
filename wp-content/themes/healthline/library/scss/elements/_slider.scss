@@ -1,0 +1,113 @@
+/* ==========================================================================
+  Slider
+========================================================================== */
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  .slider-wrap {
+    width: 20000em;
+    position: relative;
+  }
+  li, .slide {
+    float: left;
+  }
+  .slide {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @include breakpoint(large) {
+    .slide {
+      width: 970px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  @include breakpoint(medium) {
+    .slide {
+      width: 750px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  @include breakpoint(small) {
+    .slider-wrap {
+      width: 100%;
+    }
+    .slide {
+      width: auto;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    img {
+      margin: 0 0 20px;
+    }
+    .span8 {
+      img {
+        margin: 0 auto 10px;
+        display: block;
+      }
+    }
+  }
+
+}
+
+.carousel-pagination {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  z-index: 100;
+  li {
+    margin: 0 0 0 5px;
+    font-size: 14px;
+  }
+  a {
+    color: #8b8b8b;
+    &:hover,
+    &:focus {
+      color: $purple;
+    }
+  }
+  .active {
+    a {
+      color: $purple;
+    }
+  }
+}
+
+.prev,
+.next {
+  position: absolute;
+  font-size: 55px;
+  top: 50%;
+  left: -7%;
+  margin-top: -20px;
+  color: #DADADA;
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+  &.inactive {
+    color: #efefef;
+    cursor: default;
+  }
+
+  @include breakpoint(small) {
+    top: -30px;
+    left: 20px;
+  }
+}
+
+.next {
+  right: -7%;
+  left: auto;
+  @include breakpoint(small) {
+    right: 20px;
+    left: auto;
+  }
+}

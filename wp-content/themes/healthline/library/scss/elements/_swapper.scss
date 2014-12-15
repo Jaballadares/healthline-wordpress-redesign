@@ -1,0 +1,150 @@
+/* ==========================================================================
+  Swapper
+========================================================================== */
+
+
+.swapper-selector {
+  li {
+    cursor: pointer;
+  }
+}
+
+.swapper-inline {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: $blue;
+  li {
+    display: inline-block;
+    background: $purple;
+    color: #fff;
+    padding: 13px 25px 10px;
+    margin: 0 -2px;
+    position: relative;
+    transition: all .15s ease-in-out;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:hover,
+    &:focus,
+    &.current {
+      background: #fff;
+      color: #242424;
+      padding-top: 20px;
+    }
+  }
+
+  @include breakpoint(small) {
+    margin-bottom: -20px;
+    li {
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 16px;
+    }
+  }
+}
+
+.swapper-icons {
+  width: 100%;
+  li {
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+    z-index: 2;
+    &:after {
+      content: " ";
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 3px solid $purple;
+      border-bottom: none;
+      border-right: none;
+      position: absolute;
+      bottom: -21px;
+      left: 50%;
+      display: block;
+      opacity: 0;
+      margin-left: -10px;
+      transform: rotate(45deg);
+      transition: all .15s ease-in-out;
+    }
+    h6 {
+      margin: 15px 0;
+      color: #999;
+      @include medium-font();
+      transition: color .15s ease-in-out;
+    }
+    i {
+      border: 3px solid #dbdbda;
+      border-radius: 100%;
+      transition: all .15s ease-in-out;
+    }
+    &:hover,
+    &:focus,
+    &.current {
+      h6 {
+        color: $purple;
+      }
+      i {
+        border: 3px solid $purple;
+      }
+    }
+    &.current {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    li {
+      margin: 0 15px;
+    }
+  }
+
+  @include breakpoint(small) {
+    display: none;
+  }
+
+}
+
+.swapper-content {
+  display: none;
+  background: #fff;
+  padding: 50px 30px 30px;
+  &.show {
+    display: block;
+    @include animation(name, fadeIn);
+    @include animation(duration, .35s);
+  }
+}
+
+.swapper-wrap-alt {
+  margin-top: 10px;
+  .swapper-content {
+    border: 3px solid $purple;
+    padding: 30px;
+    background: #fff;
+  }
+  .no-csstransforms & {
+    .swapper-content {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    padding-top: 0;
+    .swapper-content {
+      display: block;
+      margin-bottom: -1px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+}

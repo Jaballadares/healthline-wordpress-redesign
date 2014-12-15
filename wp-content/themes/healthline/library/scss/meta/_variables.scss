@@ -1,0 +1,33 @@
+/* ==========================================================================
+  Variables
+========================================================================== */
+
+$padding: 50px;
+$margin: 40px;
+
+$red: #b64422;
+$blue: #00abc7;
+$brown: #85776f;
+$purple: #8e4399;
+$green: #7cc247;
+
+$link-color: $blue;
+$link-hover: lighten($link-color, 7%);
+
+@mixin thin-font() {
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin medium-font() {
+  font-family: "proxima-nova", helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin bold-font() {
+  font-family: "proxima-nova", helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}

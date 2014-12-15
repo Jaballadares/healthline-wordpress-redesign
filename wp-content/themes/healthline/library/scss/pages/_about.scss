@@ -1,0 +1,178 @@
+/* ==========================================================================
+  About
+========================================================================== */
+
+
+.team {
+  text-align: left;
+  margin: 50px 0 0;
+  li {
+    width: 18%;
+    padding: 0 20px;
+    margin: 0 0 20px;
+    vertical-align: top;
+    text-align: center;
+  }
+  .circle {
+    width: 80%;
+    margin: 0 auto 20px;
+    transition: all .15s ease-in-out;
+  }
+  h5 {
+    font-size: 16px;
+    a {
+      color: #333;
+      &:hover,
+      &:focus {
+        color: $link-color;
+      }
+    }
+  }
+  h6 {
+    line-height: 1;
+    small {
+      font-size: 12px;
+    }
+  }
+
+  @include breakpoint(small) {
+    margin: 0;
+    li {
+      width: 49%;
+    }
+    .circle {
+      width: 100%;
+    }
+  }
+
+  @include breakpoint(xSmall) {
+    li {
+      width: 100%;
+    }
+  }
+
+}
+
+
+.customers {
+  iframe {
+    margin-left: -1px;
+  }
+
+  @include breakpoint(small) {
+    .swapper-content {
+      display: none;
+      &:first-of-type {
+        display: block;
+      }
+    }
+    iframe {
+      margin: 0 0 15px;
+    }
+  }
+
+  .lt-ie10 & {
+    .pad-r {
+      padding-top: 30px;
+    }
+  }
+}
+
+
+.customers-list {
+  margin-top: $margin;
+  li {
+    width: 165px;
+    cursor: pointer;
+    margin-right: 30px;
+    filter: grayscale(100%);
+    transition: all .15s ease-in-out;
+    &:hover,
+    &:focus,
+    &.current {
+      filter: grayscale(0);
+    }
+  }
+
+  @include breakpoint(large) {
+    li {
+      width: 142px;
+      margin-right: 20px;
+    }
+  }
+
+  @include breakpoint(medium) {
+    li {
+      width: 105px;
+      margin-right: 20px;
+    }
+  }
+
+  @include breakpoint(small) {
+    margin-top: 10px;
+    li {
+      width: 200px;
+      margin-right: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+
+.customer-grid {
+  .outline {
+    height: 200px;
+  }
+  img {
+    max-width: 90%;
+  }
+
+  @include breakpoint(small) {
+    .outline {
+      height: 150px;
+    }
+  }
+}
+
+
+.press-news {
+  time {
+    display: block;
+    margin: 0 0 3px;
+  }
+  ul {
+    margin: 25px 0;
+  }
+  li {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: 1px solid #EDEDED;
+    &:last-of-type {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+  }
+}
+
+.address {
+  font-size: 17px;
+  li {
+    &:first-of-type {
+      h5 {
+        margin-top: 0;
+        padding-top: 0;
+        border: none;
+      }
+    }
+  }
+  h5 {
+    display: block;
+    margin: 15px 0 6px 0;
+    padding-top: 15px;
+    border-top: 1px solid #EDEDED;
+  }
+}

@@ -1,0 +1,277 @@
+/* ==========================================================================
+  Forms
+========================================================================== */
+
+form {
+  margin: 0;
+  @include placeholder(#888);
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+  border: none;
+  outline: 0;
+  border: 1px solid #a5a5a5;
+  font-size: 14px;
+  padding: 7px 10px;
+  -webkit-appearance: none;
+  border-radius: 0;
+  @include placeholder(#888);
+  transition: all .15s ease-in-out;
+  &:hover,
+  &:focus {
+    border: 1px solid #757575;
+    background: #f5f5f5;
+  }
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+label {
+  font-size: 14px;
+  margin: 3px 0 0 0;
+  display: block;
+  &.error {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 10;
+    color: $purple;
+    font-size: 13px;
+    @include animation(name, fadeIn);
+    @include animation(duration, .15s);
+    @include animation(fill-mode, both);
+    .right & {
+      left: 15px;
+    }
+    .form-login & {
+      top: 24px;
+    }
+  }
+
+  @include breakpoint(large) {
+    &.error {
+      .form-login & {
+        top: 40px;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    &.error {
+      .form-login & {
+        top: 40px;
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    &.error {
+      .right & {
+        left: 0;
+      }
+      .form-login & {
+        top: 38px;
+      }
+    }
+  }
+}
+
+.placeholder {
+  .placeholder-hide {
+    display: none;
+  }
+}
+
+
+.form-general {
+  input {
+    width: 100%;
+    display: block;
+    margin: 0 0 10px 0;
+    &.btn {
+      width: 30%;
+      float: right;
+      margin: 20px 0 0 0;
+    }
+  }
+}
+
+
+// Get Started form
+
+.form-get-started {
+  input {
+    margin: 0 0 20px;
+    &.btn {
+      clear: both;
+      float: left;
+      margin: 10px 0 0 0;
+    }
+  }
+
+  @include breakpoint(small) {
+    input {
+      &.btn {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.input-wrap {
+  width: 50%;
+  position: relative;
+  &.left {
+    padding-right: 15px;
+  }
+  &.right {
+    padding-left: 15px;
+  }
+  .form-newsletter &,
+  .form-login & {
+    width: 100%;
+    margin: 0 0 22px;
+  }
+  .form-login & {
+    margin: 0 0 17px;
+  }
+
+  @include breakpoint(small) {
+    width: 100%;
+    &.left,
+    &.right {
+      float: none;
+      padding: 0;
+    }
+  }
+}
+
+// login form on developers page
+
+.form-login {
+  background: #fff;
+  background: rgba(255,255,255,.6);
+  padding: 20px;
+  position: relative;
+  h5 {
+    margin: 0 0 15px;
+  }
+  input {
+    display: block;
+    width: 100%;
+    margin: 0 0 8px;
+    &[type=email],
+    &[type=text] {
+      border: 1px solid #fff;
+      padding: 5px 8px;
+      &:hover,
+      &:focus {
+        border: 1px solid #757575;
+      }
+    }
+  }
+  .btn-gray {
+    margin: 5px 0 0 0;
+    font-size: 17px;
+    padding: 15px 0 13px;
+  }
+}
+
+// form template styles
+
+.form-template {
+  input {
+    width: 100%;
+    margin: 0 0 10px;
+    &[type=submit] {
+      width: 30%;
+      font-size: 16px;
+      float: right;
+      @extend .btn;
+      @extend .btn-purple;
+      @extend .btn-large;
+    }
+  }
+}
+
+
+
+
+
+
+
+

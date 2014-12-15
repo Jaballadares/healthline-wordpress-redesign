@@ -1,0 +1,179 @@
+/* ==========================================================================
+  Landing Page
+========================================================================== */
+
+
+.page-template-page-landing-page-php {
+  .nav-main {
+    padding-top: 10px;
+    h1 {
+      margin: 0;
+      float: left;
+    }
+    .btn {
+      margin-top: 20px;
+      font-size: 12px;
+      float: right;
+    }
+  }
+
+  .nav {
+    li {
+      display: none;
+      &.menu-item-240 {
+        display: inline-block;
+      }
+    }
+  }
+
+  footer {
+    p {
+      &:last-of-type {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .nav-footer {
+      display: none;
+    }
+    form {
+      display: none;
+    }
+  }
+
+  .callout {
+    padding-bottom: 30px;
+    background: $blue;
+    color: #fff;
+    h1 {
+      font-size: 50px;
+      padding: 0 0 20px;
+      margin: 0;
+      color: #fff;
+    }
+    h4 {
+      padding: 0 0 70px;
+      margin: 0;
+      color: #fff;
+    }
+
+  }
+
+  .slider {
+    .slide {
+      width: 1100px;
+    }
+  }
+
+  .carousel-pagination {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 0 0;
+    a {
+      color: #fff;
+      &:hover,
+      &:focus {
+        color: #2d2925;
+      }
+    }
+    .active {
+      a {
+        color: #2d2925;
+      }
+    }
+  }
+
+  .highlight-list {
+    font-size: 20px;
+    padding-left: 20px;
+    color: #fff;
+    li {
+      margin: 0;
+      padding: 0 0 10px;
+      list-style: disc;
+      float: none;
+      &:last-of-type {
+        padding: 0;
+      }
+    }
+  }
+
+  form {
+    input {
+      &[type=submit] {
+        margin-top: 20px;
+      }
+    }
+  }
+  label {
+    &.error {
+      position: static;
+      margin: 0 0 -10px;
+      top: 0;
+    }
+  }
+
+  @include breakpoint(large) {
+    .callout {
+      h1 {
+        font-size: 42px;
+      }
+    }
+    .slider {
+      .slide {
+        width: 970px;
+      }
+    }
+    .highlight-list {
+      font-size: 18px;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .nav-main {
+      h1 {
+        a {
+          width: 240px;
+        }
+      }
+    }
+    .mobile-nav {
+      display: none;
+    }
+    .callout {
+      h1 {
+        font-size: 42px;
+      }
+    }
+    .slider {
+      .slide {
+        width: 750px;
+      }
+    }
+    .highlight-list {
+      font-size: 16px;
+    }
+  }
+  @include breakpoint(small) {
+    .mobile-nav {
+      display: none;
+    }
+    .callout {
+      h1 {
+        font-size: 38px;
+      }
+    }
+    .slider {
+      .slide {
+        width: 100%;
+      }
+    }
+    .highlight-list {
+      font-size: 18px;
+    }
+  }
+}
