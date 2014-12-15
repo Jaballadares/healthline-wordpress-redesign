@@ -3,7 +3,7 @@
 function news() {
   register_post_type( 'news',
     array( 'labels' => array(
-      'name' => __( 'News', 'bonestheme' ),
+      'name' => __( 'Media Coverage', 'bonestheme' ),
       'singular_name' => __( 'News', 'bonestheme' ),
       'all_items' => __( 'All News', 'bonestheme' ),
       'add_new' => __( 'Add New', 'bonestheme' ),

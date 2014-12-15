@@ -71,7 +71,7 @@ Template Name: About Page Template
 
     <div class="row">
       <div class="span12">
-        <ul class="team list-inline">
+        <ul class="team list-inline team-photos">
         <?php if( get_sub_field('leadership_buckets') ): while( has_sub_field('leadership_buckets') ): ?>
           <li>
             <img src="<?php the_sub_field('image'); ?>" alt="Healthline Leadership" class="mar-b--10">
@@ -306,7 +306,7 @@ Template Name: About Page Template
 
     <div class="row">
       <div class="span6">
-        <h3>News</h3>
+        <h3>Media Coverage</h3>
         <ul>
         <?php $query = queryPost('news', 3); ?>
         <?php if ( $query->have_posts() ) : while ($query->have_posts()) : $query->the_post(); ?>
@@ -326,8 +326,9 @@ Template Name: About Page Template
         </ul>
         <a href="/about-us/news/" class="btn btn-purple">All News</a>
       </div>
+
       <div class="span6">
-        <h3>Press</h3>
+        <h3>Press Releases</h3>
         <ul>
         <?php $query = queryPost('press_release', 3); ?>
         <?php if ( $query->have_posts() ) : while ($query->have_posts()) : $query->the_post(); ?>

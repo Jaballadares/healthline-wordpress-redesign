@@ -19,7 +19,7 @@ Template Name: Home Page Template
 
       <?php endwhile; endif; ?>
 
-        <nav class="nav-scroll">
+        <nav class="nav-scroll home-icons">
           <ul class="list-points mobile-hide">
             <li>
               <a href="#search-discover">
