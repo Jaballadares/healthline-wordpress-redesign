@@ -1,3 +1,28 @@
-/**** **** **** **** **** **** ****
- -- Healthline CSS --
-**** **** **** **** **** **** ****/
+/* line 1, ../scss/healthlineSnippets/_hlHeader.scss */
+.nav-scroll {
+  text-align: center;
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  /* line 6, ../scss/healthlineSnippets/_hlHeader.scss */
+  .nav-main .nav a {
+    font-size: 99%;
+  }
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+  /* line 12, ../scss/healthlineSnippets/_hlHeader.scss */
+  .nav-main .nav a {
+    font-size: 90%;
+  }
+}
+/* line 17, ../scss/healthlineSnippets/_hlHeader.scss */
+#menu-item-233 a, #menu-item-232 a, #menu-item-230 a {
+  font-size: 12px;
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+  /* line 22, ../scss/healthlineSnippets/_hlHeader.scss */
+  .nav-main a {
+    font-size: 70%;
+  }
+}

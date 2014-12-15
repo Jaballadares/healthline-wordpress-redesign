@@ -33,12 +33,12 @@ Template Name: Home Page Template
                 <span><strong>Data</strong> Solutions</span>
               </a>
             </li>
-            <li>
+          <!--   <li>
               <a href="#content">
                 <i class="icon-v2 icon-book-v2">book</i>
                 <span><strong>Content</strong> Solutions</span>
               </a>
-            </li>
+            </li> -->
             <li>
               <a href="#marketing">
                 <i class="icon-v2 icon-target-v2">target</i>

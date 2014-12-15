@@ -2,14 +2,13 @@
   Callout
 ========================================================================== */
 
-
 .callout {
   color: $purple;
   padding: 170px 0 60px;
   position: relative;
 
   &.bg-img {
-    background: #E9E8E8 url(../img/structure/bg-callout.png) no-repeat center bottom;
+    background: #E9E8E8 url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
 
   &.bg-blog {
