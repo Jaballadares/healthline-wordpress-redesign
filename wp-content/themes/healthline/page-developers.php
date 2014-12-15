@@ -28,7 +28,7 @@ Template Name: Developers Page Template
             <input type="submit" value="Submit" id="request-license-submit" class="btn btn-purple btn-block">
           </div>
           <div class="message" style="display:none;height:69px;">
-            <p><strong>Thanks!</strong> Your request has been sent.</p>
+            <p><strong>Gracias!</strong> Your request has been sent.</p>
           </div>
           <p class="mar-t--20 mar-b--0 text-gray">Have a license?</p>
           <a href="http://portal.healthline.com" class="btn btn-gray btn-block">Login</a>
