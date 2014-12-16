@@ -50,3 +50,12 @@ About us Photos
 /******************************************
 Experimental Counter
 *******************************************/
+/* line 50, ../scss/healthlineSnippets/_hlHeader.scss */
+.value-prop {
+  white-space: nowrap;
+}
+
+/* line 54, ../scss/healthlineSnippets/_hlHeader.scss */
+.underlineMe {
+  font-weight: bold;
+}

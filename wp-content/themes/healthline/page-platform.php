@@ -66,7 +66,10 @@ Template Name: Platform Page Template
 
     <div class="row">
       <div class="span12">
-        <img src="<?php bloginfo('template_directory'); ?>/library/img/platform/healthline-infographic.jpg" alt="Healthline Inforgraphic">
+      <img src="http://healthline.dev/wp-content/uploads/2014/12/Breast-Cancer9-01.png" alt="">
+      <!-- Use this if image source fails -->
+
+       <!--  <img src="<?php bloginfo('template_directory'); ?>/library/img/platform/healthline-infographic.jpg" alt="Healthline Inforgraphic"> -->
       </div>
     </div><!--! .row -->
 
