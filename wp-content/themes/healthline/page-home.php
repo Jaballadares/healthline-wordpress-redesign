@@ -19,7 +19,7 @@ Template Name: Home Page Template
 
       <?php endwhile; endif; ?>
 
-        <nav class="nav-scroll">
+        <nav class="nav-scroll home-icons">
           <ul class="list-points mobile-hide">
             <li>
               <a href="#search-discover">
@@ -33,12 +33,12 @@ Template Name: Home Page Template
                 <span><strong>Data</strong> Solutions</span>
               </a>
             </li>
-            <li>
+          <!--   <li>
               <a href="#content">
                 <i class="icon-v2 icon-book-v2">book</i>
                 <span><strong>Content</strong> Solutions</span>
               </a>
-            </li>
+            </li> -->
             <li>
               <a href="#marketing">
                 <i class="icon-v2 icon-target-v2">target</i>
@@ -86,14 +86,14 @@ Template Name: Home Page Template
       <?php if( have_rows('home_page_content') ): while ( have_rows('home_page_content') ) : the_row(); ?>
       <?php if( get_row_layout() == 'row_2' ): ?>
         <h3 class="text-green"><i class="icon-v2 icon-taxonomy-v2 mobile-hide">taxonomy</i> <?php the_sub_field('headline'); ?></h3>
-        <p class="lead"><?php the_sub_field('paragraph'); ?></p>
+        <!-- <p class="lead"><?php the_sub_field('paragraph'); ?></p> -->
 
         <div class="outline outline-thick mar-t">
           <ul class="list-stats">
           <?php if( get_sub_field('statistics') ): while( has_sub_field('statistics') ): ?>
             <li>
               <?php the_sub_field('headline'); ?>
-              <span><?php the_sub_field('number'); ?></span>
+              <?php the_sub_field('number'); ?>
             </li>
           <?php endwhile; endif; ?>
           </ul>

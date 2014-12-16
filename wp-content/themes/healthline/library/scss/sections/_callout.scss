@@ -2,39 +2,38 @@
   Callout
 ========================================================================== */
 
-
 .callout {
   color: $purple;
   padding: 170px 0 60px;
   position: relative;
 
   &.bg-img {
-    background: #E9E8E8 url(../img/structure/bg-callout.png) no-repeat center bottom;
+    background: #E9E8E8 url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
 
   &.bg-blog {
-    background-image: url(../img/structure/bg-blog.png);
+    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
   &.bg-about {
-    background-image: url(../img/structure/bg-about.png);
+    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
   &.bg-developers {
-    background-image: url(../img/structure/bg-developers.png);
+    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
   &.bg-solutions {
-    background-image: url(../img/structure/bg-solutions.png);
+    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
   &.bg-solutions-b {
-    background-image: url(../img/structure/bg-solutions-b.png);
+    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
   &.bg-solutions-c {
-    background-image: url(../img/structure/bg-solutions-c.png);
+    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
   &.bg-solutions-d {
-    background-image: url(../img/structure/bg-solutions-d.png);
+    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
   }
   &.bg-platform {
-    background-image: url(../img/structure/bg-platform.png);
+    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
     background-color: #ECECEC;
   }
   &.bg-border {

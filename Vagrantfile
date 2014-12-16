@@ -15,6 +15,15 @@ Vagrant.configure('2') do |config|
     config.vm.hostname = "#{data['vm']['hostname']}"
   end
 
+
+config.push.define "ftp" do |push|
+  push.host = "aspiringcoder.com"
+  push.username = "aspiring"
+  push.password = "qIe181aXw4"
+  push.destination = "/public_html/vagrant"
+end
+
+
   if data['vm']['network']['private_network'].to_s != ''
     config.vm.network 'private_network', ip: "#{data['vm']['network']['private_network']}"
   end

@@ -28,7 +28,7 @@ Template Name: Marketing Solutions Page Template
 
     <div class="row">
       <div class="span12">
-        <nav class="nav-scroll btn-scroll">
+        <nav class="nav-scroll btn-scroll media-nav">
           <ul class="list-inline">
             <li><a href="#healthweb">Healthline Healthweb</a></li>
             <li><a href="#healthline-com">Healthline.com</a></li>
