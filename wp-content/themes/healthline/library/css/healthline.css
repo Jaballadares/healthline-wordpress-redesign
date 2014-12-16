@@ -1,3 +1,6 @@
+/* ==========================================================================
+  Variables
+========================================================================== */
 @media (min-width: 1200px) and (max-width: 1300px) {
   /* line 4, ../scss/healthlineSnippets/_hlHeader.scss */
   .nav-main .nav a {
@@ -43,3 +46,7 @@ About us Photos
 .team-photos {
   text-align: center;
 }
+
+/******************************************
+Experimental Counter
+*******************************************/

@@ -259,7 +259,7 @@ Template Name: About Page Template
       <div class="span12">
         <ul class="list-logos mar-t--20">
         <?php if( get_sub_field('logos') ): while( has_sub_field('logos') ): ?>
-          <li><img src="<?php the_sub_field('logo'); ?>" alt="Healthline Parner"></li>
+          <li><img src="<?php the_sub_field('logo'); ?>" alt="Healthline Partner"></li>
         <?php endwhile; endif; ?>
         </ul>
       </div>
