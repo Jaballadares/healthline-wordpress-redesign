@@ -166,7 +166,7 @@ Template Name: Home Page Template
 </section>
 
 
-<section id="content">
+<!-- <section id="content"> -->
   <div class="container">
 
     <div class="row flex-v-align">
@@ -187,7 +187,7 @@ Template Name: Home Page Template
     </div>
 
   </div>
-</section>
+<!-- </section> -->
 
 
 <section class="gray" id="marketing">
@@ -196,7 +196,7 @@ Template Name: Home Page Template
     <div class="row flex-v-align">
     <?php if( have_rows('home_page_content') ): while ( have_rows('home_page_content') ) : the_row(); ?>
     <?php if( get_row_layout() == 'row_7' ): ?>
-      <div class="span5 text-center order-2">
+      <div class="span5 text-center">
         <img src="<?php the_sub_field('image'); ?>" alt="Healthline screenshot">
       </div>
       <div class="span6 offset1 order-1">

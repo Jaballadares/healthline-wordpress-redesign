@@ -137,44 +137,7 @@ Template Name: About Page Template
 </section>
 
 
-<section id="advisory-board">
-  <div class="container">
-  <?php if( have_rows('about_us_page_content') ): while ( have_rows('about_us_page_content') ) : the_row(); ?>
-  <?php if( get_row_layout() == 'row_3' ): ?>
 
-    <div class="row text-center">
-      <div class="span10 offset1">
-        <h3><?php the_sub_field('headline'); ?></h3>
-        <p><?php the_sub_field('paragraph'); ?></p>
-      </div>
-    </div><!--! .row -->
-
-    <?php $j = 1; if( get_sub_field('advisory_buckets') ): while( has_sub_field('advisory_buckets') ): ?>
-    <?php if ($j % 2 == 1): ?>
-    <div class="row mar-t">
-    <?php endif; ?>
-      <div class="span6">
-      <?php if( get_sub_field('position') ) : ?>
-        <h6><small><?php the_sub_field('position'); ?></small></h6>
-      <?php endif; ?>
-        <h5><?php the_sub_field('name'); ?></h5>
-        <p><?php the_sub_field('bio'); ?></p>
-      </div>
-    <?php if ($j % 2 == 0): ?>
-    </div><!--! .row -->
-    <?php endif; ?>
-
-    <?php $j++; endwhile; endif; ?>
-
-    <?php $j = $j - 1 ; if (0 != $j % 2): ?>
-    </div><!--! .row -->
-    <?php endif; ?>
-
-
-  <?php endif; ?>
-  <?php endwhile; endif; ?>
-  </div>
-</section>
 
 
 <section class="gray">
