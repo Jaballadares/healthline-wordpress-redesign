@@ -190,7 +190,7 @@ Template Name: Home Page Template
 <!-- </section> -->
 
 
-<section class="gray" id="marketing">
+<section id="marketing">
   <div class="container">
 
     <div class="row flex-v-align">
