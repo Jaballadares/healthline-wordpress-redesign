@@ -58,9 +58,15 @@ USAGE: @include order(2);
     font-size: 70%;
   }
 }
+@media (min-width: 1300px) {
+  /* line 28, ../scss/healthlineSnippets/_hlHeader.scss */
+  .nav-main a {
+    font-size: 98%;
+  }
+}
 /************************************************** This is on the Marketing Solutions Page
 **********************************************/
-/* line 29, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 35, ../scss/healthlineSnippets/_hlHeader.scss */
 .media-nav {
   font-size: 78%;
 }
@@ -68,7 +74,7 @@ USAGE: @include order(2);
 /******************************************
 Page-home.php
 ********************************************/
-/* line 37, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 43, ../scss/healthlineSnippets/_hlHeader.scss */
 .home-icons {
   text-align: center;
 }
@@ -76,7 +82,7 @@ Page-home.php
 /*******************
 About us Photos
 **********************/
-/* line 45, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 51, ../scss/healthlineSnippets/_hlHeader.scss */
 .team-photos {
   text-align: center;
 }
@@ -84,18 +90,27 @@ About us Photos
 /******************************************
 Experimental Counter
 *******************************************/
-/* line 53, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 59, ../scss/healthlineSnippets/_hlHeader.scss */
 .values-gray {
   text-align: center;
 }
 
-/* line 57, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 63, ../scss/healthlineSnippets/_hlHeader.scss */
 .noWrapping {
   white-space: nowrap;
 }
 @media (max-width: 767px) {
-  /* line 57, ../scss/healthlineSnippets/_hlHeader.scss */
+  /* line 63, ../scss/healthlineSnippets/_hlHeader.scss */
   .noWrapping {
     white-space: normal;
   }
+}
+
+/**************************************
+Dropdown Nav Aligning Lines/Text
+***************************************/
+/* line 73, ../scss/healthlineSnippets/_hlHeader.scss */
+#menu-item-233 a, #menu-item-232 a, #menu-item-230 a {
+  font-size: 12px;
+  display: inline-flex;
 }

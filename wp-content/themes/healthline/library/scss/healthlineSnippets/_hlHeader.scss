@@ -24,6 +24,12 @@ font-size: 70%;
 }
 }
 
+@media (min-width: 1300px) {
+  .nav-main a {
+    font-size: 98%;
+  }
+}
+
 /************************************************** This is on the Marketing Solutions Page
 **********************************************/
 .media-nav {
@@ -59,4 +65,12 @@ Experimental Counter
     @include breakpoint(small) {
     white-space: normal;
   }
+}
+
+/**************************************
+Dropdown Nav Aligning Lines/Text
+***************************************/
+#menu-item-233 a, #menu-item-232 a, #menu-item-230 a {
+font-size: 12px;
+display: inline-flex;
 }

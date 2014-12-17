@@ -134,7 +134,8 @@ Template Name: Platform Page Template
         <p class="lead"><?php the_sub_field('paragraph'); ?></p>
       </div>
       <div class="span5 text-center">
-        <img src="<?php the_sub_field('image'); ?>" alt="Taxonomy wheel">
+        <img src=
+        "<?php the_sub_field('image'); ?>" alt="Taxonomy wheel">
       </div>
     <?php endif; ?>
     <?php endwhile; endif; ?>
