@@ -22,6 +22,14 @@ Template Name: Search & Discovery Page Template
   </div>
 </section>
 
+<section class="bQuote">
+  <blockquote>
+    <p>Healthline is helping us to harness the power of their medical taxonomy to develop clinically intelligent applications and make our vast library of health content smarter and easier to search</p>
+    <footer>
+      <cite>Elsevier</cite>
+    </footer>
+  </blockquote>
+</section>
 
 <section>
   <div class="container">

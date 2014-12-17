@@ -114,3 +114,21 @@ Dropdown Nav Aligning Lines/Text
   font-size: 12px;
   display: inline-flex;
 }
+
+/**************************************
+Dropdown Nav Aligning Lines/Text
+***************************************/
+/* line 82, ../scss/healthlineSnippets/_hlHeader.scss */
+blockquote {
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* line 85, ../scss/healthlineSnippets/_hlHeader.scss */
+blockquote p {
+  font-size: 1.3em;
+}
+
+/* line 90, ../scss/healthlineSnippets/_hlHeader.scss */
+.bQuote {
+  padding-bottom: 0;
+}
