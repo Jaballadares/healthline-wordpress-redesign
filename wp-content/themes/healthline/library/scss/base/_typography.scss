@@ -291,6 +291,20 @@ blockquote {
     color: #ececec;
     font-size: 50px;
   }
+  &:after {
+      content: "\f10e";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #ececec;
+      font-size: 50px;
+  }
   p {
     font-size: 28px;
     color: $red;

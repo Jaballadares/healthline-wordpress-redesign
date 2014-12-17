@@ -32,7 +32,7 @@
           <div class="span4 offset1">
             <nav class="nav-social">
               <ul class="list-inline">
-                <li><a href="http://www.youtube.com/user/HealthlineVideos" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.youtube.com/user/Healthline" target="_blank"><i class="fa fa-youtube"></i></a></li>
                 <li><a href="http://www.linkedin.com/company/healthline-networks-inc.?trk=company_logo" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
                 <li><a href="https://twitter.com/Healthline" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="https://www.facebook.com/healthlinenetworks" target="_blank"><i class="fa fa-facebook"></i></a></li>

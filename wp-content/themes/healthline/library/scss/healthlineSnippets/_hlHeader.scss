@@ -1,5 +1,7 @@
  @import "../meta/_variables";
 
+@import "../meta/_mixins";
+
  @media (min-width: 1200px) and (max-width: 1300px) {
   .nav-main .nav a {
   font-size: 99%;
@@ -50,8 +52,11 @@ Experimental Counter
 
 .values-gray {
   text-align: center;
+}
 
-.homeButtons {
-  background-color: pink;
-  color:white;
+.noWrapping {
+  white-space: nowrap;
+    @include breakpoint(small) {
+    white-space: normal;
+  }
 }

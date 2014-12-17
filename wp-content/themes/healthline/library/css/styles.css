@@ -1295,11 +1295,26 @@ blockquote:before {
   font-size: 50px;
 }
 /* line 294, ../scss/base/_typography.scss */
+blockquote:after {
+  content: "\f10e";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #ececec;
+  font-size: 50px;
+}
+/* line 308, ../scss/base/_typography.scss */
 blockquote p {
   font-size: 28px;
   color: #b64422;
 }
-/* line 298, ../scss/base/_typography.scss */
+/* line 312, ../scss/base/_typography.scss */
 blockquote cite {
   display: block;
   text-align: right;
@@ -6749,7 +6764,7 @@ i.white.on-top, .nav-main i.white.menu-item-227,
 }
 
 /* line 785, ../scss/elements/_font-awesome.scss */
-.fa-quote-right:before {
+.fa-quote-right:after {
   content: "\f10e";
 }
 
