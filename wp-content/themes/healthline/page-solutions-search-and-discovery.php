@@ -23,12 +23,12 @@ Template Name: Search & Discovery Page Template
 </section>
 
 <section class="bQuote">
-  <blockquote>
-    <p>Healthline is helping us to harness the power of their medical taxonomy to develop clinically intelligent applications and make our vast library of health content smarter and easier to search</p>
+
+    <p class="blueLetters">"Healthline is helping us to harness the power of their medical taxonomy<br> to develop clinically intelligent applications and make our vast library <br>of health content smarter and easier to search."</p>
     <footer>
-      <cite>Elsevier</cite>
+      <cite class="citing">- Elsevier</cite>
     </footer>
-  </blockquote>
+
 </section>
 
 <section>

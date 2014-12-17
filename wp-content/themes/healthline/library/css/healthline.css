@@ -123,12 +123,20 @@ blockquote {
   font-weight: bold;
   margin-top: 10px;
 }
-/* line 85, ../scss/healthlineSnippets/_hlHeader.scss */
-blockquote p {
-  font-size: 1.3em;
-}
 
-/* line 90, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 88, ../scss/healthlineSnippets/_hlHeader.scss */
 .bQuote {
   padding-bottom: 0;
+}
+
+/* line 92, ../scss/healthlineSnippets/_hlHeader.scss */
+.blueLetters {
+  font-size: 1.3em;
+  color: #00abc7;
+  text-align: center;
+}
+
+/* line 98, ../scss/healthlineSnippets/_hlHeader.scss */
+.citing {
+  text-align: center;
 }

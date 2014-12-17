@@ -82,11 +82,19 @@ Dropdown Nav Aligning Lines/Text
 blockquote {
   font-weight: bold;
   margin-top: 10px;
-    p {
-      font-size: 1.3em;
-    }
+
 }
 
 .bQuote {
   padding-bottom: 0;
 }
+
+.blueLetters {
+      font-size: 1.3em;
+      color:$blue;
+      text-align: center;
+    }
+
+    .citing {
+      text-align: center;
+    }
