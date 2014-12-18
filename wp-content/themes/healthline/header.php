@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="google-site-verification" content="lC19838MQdUht79Pd1YQHYbhAx3qy-rbg3w3bHAMLxc" />
 
+
     <title><?php wp_title('-', TRUE, 'right'); ?> <?php bloginfo('description'); ?></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
