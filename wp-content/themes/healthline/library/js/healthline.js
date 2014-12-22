@@ -99,3 +99,13 @@ jQuery(function ($) {
   $this.countTo(options);
   }
 });
+
+  var swapperSelector = $('.swapper-selector').find('li'),
+      swapperWrap = $('.swapper-wrap'),
+      swapperContent = swapperWrap.find('.swapper-content');
+  var sliderToggle = function(){
+    $(".swapper-selector li.current").removeClass()
+     .next().add('swapper-selector li:first').last().addClass("current");
+
+  }
+  setInterval(sliderToggle, 5000);
