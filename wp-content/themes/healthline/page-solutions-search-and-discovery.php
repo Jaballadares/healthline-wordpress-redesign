@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Search & Discovery Page Template
+Template Name: Engagement Solutions Page Template
 */
 ?>
 
@@ -22,15 +22,6 @@ Template Name: Search & Discovery Page Template
   </div>
 </section>
 
-<section class="bQuote">
-
-    <p class="blueLetters">"Healthline is helping us to harness the power of their medical taxonomy<br> to develop clinically intelligent applications and make our vast library <br>of health content smarter and easier to search."</p>
-    <footer>
-      <cite class="citing">- Elsevier</cite>
-    </footer>
-
-</section>
-
 <section>
   <div class="container">
 
@@ -50,7 +41,14 @@ Template Name: Search & Discovery Page Template
   </div>
 </section>
 
+<section class="bQuote">
 
+    <p class="blueLetters">"Healthline is helping us to harness the power of their medical taxonomy<br> to develop clinically intelligent applications and make our vast library <br>of health content smarter and easier to search."</p>
+    <footer>
+      <cite class="citing">- Elsevier</cite>
+    </footer>
+
+</section>
 <section class="pad-t--10">
   <div class="container">
 

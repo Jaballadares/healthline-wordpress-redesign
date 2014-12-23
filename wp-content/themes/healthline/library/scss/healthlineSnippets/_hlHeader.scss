@@ -87,6 +87,7 @@ blockquote {
 
 .bQuote {
   padding-bottom: 0;
+  text-align:center;
 }
 
 .blueLetters {
@@ -97,4 +98,9 @@ blockquote {
 
     .citing {
       text-align: center;
+    }
+
+    .gray-subhead {
+      color: #666;
+      font-size: 1.2em;
     }
