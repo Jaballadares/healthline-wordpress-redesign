@@ -1,5 +1,7 @@
  @import "../meta/_variables";
 
+@import "../meta/_mixins";
+
  @media (min-width: 1200px) and (max-width: 1300px) {
   .nav-main .nav a {
   font-size: 99%;
@@ -20,6 +22,12 @@
 .nav-main a {
 font-size: 70%;
 }
+}
+
+@media (min-width: 1300px) {
+  .nav-main a {
+    font-size: 98%;
+  }
 }
 
 /************************************************** This is on the Marketing Solutions Page
@@ -47,11 +55,46 @@ About us Photos
 /******************************************
 Experimental Counter
 *******************************************/
-.value-prop {
+
+.values-gray {
+  text-align: center;
+}
+
+.noWrapping {
   white-space: nowrap;
+    @include breakpoint(small) {
+    white-space: normal;
+  }
 }
 
-.underlineMe {
+/**************************************
+Dropdown Nav Aligning Lines/Text
+***************************************/
+#menu-item-233 a, #menu-item-232 a, #menu-item-230 a {
+font-size: 12px;
+display: inline-flex;
+}
+
+/**************************************
+Dropdown Nav Aligning Lines/Text
+***************************************/
+
+blockquote {
   font-weight: bold;
+  margin-top: 10px;
+
 }
 
+.bQuote {
+  padding-bottom: 0;
+}
+
+.blueLetters {
+      font-size: 1.3em;
+      color:$blue;
+      text-align: center;
+    }
+
+    .citing {
+      text-align: center;
+    }

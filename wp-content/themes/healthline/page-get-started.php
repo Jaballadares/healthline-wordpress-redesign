@@ -4,8 +4,7 @@ Template Name: Get Started Page Template
 */
 ?>
 
-
-<?php get_header(); ?>
+<?php get_header();?>
 
 
 <section class="gray">
@@ -26,7 +25,8 @@ Template Name: Get Started Page Template
           <input type="hidden" name="oid" value="00DG0000000i5W2">
           <!-- Thank you page redirect -->
           <input type="hidden" name="retURL" value="http://corp.healthline.com/thanks">
-          <input type="hidden" name="leadSource" value="corpSite">
+          <input type="hidden" select id="lead_source" name="lead_source" value="CorpSite">
+
 
           <div class="input-wrap left">
             <label class="placeholder-hide" for="first_name">First Name</label>
@@ -48,7 +48,7 @@ Template Name: Get Started Page Template
             <input id="title" maxlength="40" name="title" size="20" type="text" placeholder="Title">
           </div>
 
-          <div class="input-wrap left">
+      <div class="input-wrap left">
             <label class="placeholder-hide" for="city">City</label>
             <input id="city" maxlength="40" name="city" size="20" type="text" placeholder="City">
           </div>
@@ -68,6 +68,21 @@ Template Name: Get Started Page Template
             <input id="email" maxlength="80" name="email" size="20" placeholder="Email">
           </div>
 
+          <div class="input-wrap-full">
+<select required id="00NG000000EM47A" name="00NG000000EM47A" title="Please Select the Product You Are Interested In" class="droppy-down" style="width:100%;">
+<optgroup label="Solutions">
+<option value="">Please Select the Solution You Are Interested In &#9660 &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;</option>
+<option value=" Data Solutions">Data Solutions</option>
+<option value="Engagement Solutions">Engagement Solutions</option>
+<option value="Marketing Solutions">Marketing Solutions</option>
+</optgroup>
+</select>
+</label>
+    </div>
+
+
+
+   <label for="description"></label><textarea name="description" placeholder="How Can We Help?" style="width:100%;"></textarea><br>
           <input type="submit" value="Submit" class="btn btn-purple btn-large">
         </form>
       </div>

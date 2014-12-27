@@ -38,6 +38,7 @@ Template Name: About Page Template
 </section>
 
 
+
 <section>
   <div class="container">
 
@@ -137,44 +138,7 @@ Template Name: About Page Template
 </section>
 
 
-<section id="advisory-board">
-  <div class="container">
-  <?php if( have_rows('about_us_page_content') ): while ( have_rows('about_us_page_content') ) : the_row(); ?>
-  <?php if( get_row_layout() == 'row_3' ): ?>
 
-    <div class="row text-center">
-      <div class="span10 offset1">
-        <h3><?php the_sub_field('headline'); ?></h3>
-        <p><?php the_sub_field('paragraph'); ?></p>
-      </div>
-    </div><!--! .row -->
-
-    <?php $j = 1; if( get_sub_field('advisory_buckets') ): while( has_sub_field('advisory_buckets') ): ?>
-    <?php if ($j % 2 == 1): ?>
-    <div class="row mar-t">
-    <?php endif; ?>
-      <div class="span6">
-      <?php if( get_sub_field('position') ) : ?>
-        <h6><small><?php the_sub_field('position'); ?></small></h6>
-      <?php endif; ?>
-        <h5><?php the_sub_field('name'); ?></h5>
-        <p><?php the_sub_field('bio'); ?></p>
-      </div>
-    <?php if ($j % 2 == 0): ?>
-    </div><!--! .row -->
-    <?php endif; ?>
-
-    <?php $j++; endwhile; endif; ?>
-
-    <?php $j = $j - 1 ; if (0 != $j % 2): ?>
-    </div><!--! .row -->
-    <?php endif; ?>
-
-
-  <?php endif; ?>
-  <?php endwhile; endif; ?>
-  </div>
-</section>
 
 
 <section class="gray">
@@ -227,7 +191,7 @@ Template Name: About Page Template
       </div>
     </div><!--! .row -->
 
-    <div class="row">
+    <div class="row text-center">
       <div class="span6 offset3">
          <ul class="lead list-two-column">
           <?php if( get_sub_field('bullet_points') ): while( has_sub_field('bullet_points') ): ?>
@@ -276,7 +240,7 @@ Template Name: About Page Template
   <?php if( have_rows('about_us_page_content') ): while ( have_rows('about_us_page_content') ) : the_row(); ?>
   <?php if( get_row_layout() == 'row_8' ): ?>
 
-    <div class="row text-center">
+    <div class="row text-center block">
       <div class="span8 offset2">
         <h3><?php the_sub_field('headline'); ?></h3>
       </div>

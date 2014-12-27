@@ -1,32 +1,72 @@
 /* ==========================================================================
   Variables
 ========================================================================== */
+/* ==========================================================================
+  Mixins
+========================================================================== */
+/**** **** **** **** ****
+ANIMATION -
+USAGE: @include animation(name, fadeIn);
+USAGE: @include animation(duration, .15s);
+USAGE: @include animation(delay, 1s);
+USAGE: @include animation(fill-mode, both);
+**** **** **** **** ****/
+/**** **** **** **** ****
+BREAKPOINTS -
+USAGE: @include breakpoint(small) {}
+**** **** **** **** ****/
+/**** **** **** **** ****
+CLEARFIX -
+USAGE: @include clearfix();
+**** **** **** **** ****/
+/**** **** **** **** ****
+PLACEHOLDER -
+USAGE: @include placeholder(#333);
+**** **** **** **** ****/
+/**** **** **** **** ****
+FLEXBOX!
+USAGE: @include flexbox();
+**** **** **** **** ****/
+/**** **** **** **** ****
+FLEX
+USAGE: @include flex(1 1 200px);
+**** **** **** **** ****/
+/**** **** **** **** ****
+ORDER
+USAGE: @include order(2);
+**** **** **** **** ****/
 @media (min-width: 1200px) and (max-width: 1300px) {
-  /* line 4, ../scss/healthlineSnippets/_hlHeader.scss */
+  /* line 6, ../scss/healthlineSnippets/_hlHeader.scss */
   .nav-main .nav a {
     font-size: 99%;
   }
 }
 @media (min-width: 980px) and (max-width: 1200px) {
-  /* line 10, ../scss/healthlineSnippets/_hlHeader.scss */
+  /* line 12, ../scss/healthlineSnippets/_hlHeader.scss */
   .nav-main .nav a {
     font-size: 90%;
   }
 }
-/* line 15, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 17, ../scss/healthlineSnippets/_hlHeader.scss */
 #menu-item-233 a, #menu-item-232 a, #menu-item-230 a {
   font-size: 12px;
 }
 
 @media (max-width: 979px) and (min-width: 768px) {
-  /* line 20, ../scss/healthlineSnippets/_hlHeader.scss */
+  /* line 22, ../scss/healthlineSnippets/_hlHeader.scss */
   .nav-main a {
     font-size: 70%;
   }
 }
+@media (min-width: 1300px) {
+  /* line 28, ../scss/healthlineSnippets/_hlHeader.scss */
+  .nav-main a {
+    font-size: 98%;
+  }
+}
 /************************************************** This is on the Marketing Solutions Page
 **********************************************/
-/* line 27, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 35, ../scss/healthlineSnippets/_hlHeader.scss */
 .media-nav {
   font-size: 78%;
 }
@@ -34,7 +74,7 @@
 /******************************************
 Page-home.php
 ********************************************/
-/* line 35, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 43, ../scss/healthlineSnippets/_hlHeader.scss */
 .home-icons {
   text-align: center;
 }
@@ -42,7 +82,7 @@ Page-home.php
 /*******************
 About us Photos
 **********************/
-/* line 43, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 51, ../scss/healthlineSnippets/_hlHeader.scss */
 .team-photos {
   text-align: center;
 }
@@ -50,12 +90,53 @@ About us Photos
 /******************************************
 Experimental Counter
 *******************************************/
-/* line 50, ../scss/healthlineSnippets/_hlHeader.scss */
-.value-prop {
-  white-space: nowrap;
+/* line 59, ../scss/healthlineSnippets/_hlHeader.scss */
+.values-gray {
+  text-align: center;
 }
 
-/* line 54, ../scss/healthlineSnippets/_hlHeader.scss */
-.underlineMe {
+/* line 63, ../scss/healthlineSnippets/_hlHeader.scss */
+.noWrapping {
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  /* line 63, ../scss/healthlineSnippets/_hlHeader.scss */
+  .noWrapping {
+    white-space: normal;
+  }
+}
+
+/**************************************
+Dropdown Nav Aligning Lines/Text
+***************************************/
+/* line 73, ../scss/healthlineSnippets/_hlHeader.scss */
+#menu-item-233 a, #menu-item-232 a, #menu-item-230 a {
+  font-size: 12px;
+  display: inline-flex;
+}
+
+/**************************************
+Dropdown Nav Aligning Lines/Text
+***************************************/
+/* line 82, ../scss/healthlineSnippets/_hlHeader.scss */
+blockquote {
   font-weight: bold;
+  margin-top: 10px;
+}
+
+/* line 88, ../scss/healthlineSnippets/_hlHeader.scss */
+.bQuote {
+  padding-bottom: 0;
+}
+
+/* line 92, ../scss/healthlineSnippets/_hlHeader.scss */
+.blueLetters {
+  font-size: 1.3em;
+  color: #00abc7;
+  text-align: center;
+}
+
+/* line 98, ../scss/healthlineSnippets/_hlHeader.scss */
+.citing {
+  text-align: center;
 }
