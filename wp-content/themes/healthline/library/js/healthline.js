@@ -118,29 +118,34 @@ var swapperSelector = $('.swapper-selector').find('li'),
 
 var sliderToggle = function() {
     var items = $('.switch-item');
+    var contentItems = $('.swapper-content');
     for (var i = 0; i < items.length; i++) {
         if ($(items[i]).hasClass('current')) {
             $(items[i]).removeClass('current');
             var next = $(items[(i + 1) % 4]);
             next.addClass('current');
+            $(contentItems[i]).removeClass('show');
+            var proximo = $(contentItems[(i + 1) % 4]);
+            proximo.addClass('show');
             break;
+
         }
     }
 }
 setInterval(sliderToggle, 3000);
 
-var sliderContent = function() {
-    var contentItems = $('.swapper-content');
-    for (var i = 0; i < contentItems.length; i++) {
-        if ($(contentItems[i]).hasClass('show')) {
-            $(contentItems[i]).removeClass('show');
-            var proximo = $(contentItems[(i + 1) % 4]);
-            proximo.addClass('show');
-            break;
-        }
-    }
-}
-setInterval(sliderContent, 3000);
+// var sliderContent = function() {
+//     var contentItems = $('.swapper-content');
+//     for (var i = 0; i < contentItems.length; i++) {
+//         if ($(contentItems[i]).hasClass('show')) {
+//             $(contentItems[i]).removeClass('show');
+//             var proximo = $(contentItems[(i + 1) % 4]);
+//             proximo.addClass('show');
+//             break;
+//         }
+//     }
+// }
+// setInterval(sliderContent, 3000);
 
 
 swapperSelector.on('click', function() {
