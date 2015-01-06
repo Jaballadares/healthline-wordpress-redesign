@@ -22,6 +22,7 @@ Template Name: Engagement Solutions Page Template
   </div>
 </section>
 
+
 <section>
   <div class="container">
 
@@ -41,14 +42,56 @@ Template Name: Engagement Solutions Page Template
   </div>
 </section>
 
-<section class="bQuote">
+<section>
+  <div class="container">
 
-    <p class="blueLetters">"Healthline is helping us to harness the power of their medical taxonomy<br> to develop clinically intelligent applications and make our vast library <br>of health content smarter and easier to search."</p>
-    <footer>
-      <cite class="citing">- Elsevier</cite>
-    </footer>
+  <?php if( have_rows('search_discovery_page_content') ): while ( have_rows('search_discovery_page_content') ) : the_row(); ?>
+  <?php if( get_row_layout() == 'row_6' ): ?>
+    <div class="row text-center">
+      <div class="span12">
+        <h3><?php the_sub_field('headline'); ?></h3>
+      </div>
+    </div><!--! .row -->
 
+    <div class="row mar-t text-center mobile-hide">
+      <ul class="swapper-selector swapper-icons">
+        <li class="switch-item" id="item1" data-target="1">
+          <i class="icon-solutions icon-precision mar-t--10">Precision and Recall Icon</i>
+          <h6 class="uppercase">Precision &amp; Recall</h6>
+        </li>
+        <li class="switch-item" data-target="2">
+          <i class="icon-solutions icon-scale mar-t--10">Scale Icon</i>
+          <h6 class="uppercase">Scale</h6>
+        </li>
+        <li class="switch-item" data-target="3">
+          <i class="icon-solutions icon-speed mar-t--10">Speed Icon</i>
+          <h6 class="uppercase">Speed</h6>
+        </li>
+        <li class="switch-item" data-target="4">
+          <i class="icon-solutions icon-personalization mar-t--10">Personalization Icon</i>
+          <h6 class="uppercase">Personalization</h6>
+        </li>
+      </ul>
+    </div><!--! .row -->
+
+    <div class="row swapper-wrap swapper-wrap-alt">
+      <div class="span10 offset1">
+      <?php $j = 1; if( get_sub_field('search_boxes') ): while( has_sub_field('search_boxes') ): ?>
+        <div class="swapper-content <?php if ( $j == 1 ) { ?>show<?php }; ?>" data-title="<?php echo $j; ?>">
+          <p><?php the_sub_field('paragraph'); ?></p>
+          <?php if( get_sub_field('link') ): while( has_sub_field('link') ): ?>
+          <a href="<?php the_sub_field('link'); ?>"><strong><?php the_sub_field('link_text'); ?></strong></a>
+          <?php endwhile; endif; ?>
+        </div>
+      <?php $j++; endwhile; endif; ?>
+      </div>
+    </div>
+    <?php endif; ?>
+    <?php endwhile; endif; ?>
+
+  </div>
 </section>
+
 <section class="pad-t--10">
   <div class="container">
 
@@ -326,55 +369,6 @@ Template Name: Engagement Solutions Page Template
 </section>
 
 
-<section>
-  <div class="container">
-
-  <?php if( have_rows('search_discovery_page_content') ): while ( have_rows('search_discovery_page_content') ) : the_row(); ?>
-  <?php if( get_row_layout() == 'row_6' ): ?>
-    <div class="row text-center">
-      <div class="span12">
-        <h3><?php the_sub_field('headline'); ?></h3>
-      </div>
-    </div><!--! .row -->
-
-    <div class="row mar-t text-center mobile-hide">
-      <ul class="swapper-selector swapper-icons">
-        <li class="current" data-target="1">
-          <i class="icon-solutions icon-precision mar-t--10">Precision and Recall Icon</i>
-          <h6 class="uppercase">Precision &amp; Recall</h6>
-        </li>
-        <li data-target="2">
-          <i class="icon-solutions icon-scale mar-t--10">Scale Icon</i>
-          <h6 class="uppercase">Scale</h6>
-        </li>
-        <li data-target="3">
-          <i class="icon-solutions icon-speed mar-t--10">Speed Icon</i>
-          <h6 class="uppercase">Speed</h6>
-        </li>
-        <li data-target="4">
-          <i class="icon-solutions icon-personalization mar-t--10">Personalization Icon</i>
-          <h6 class="uppercase">Personalization</h6>
-        </li>
-      </ul>
-    </div><!--! .row -->
-
-    <div class="row swapper-wrap swapper-wrap-alt">
-      <div class="span10 offset1">
-      <?php $j = 1; if( get_sub_field('search_boxes') ): while( has_sub_field('search_boxes') ): ?>
-        <div class="swapper-content <?php if ( $j == 1 ) { ?>show<?php }; ?>" data-title="<?php echo $j; ?>">
-          <p><?php the_sub_field('paragraph'); ?></p>
-          <?php if( get_sub_field('link') ): while( has_sub_field('link') ): ?>
-          <a href="<?php the_sub_field('link'); ?>"><strong><?php the_sub_field('link_text'); ?></strong></a>
-          <?php endwhile; endif; ?>
-        </div>
-      <?php $j++; endwhile; endif; ?>
-      </div>
-    </div>
-    <?php endif; ?>
-    <?php endwhile; endif; ?>
-
-  </div>
-</section>
 
 
 <section class="gray" id="implementation">
@@ -433,6 +427,14 @@ Template Name: Engagement Solutions Page Template
   </div>
 </section>
 
+<section class="bQuote" style="margin-top: 2.5%;">
+
+    <p class="blueLetters">"Healthline is helping us to harness the power of their medical taxonomy<br> to develop clinically intelligent applications and make our vast library <br>of health content smarter and easier to search."</p>
+    <footer>
+      <cite class="citing">- Elsevier</cite>
+    </footer>
+
+</section>
 
 <section>
   <div class="container">
@@ -474,34 +476,6 @@ Template Name: Engagement Solutions Page Template
   </div>
 </section>
 
-
-<section>
-  <div class="container">
-
-    <div class="row">
-      <div class="span12">
-
-        <div class="outline">
-          <div class="row text-center">
-            <div class="span8 offset2">
-            <?php if( have_rows('search_discovery_page_content') ): while ( have_rows('search_discovery_page_content') ) : the_row(); ?>
-            <?php if( get_row_layout() == 'row_9' ): ?>
-              <h3><?php the_sub_field('headline'); ?></h3>
-              <p><?php the_sub_field('paragraph'); ?></p>
-              <?php if( get_sub_field('button') ): while( has_sub_field('button') ): ?>
-              <a href="<?php the_sub_field('button_link'); ?>" class="btn btn-purple btn-large mar-t--20"><?php the_sub_field('button_text'); ?></a>
-              <?php endwhile; endif; ?>
-            <?php endif; ?>
-            <?php endwhile; endif; ?>
-            </div>
-          </div><!--! .row -->
-        </div>
-
-      </div>
-    </div><!--! .row -->
-
-  </div>
-</section>
 
 
 

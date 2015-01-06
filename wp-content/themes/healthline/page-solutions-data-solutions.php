@@ -32,7 +32,7 @@ Template Name: Data Solutions Page Template
         </div>
       </div>
       <div class="span6">
-        <h3>Reduce Readmission Rates</h3>
+        <h3>Better Identify Your Risk Exposure</h3>
         <p class="lead">$70 Billion dollars are spent on patient readmissions a year. With access to the right data we can help cut costs and improve patient health.</p>
       </div>
     </div>

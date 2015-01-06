@@ -200,9 +200,9 @@ Template Name: Marketing Solutions Page Template
       <div class="span12">
         <h3><?php the_sub_field('headline'); ?></h3>
         <ul class="mar-t swapper-selector swapper-inline">
-          <li data-target="1" class="current">Custom</li>
-          <li data-target="2">Distribution</li>
-          <li data-target="3">Media</li>
+          <li data-target="1" id="item1" class="current switch-item">Custom</li>
+          <li data-target="2" class="switch-item">Distribution</li>
+          <li data-target="3" class="switch-item">Media</li>
         </ul>
       </div>
     </div><!--! .row -->

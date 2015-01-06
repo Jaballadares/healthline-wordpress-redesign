@@ -127,22 +127,23 @@ blockquote {
 /* line 88, ../scss/healthlineSnippets/_hlHeader.scss */
 .bQuote {
   padding-bottom: 0;
+  padding-top: 0;
   text-align: center;
 }
 
-/* line 93, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 94, ../scss/healthlineSnippets/_hlHeader.scss */
 .blueLetters {
   font-size: 1.3em;
   color: #00abc7;
   text-align: center;
 }
 
-/* line 99, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 100, ../scss/healthlineSnippets/_hlHeader.scss */
 .citing {
   text-align: center;
 }
 
-/* line 103, ../scss/healthlineSnippets/_hlHeader.scss */
+/* line 104, ../scss/healthlineSnippets/_hlHeader.scss */
 .gray-subhead {
   color: #666;
   font-size: 1.2em;
