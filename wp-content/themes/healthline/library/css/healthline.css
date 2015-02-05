@@ -36,115 +36,81 @@ ORDER
 USAGE: @include order(2);
 **** **** **** **** ****/
 @media (min-width: 1200px) and (max-width: 1300px) {
-  /* line 6, ../scss/healthlineSnippets/_hlHeader.scss */
   .nav-main .nav a {
-    font-size: 99%;
-  }
-}
+    font-size: 99%; } }
 @media (min-width: 980px) and (max-width: 1200px) {
-  /* line 12, ../scss/healthlineSnippets/_hlHeader.scss */
   .nav-main .nav a {
-    font-size: 90%;
-  }
-}
-/* line 17, ../scss/healthlineSnippets/_hlHeader.scss */
+    font-size: 90%; } }
 #menu-item-233 a, #menu-item-232 a, #menu-item-230 a {
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 @media (max-width: 979px) and (min-width: 768px) {
-  /* line 22, ../scss/healthlineSnippets/_hlHeader.scss */
   .nav-main a {
-    font-size: 70%;
-  }
-}
+    font-size: 70%; } }
 @media (min-width: 1300px) {
-  /* line 28, ../scss/healthlineSnippets/_hlHeader.scss */
   .nav-main a {
-    font-size: 98%;
-  }
-}
+    font-size: 98%; } }
 /************************************************** This is on the Marketing Solutions Page
 **********************************************/
-/* line 35, ../scss/healthlineSnippets/_hlHeader.scss */
 .media-nav {
-  font-size: 78%;
-}
+  font-size: 78%; }
 
 /******************************************
 Page-home.php
 ********************************************/
-/* line 43, ../scss/healthlineSnippets/_hlHeader.scss */
 .home-icons {
-  text-align: center;
-}
+  text-align: center; }
 
 /*******************
 About us Photos
 **********************/
-/* line 51, ../scss/healthlineSnippets/_hlHeader.scss */
 .team-photos {
-  text-align: center;
-}
+  text-align: center; }
 
 /******************************************
 Experimental Counter
 *******************************************/
-/* line 59, ../scss/healthlineSnippets/_hlHeader.scss */
 .values-gray {
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 63, ../scss/healthlineSnippets/_hlHeader.scss */
 .noWrapping {
-  white-space: nowrap;
-}
-@media (max-width: 767px) {
-  /* line 63, ../scss/healthlineSnippets/_hlHeader.scss */
-  .noWrapping {
-    white-space: normal;
-  }
-}
+  white-space: nowrap; }
+  @media (max-width: 767px) {
+    .noWrapping {
+      white-space: normal; } }
 
 /**************************************
 Dropdown Nav Aligning Lines/Text
 ***************************************/
-/* line 73, ../scss/healthlineSnippets/_hlHeader.scss */
 #menu-item-233 a, #menu-item-232 a, #menu-item-230 a {
   font-size: 12px;
-  display: inline-flex;
-}
+  display: inline-flex; }
 
 /**************************************
 Dropdown Nav Aligning Lines/Text
 ***************************************/
-/* line 82, ../scss/healthlineSnippets/_hlHeader.scss */
 blockquote {
   font-weight: bold;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
-/* line 88, ../scss/healthlineSnippets/_hlHeader.scss */
 .bQuote {
   padding-bottom: 0;
   padding-top: 0;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 94, ../scss/healthlineSnippets/_hlHeader.scss */
 .blueLetters {
   font-size: 1.3em;
   color: #00abc7;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 100, ../scss/healthlineSnippets/_hlHeader.scss */
 .citing {
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 104, ../scss/healthlineSnippets/_hlHeader.scss */
 .gray-subhead {
   color: #666;
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
+
+.underlineMe {
+  text-decoration: underline; }
+
+/*# sourceMappingURL=healthline.css.map */

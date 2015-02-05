@@ -83,7 +83,7 @@ Template Name: Data Solutions Page Template
         <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/plus-icon.png" alt="Plus icon">
       </div>
       <div class="span10">
-        <h4 class="text-white"><strong>Studies show that the best indications of a patient at risk to be readmitted are related to ta psychosocial factors - this type of data has been unstructured and unusable</strong></h4>
+        <h4 class="text-white"><strong>Studies show that 38.1% of the diagnosed diabetic population did <span class="underlineMe">not</span> have diabetes diagnosis in their medical records and were only identified by the presence of diabetic medications - this type of data has been unstructured and unusable</strong></h4>
       </div>
     </div>
 

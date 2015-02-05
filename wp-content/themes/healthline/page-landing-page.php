@@ -6,7 +6,6 @@ Template Name: Landing Page Template
 
 
 <?php require('header-simple.php'); ?>
-
 <section class="gray callout">
   <div class="container">
 
