@@ -2425,7 +2425,9 @@ span.type {
   .purple-bg-simple .btn-cta {
     background: #00abc7;
     padding: 10px;
-    text-transform: none; }
+    text-transform: none;
+    font-size: 1em;
+    font-family: inherit; }
     .purple-bg-simple .btn-cta:hover, .purple-bg-simple .btn-cta:focus {
       background: #00c1e1; }
 

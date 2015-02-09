@@ -42,15 +42,14 @@ Template Name: Data Solutions Page Template
   <div class="container">
 
     <div class="row flex-v-align">
-      <div class="span6 text-center">
+      <div class="span4 text-center">
         <div class="img-wrap-building">
-          <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/building.png" alt="Re-Admission Graphic">
-          <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/round.png" alt="Re-Admission Graphic" class="rotate-in visible-check">
+        <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape3.png" height="223" width="205">
         </div>
       </div>
-      <div class="span6">
-        <h3>Better Identify Your Risk Exposure</h3>
-        <p class="lead">80% of the data in Electronic Health Records (EHRs) is unstrucutred - free-form text in physcian ntoes, scanend documents, patient complication histories, hospital admission and discharge summaries.</p>
+      <div class="span8">
+        <h3>Most Healthcare Data is Currenty Unaccessible for Analysis</h3>
+        <p class="lead">80% of the data in Electronic Health Records (EHRs) is unstrucutred - free-form text in physcian notes, scanend documents, patient complication histories, hospital admission and discharge summaries.</p>
       </div>
     </div>
 
@@ -58,7 +57,7 @@ Template Name: Data Solutions Page Template
 </section>
 
 <section class="purple-bg-simple">
-  <h4>Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
+  <h4 class="span8">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
   <button class="btn btn-cta">Download our whitepaper to find out.</button>
 </section>
 

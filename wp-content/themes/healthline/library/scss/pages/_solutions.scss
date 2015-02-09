@@ -352,6 +352,8 @@ span {
     background: $blue;
     padding: 10px;
     text-transform: none;
+    font-size: 1em;
+    font-family: inherit;
     &:hover,
     &:focus {
     background: lighten($blue, 5%);
