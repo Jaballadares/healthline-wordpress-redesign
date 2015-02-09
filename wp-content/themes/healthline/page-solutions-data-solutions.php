@@ -20,6 +20,23 @@ Template Name: Data Solutions Page Template
   </div>
 </section>
 
+<section>
+  <div class="container">
+
+    <div class="row">
+      <div class="span12">
+        <nav class="nav-scroll btn-scroll">
+          <ul class="list-inline">
+            <li><a href="#applications">HealthData Engine</a></li>
+            <li><a href="#HCC-coding">HCC Coding InSight Application</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!--! .row -->
+
+  </div>
+</section>
+
 
 <section class="pad-t graphic-shape-bottom">
   <div class="container">
@@ -33,11 +50,16 @@ Template Name: Data Solutions Page Template
       </div>
       <div class="span6">
         <h3>Better Identify Your Risk Exposure</h3>
-        <p class="lead">$70 Billion dollars are spent on patient readmissions a year. With access to the right data we can help cut costs and improve patient health.</p>
+        <p class="lead">80% of the data in Electronic Health Records (EHRs) is unstrucutred - free-form text in physcian ntoes, scanend documents, patient complication histories, hospital admission and discharge summaries.</p>
       </div>
     </div>
 
   </div>
+</section>
+
+<section class="purple-bg-simple">
+  <h4>Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
+  <button class="btn btn-cta">Download our whitepaper to find out.</button>
 </section>
 
 
@@ -91,12 +113,12 @@ Template Name: Data Solutions Page Template
 </section>
 
 
-<section class="graphic-shape-top">
+<section class="graphic-shape-top" id="HCC-coding">
   <div class="container">
 
     <div class="row text-center">
       <div class="span12 visible-check">
-        <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/readmissions-logo.jpg" alt="Readmissions Insight" class="logo-in">
+        <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/Health_Data_Engine.png" alt="Readmissions Insight" class="logo-in">
       </div>
     </div>
     <div class="row text-center pad-t--20 pad-b--20">

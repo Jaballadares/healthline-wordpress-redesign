@@ -335,6 +335,29 @@ span {
   }
 }
 
+// new styles
+
+.purple-bg-simple {
+  background: #8a4c97;
+  background-size: cover;
+  h4 {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 2.2%;
+    display: inline;
+    vertical-align: middle;
+  }
+  .btn-cta {
+    background: $blue;
+    padding: 10px;
+    text-transform: none;
+    &:hover,
+    &:focus {
+    background: lighten($blue, 5%);
+  }
+  }
+}
 
 .img-wrap-building {
   position: relative;

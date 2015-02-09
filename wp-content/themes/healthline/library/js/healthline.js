@@ -112,58 +112,58 @@
 // // Content Swapper
 // // --------------------
 
-// var swapperSelector = $('.swapper-selector').find('li'),
-//     swapperWrap = $('.swapper-wrap'),
-//     swapperContent = swapperWrap.find('.swapper-content');
+var swapperSelector = $('.swapper-selector').find('li'),
+    swapperWrap = $('.swapper-wrap'),
+    swapperContent = swapperWrap.find('.swapper-content');
 
-// var sliderToggle = function() {
-//     var items = $('.switch-item');
-//     for (var i = 0; i < items.length; i++) {
-//         if ($(items[i]).hasClass('current')) {
-//             $(items[i]).removeClass('current');
-//             var next = $(items[(i + 1) % 4]);
-//             next.addClass('current');
-//             break;
-//         }
-//     }
-// }
-// setInterval(sliderToggle, 3000);
+var sliderToggle = function() {
+    var items = $('.switch-item');
+    for (var i = 0; i < items.length; i++) {
+        if ($(items[i]).hasClass('current')) {
+            $(items[i]).removeClass('current');
+            var next = $(items[(i + 1) % 4]);
+            next.addClass('current');
+            break;
+        }
+    }
+}
+setInterval(sliderToggle, 3000);
 
-// var sliderContent = function() {
-//   var contentItems = $('.swapper-content');
-//   for (var i = 0; i < contentItems.length; i++) {
-//     if ($(contentItems[i]).hasClass('show')) {
-//         $(contentItems[i]).removeClass('show');
-//         var proximo = $(contentItems[(i + 1) % 4]);
-//         proximo.addClass('show');
-//         break;
-//     }
-//   }
-// }
-// setInterval(sliderContent, 3000);
+var sliderContent = function() {
+  var contentItems = $('.swapper-content');
+  for (var i = 0; i < contentItems.length; i++) {
+    if ($(contentItems[i]).hasClass('show')) {
+        $(contentItems[i]).removeClass('show');
+        var proximo = $(contentItems[(i + 1) % 4]);
+        proximo.addClass('show');
+        break;
+    }
+  }
+}
+setInterval(sliderContent, 3000);
 
 
-// swapperSelector.on('click', function() {
+swapperSelector.on('click', function() {
 
-//     var target = $(this).attr('data-target');
-//     target = swapperWrap.find('div.swapper-content[data-title=' + target + ']');
-//     var preVideo = swapperWrap.find('div.swapper-content.show iframe');
+    var target = $(this).attr('data-target');
+    target = swapperWrap.find('div.swapper-content[data-title=' + target + ']');
+    var preVideo = swapperWrap.find('div.swapper-content.show iframe');
 
-//     swapperSelector.removeClass('current');
-//     $(this).addClass('current');
+    swapperSelector.removeClass('current');
+    $(this).addClass('current');
 
-//     swapperContent.removeClass('show');
-//     $(target).addClass('show');
+    swapperContent.removeClass('show');
+    $(target).addClass('show');
 
-//     if (preVideo.length) {
-//         preVideo.each(function() {
-//             var src = $(this).attr('src');
-//             $(this).attr('src', '');
-//             $(this).attr('src', src);
-//         });
-//     }
+    if (preVideo.length) {
+        preVideo.each(function() {
+            var src = $(this).attr('src');
+            $(this).attr('src', '');
+            $(this).attr('src', src);
+        });
+    }
 
-// });
+});
 
 
 

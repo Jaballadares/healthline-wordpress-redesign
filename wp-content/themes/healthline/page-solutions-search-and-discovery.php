@@ -55,7 +55,7 @@ Template Name: Engagement Solutions Page Template
 
     <div class="row mar-t text-center mobile-hide">
       <ul class="swapper-selector swapper-icons">
-        <li class="switch-item" id="item1" data-target="1">
+        <li class="switch-item current" id="item1" data-target="1">
           <i class="icon-solutions icon-precision mar-t--10">Precision and Recall Icon</i>
           <h6 class="uppercase">Precision &amp; Recall</h6>
         </li>
