@@ -361,6 +361,39 @@ span {
   }
 }
 
+.HDE-logo {
+  width: 65%;
+  margin: auto;
+  display: block;
+}
+
+.HDE-overview {
+    display: inline-flex;
+    text-align: center;
+    margin: 0 auto;
+  img {
+    width: 60%;
+  }
+  h1 {
+    color: $brown;
+    text-align:center;
+  }
+  h3 {
+    color: $brown;
+    font-size: 1.2em;
+    text-align:center;
+  }
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+}
+
+
+
+// End John Styles
+
 .img-wrap-building {
   position: relative;
   padding-bottom: 60px;

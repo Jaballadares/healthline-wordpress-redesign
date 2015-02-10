@@ -61,6 +61,50 @@ Template Name: Data Solutions Page Template
   <button class="btn btn-cta">Download our whitepaper to find out.</button>
 </section>
 
+<div class="row">
+<img src="http://corp.healthline.com/wp-content/uploads/2015/02/HealthDataEngine.png" class="HDE-logo">
+</div>
+
+ <div class="row">
+  <div class="HDE-overview">
+    <div class="inputs span4">
+    <h1>Inputs</h1>
+    <h3>Integrate across the care continuum</h3>
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/structured-un-semi.png">
+    <ul class="inputs-list">
+      <li>EHR / Clinical Data</li>
+      <li>CCD / CCDA</li>
+      <li>Claims Data </li>
+      <li>Several Other Data Sources</li>
+    </ul>
+  </div>
+
+  <div class="engine span4">
+    <h1>Engine</h1>
+    <h3>Extract, normalize, and enrich patient data</h3>
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy.png" alt="data-engine">
+    <ul class="inputs-list">
+      <li>Natural Language Processing</li>
+      <li>Semantic Mapping</li>
+      <li>HealthTaxonomy</li>
+    </ul>
+  </div> <!-- end engine -->
+
+  <div class="output span4">
+    <h1>Output</h1>
+    <h3>Access data in a variety of formats</h3>
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL7.png" alt="output-image" class="output-image">
+    <ul class="inputs-list">
+      <li>RESTful API</li>
+      <li>XML</li>
+      <li>HL7</li>
+      <li>Batch Files</li>
+    </ul>
+  </div> <!-- end output -->
+
+    </div> <!-- end HDE overview -->
+  </div> <!-- end row -->
+
 
 <section class="gray">
   <div class="container">

@@ -2431,6 +2431,28 @@ span.type {
     .purple-bg-simple .btn-cta:hover, .purple-bg-simple .btn-cta:focus {
       background: #00c1e1; }
 
+.HDE-logo {
+  width: 65%;
+  margin: auto;
+  display: block; }
+
+.HDE-overview {
+  display: inline-flex;
+  text-align: center;
+  margin: 0 auto; }
+  .HDE-overview img {
+    width: 60%; }
+  .HDE-overview h1 {
+    color: #85776f;
+    text-align: center; }
+  .HDE-overview h3 {
+    color: #85776f;
+    font-size: 1.2em;
+    text-align: center; }
+  .HDE-overview ul {
+    list-style-type: disc;
+    list-style-position: inside; }
+
 .img-wrap-building {
   position: relative;
   padding-bottom: 60px; }
