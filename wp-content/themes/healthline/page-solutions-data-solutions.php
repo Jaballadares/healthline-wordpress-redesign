@@ -57,7 +57,7 @@ Template Name: Data Solutions Page Template
 </section>
 
 <section class="purple-bg-simple">
-  <h4 class="span8">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
+  <h4 class="span8 span-m-12">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
   <button class="btn btn-cta">Download our whitepaper to find out.</button>
 </section>
 
@@ -65,46 +65,112 @@ Template Name: Data Solutions Page Template
 <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HealthDataEngine.png" class="HDE-logo">
 </div>
 
- <div class="row">
-  <div class="HDE-overview">
-    <div class="inputs span4">
-    <h1>Inputs</h1>
-    <h3>Integrate across the care continuum</h3>
+ <div class="row mar-t text-center">
+
+    <div class="inputs span4 visible-check visible">
+    <h1 class="brownie">Inputs</h1>
+    <h3 class="hd3">Integrate across the care continuum</h3>
     <img src="http://corp.healthline.com/wp-content/uploads/2015/02/structured-un-semi.png">
+    <div class="list-box">
+      <ul class="inputs-list">
+        <li>EHR / Clinical Data</li>
+        <li>CCD / CCDA</li>
+        <li>Claims Data </li>
+        <li>Several Other Data Sources</li>
+      </ul>
+    </div> <!-- end middleMan -->
+  </div>
+
+  <div class="engine span4 visible-check visible">
+    <h1 class="brownie">Engine</h1>
+    <h3 class="hd3">Extract, normalize, and enrich patient data</h3>
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy.png" alt="data-engine">
+    <div class="list-box">
+      <ul class="inputs-list">
+        <li>Natural Language Processing</li>
+        <li>Semantic Mapping</li>
+        <li>HealthTaxonomy</li>
+      </ul>
+    </div> <!-- end middleMan -->
+  </div> <!-- end engine -->
+
+  <div class="output span4 visible-check visible">
+    <h1 class="brownie">Output</h1>
+    <h3 class="hd3">Access data in a variety of formats</h3>
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL7.png" alt="output-image" class="output-image">
+    <div class="list-box">
+      <ul class="inputs-list">
+        <li>RESTful API</li>
+        <li>XML</li>
+        <li>HL7</li>
+        <li>Batch Files</li>
+      </ul>
+      </div> <!-- end middleMan -->
+  </div> <!-- end output -->
+
+  </div> <!-- end row mar-t && HDE overview -->
+
+<section class="teal">
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="span12">
+        <p class="lead">Transforming Data Into Actionable Insights</p>
+    </div>
+   </div>
+  </div>
+</section>
+
+ <div class="row text-center hcc">
+   <div class="span12">
+     <h2 class="text-green">The Challenges of HCC Coding Today</h3>
+   </div>
+ </div>
+
+<div class="row mar-t text-center">
+
+  <div class="inputs span4 visible-check visible">
+  <h1 class="brownie">Inputs</h1>
+  <h3 class="hd3">Integrate across the care continuum</h3>
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/structured-un-semi.png">
+  <div class="list-box">
     <ul class="inputs-list">
       <li>EHR / Clinical Data</li>
       <li>CCD / CCDA</li>
       <li>Claims Data </li>
       <li>Several Other Data Sources</li>
     </ul>
-  </div>
+  </div> <!-- end middleMan -->
+</div>
 
-  <div class="engine span4">
-    <h1>Engine</h1>
-    <h3>Extract, normalize, and enrich patient data</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy.png" alt="data-engine">
+<div class="engine span4 visible-check visible">
+  <h1 class="brownie">Engine</h1>
+  <h3 class="hd3">Extract, normalize, and enrich patient data</h3>
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy.png" alt="data-engine">
+  <div class="list-box">
     <ul class="inputs-list">
       <li>Natural Language Processing</li>
       <li>Semantic Mapping</li>
       <li>HealthTaxonomy</li>
     </ul>
-  </div> <!-- end engine -->
+  </div> <!-- end middleMan -->
+</div> <!-- end engine -->
 
-  <div class="output span4">
-    <h1>Output</h1>
-    <h3>Access data in a variety of formats</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL7.png" alt="output-image" class="output-image">
+<div class="output span4 visible-check visible">
+  <h1 class="brownie">Output</h1>
+  <h3 class="hd3">Access data in a variety of formats</h3>
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL7.png" alt="output-image" class="output-image">
+  <div class="list-box">
     <ul class="inputs-list">
       <li>RESTful API</li>
       <li>XML</li>
       <li>HL7</li>
       <li>Batch Files</li>
     </ul>
-  </div> <!-- end output -->
+    </div> <!-- end middleMan -->
+</div> <!-- end output -->
 
-    </div> <!-- end HDE overview -->
-  </div> <!-- end row -->
-
+</div> <!-- end row mar-t && HDE overview -->
 
 <section class="gray">
   <div class="container">

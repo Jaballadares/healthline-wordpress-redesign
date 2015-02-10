@@ -340,12 +340,11 @@ span {
 .purple-bg-simple {
   background: #8a4c97;
   background-size: cover;
-  h4 {
+    h4 {
     margin: 0;
     color: #fff;
     font-weight: bold;
-    margin-left: 2.2%;
-    display: inline;
+    display: inline-flex;
     vertical-align: middle;
   }
   .btn-cta {
@@ -354,6 +353,9 @@ span {
     text-transform: none;
     font-size: 1em;
     font-family: inherit;
+    text-align:center;
+    margin: 0 auto;
+    vertical-align: middle;
     &:hover,
     &:focus {
     background: lighten($blue, 5%);
@@ -361,31 +363,76 @@ span {
   }
 }
 
+
+
 .HDE-logo {
-  width: 65%;
+  max-width: 50%;
   margin: auto;
   display: block;
 }
 
-.HDE-overview {
-    display: inline-flex;
-    text-align: center;
-    margin: 0 auto;
-  img {
-    width: 60%;
-  }
-  h1 {
+
+ h1.brownie {
     color: $brown;
-    text-align:center;
   }
-  h3 {
-    color: $brown;
-    font-size: 1.2em;
-    text-align:center;
-  }
-  ul {
+
+.hd3 {
+    color: darken($brown, 20%);
+    font-size: 1em;
+ }
+.engine, .inputs, .output {
+    background: #EFEFEF;
+    border-right: solid .5em white;
+}
+
+.inputs-list {
     list-style-type: disc;
     list-style-position: inside;
+}
+
+.list-box {
+    padding: 30px;
+    position: relative;
+    width: 80%;
+    margin: 40px auto 0;
+    color: #464646;
+    text-align: initial;
+}
+
+.teal {
+  background: $blue;
+  color: white;
+  font-weight: bold;
+  padding: 2%;
+  .lead {
+    font-size: 1.86666em;
+  }
+}
+
+.hcc-today {
+  padding: 25px;
+  letter-spacing: .05em;
+}
+
+.hcc {
+  padding-top: 3%;
+}
+
+@include breakpoint(small) {
+  .purple-bg-simple {
+    .btn-cta {
+    width: 50%;
+    white-space: pre-line;
+    }
+  }
+}
+
+@include breakpoint(medium) {
+  .purple-bg-simple {
+    .btn-cta {
+    display: inherit;
+    margin: 10px auto;
+    }
   }
 
 }
