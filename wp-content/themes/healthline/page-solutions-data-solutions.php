@@ -129,12 +129,14 @@ Template Name: Data Solutions Page Template
 
 <div class="row mar-t text-center">
 
-  <div class="inputs span4 visible-check visible">
-  <h1 class="brownie">Inputs</h1>
-  <h3 class="hd3">Integrate across the care continuum</h3>
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/structured-un-semi.png">
+  <div class="time span4 visible-check visible">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-16.png">
+  <h2 class="challenges">Labor Intensive and Time Consuming</h2>
+
+
   <div class="list-box">
     <ul class="inputs-list">
+    <h2 class="challenges">Labor Intensive and Time Consuming</h2>
       <li>EHR / Clinical Data</li>
       <li>CCD / CCDA</li>
       <li>Claims Data </li>
@@ -143,10 +145,10 @@ Template Name: Data Solutions Page Template
   </div> <!-- end middleMan -->
 </div>
 
-<div class="engine span4 visible-check visible">
-  <h1 class="brownie">Engine</h1>
-  <h3 class="hd3">Extract, normalize, and enrich patient data</h3>
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy.png" alt="data-engine">
+<div class="reimbursement span4 visible-check visible">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/clipboard.png" alt="charts">
+  <h2 class="challenges">Missed Reimbursement Opportunities</h2>
+
   <div class="list-box">
     <ul class="inputs-list">
       <li>Natural Language Processing</li>
@@ -156,10 +158,10 @@ Template Name: Data Solutions Page Template
   </div> <!-- end middleMan -->
 </div> <!-- end engine -->
 
-<div class="output span4 visible-check visible">
-  <h1 class="brownie">Output</h1>
-  <h3 class="hd3">Access data in a variety of formats</h3>
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL7.png" alt="output-image" class="output-image">
+<div class="identification span4 visible-check visible">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape21.png" alt="output-image" class="output-image">
+  <h2 class="challenges">Inaccurate High Risk Patient Identification</h2>
+
   <div class="list-box">
     <ul class="inputs-list">
       <li>RESTful API</li>

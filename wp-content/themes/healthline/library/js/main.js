@@ -109,6 +109,30 @@ $(function() {
     }
   });
 
+  $('.form-general').validate({
+    rules: {
+        first_name: {
+            required: true
+        },
+        last_name: {
+            required: true
+        },
+        company: {
+            required: true
+        },
+        title: {
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        phone: {
+            required: true
+        }
+    }
+});
+
 
   // --------------------
   // Mobile Nav Hide/Show

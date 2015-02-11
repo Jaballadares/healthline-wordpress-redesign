@@ -2476,6 +2476,12 @@ h1.brownie {
 .hcc {
   padding-top: 3%; }
 
+.time, .reimbursement, .identification {
+  background: white; }
+
+.challenges {
+  color: #85776f; }
+
 @media (max-width: 767px) {
   .purple-bg-simple .btn-cta {
     width: 50%;

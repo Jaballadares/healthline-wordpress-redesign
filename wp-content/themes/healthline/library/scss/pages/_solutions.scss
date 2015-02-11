@@ -418,6 +418,15 @@ span {
   padding-top: 3%;
 }
 
+.time, .reimbursement, .identification {
+  background: white;
+}
+
+.challenges {
+  color: $brown;
+}
+
+
 @include breakpoint(small) {
   .purple-bg-simple {
     .btn-cta {
