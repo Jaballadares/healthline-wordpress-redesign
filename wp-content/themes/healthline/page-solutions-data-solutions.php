@@ -84,7 +84,7 @@ Template Name: Data Solutions Page Template
   <div class="engine span4 visible-check visible">
     <h1 class="brownie">Engine</h1>
     <h3 class="hd3">Extract, normalize, and enrich patient data</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy1.png" alt="data-engine">
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy1.png">
     <div class="list-box">
       <ul class="inputs-list">
         <li>Natural Language Processing</li>
@@ -130,7 +130,7 @@ Template Name: Data Solutions Page Template
 <div class="row mar-t text-center">
 
   <div class="time span4 visible-check visible">
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-16.png">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-161.png">
 
   <div class="list-box">
     <ul class="inputs-list">
@@ -142,7 +142,7 @@ Template Name: Data Solutions Page Template
 </div>
 
 <div class="reimbursement span4 visible-check visible">
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/clipboard.png" alt="charts">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Rectangle-8-copy.png" alt="charts">
 
   <div class="list-box">
         <ul class="inputs-list">
@@ -155,7 +155,7 @@ Template Name: Data Solutions Page Template
 </div> <!-- end engine -->
 
 <div class="identification span4 visible-check visible">
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape21.png" alt="output-image" class="output-image">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-21.png" alt="output-image" class="output-image">
 
   <div class="list-box">
     <ul class="inputs-list">
@@ -166,6 +166,18 @@ Template Name: Data Solutions Page Template
 </div> <!-- end output -->
 
 </div> <!-- end row mar-t && HDE overview -->
+
+  <section class="dark-gray">
+    <div class="container">
+
+      <div class="row text-center">
+        <div class="span12">
+          <a href="/early-adopters-program/" class="btn btn-blue btn-x-large">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 <section class="gray">
   <div class="container">
@@ -234,56 +246,7 @@ Template Name: Data Solutions Page Template
         </div>
       </div>
     </div>
-    <div class="row text-center">
-      <div class="span12">
-        <div class="monitor-outer">
-          <div class="monitor-wrap monitor-1" data-0="opacity: 0;" data-1500="opacity:0; top: 900px;" data-2000="opacity: 1; top: 90px;" data-2650="opacity: 1;" data-2850="opacity: 0;">
-            <h4>The State of Data Today</h4>
-            <div class="point top-left">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-file.png" alt="icon - file">
-              <p>Valuable data locked in unstructured text. No unified ontology</p>
-            </div>
-            <div class="point bottom-left">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-stethoscope.png" alt="icon - stethoscope">
-              <p>Varied or inconsistent medical coding</p>
-            </div>
-            <div class="monitor">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/monitor-1.jpg" alt="Before example">
-            </div>
-            <div class="point top-right">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-database.png" alt="icon - database">
-              <p>Multiple database systems and vendors</p>
-            </div>
-            <div class="point bottom-right">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-people.png" alt="icon - people">
-              <p>No unified view of patient populations</p>
-            </div>
-          </div>
-          <div class="monitor-wrap monitor-2" data-2350="opacity: 0;" data-2650="opacity: 0;" data-2850="opacity: 1; top: 90px;" data-4000="opacity: 1;" data-4400="top: -1000px; opacity: 0;">
-            <h4>Your Data with Healthline's <strong class="text-purple">HealthDataEngine</strong></h4>
-            <div class="point top-left">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-magnifying-glass.png" alt="icon - magnifying glass">
-              <p>Scalable search and discovery</p>
-            </div>
-            <div class="point bottom-left">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-high-speed.png" alt="icon - high speed">
-              <p>High speed performance and Highspeed query</p>
-            </div>
-            <div class="monitor">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/monitor-2.jpg" alt="After example">
-            </div>
-            <div class="point top-right">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-organized.png" alt="icon - organized">
-              <p>Organized and grouped contextually by our taxonomy</p>
-            </div>
-            <div class="point bottom-right">
-              <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-lock.png" alt="icon - lock">
-              <p>Secure and HIPAA compliant</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- check evernote for chunk i took out -->
   </div>
 </section>
 
