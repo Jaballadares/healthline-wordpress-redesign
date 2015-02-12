@@ -363,8 +363,6 @@ span {
   }
 }
 
-
-
 .HDE-logo {
   max-width: 50%;
   margin: auto;
@@ -423,7 +421,8 @@ span {
 }
 
 .challenges {
-  color: $brown;
+  color: darken($brown, 30%);
+  width: 100%;
 }
 
 
@@ -445,8 +444,6 @@ span {
   }
 
 }
-
-
 
 // End John Styles
 

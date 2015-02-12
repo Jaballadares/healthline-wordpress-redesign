@@ -2480,7 +2480,8 @@ h1.brownie {
   background: white; }
 
 .challenges {
-  color: #85776f; }
+  color: #322c29;
+  width: 100%; }
 
 @media (max-width: 767px) {
   .purple-bg-simple .btn-cta {

@@ -70,7 +70,7 @@ Template Name: Data Solutions Page Template
     <div class="inputs span4 visible-check visible">
     <h1 class="brownie">Inputs</h1>
     <h3 class="hd3">Integrate across the care continuum</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/structured-un-semi.png">
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Rectangle-8-copy-7.png">
     <div class="list-box">
       <ul class="inputs-list">
         <li>EHR / Clinical Data</li>
@@ -84,7 +84,7 @@ Template Name: Data Solutions Page Template
   <div class="engine span4 visible-check visible">
     <h1 class="brownie">Engine</h1>
     <h3 class="hd3">Extract, normalize, and enrich patient data</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy.png" alt="data-engine">
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy1.png" alt="data-engine">
     <div class="list-box">
       <ul class="inputs-list">
         <li>Natural Language Processing</li>
@@ -97,7 +97,7 @@ Template Name: Data Solutions Page Template
   <div class="output span4 visible-check visible">
     <h1 class="brownie">Output</h1>
     <h3 class="hd3">Access data in a variety of formats</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL7.png" alt="output-image" class="output-image">
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL71.png" alt="output-image" class="output-image">
     <div class="list-box">
       <ul class="inputs-list">
         <li>RESTful API</li>
@@ -131,43 +131,36 @@ Template Name: Data Solutions Page Template
 
   <div class="time span4 visible-check visible">
   <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-16.png">
-  <h2 class="challenges">Labor Intensive and Time Consuming</h2>
-
 
   <div class="list-box">
     <ul class="inputs-list">
-    <h2 class="challenges">Labor Intensive and Time Consuming</h2>
-      <li>EHR / Clinical Data</li>
-      <li>CCD / CCDA</li>
-      <li>Claims Data </li>
-      <li>Several Other Data Sources</li>
+    <h3 class="challenges">Labor Intensive and Time Consuming</h3>
+      <li>^3,500 ICD-9 codes > 70 HCCs: ICD-10 roll-out (11,000 codes) will further exacerbate the problem</li>
+      <li>Manually coding process is prone to error and ineffecient</li>
     </ul>
-  </div> <!-- end middleMan -->
+  </div> <!-- end list-box -->
 </div>
 
 <div class="reimbursement span4 visible-check visible">
   <img src="http://corp.healthline.com/wp-content/uploads/2015/02/clipboard.png" alt="charts">
-  <h2 class="challenges">Missed Reimbursement Opportunities</h2>
 
   <div class="list-box">
-    <ul class="inputs-list">
-      <li>Natural Language Processing</li>
-      <li>Semantic Mapping</li>
-      <li>HealthTaxonomy</li>
+        <ul class="inputs-list">
+          <h3 class="challenges">Missed Reimbursement Opportunities</h3>
+      <li>Missed HCC Codes from past years</li>
+      <li>Missed ICD-9 codes within specialist or consult notes</li>
+      <li>Undocumented and/or un-coded pre-existing and chronic conditions</li>
     </ul>
   </div> <!-- end middleMan -->
 </div> <!-- end engine -->
 
 <div class="identification span4 visible-check visible">
   <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape21.png" alt="output-image" class="output-image">
-  <h2 class="challenges">Inaccurate High Risk Patient Identification</h2>
 
   <div class="list-box">
     <ul class="inputs-list">
-      <li>RESTful API</li>
-      <li>XML</li>
-      <li>HL7</li>
-      <li>Batch Files</li>
+      <h3 class="challenges">Inaccurate High Risk Patient Identification</h3>
+      <li>Accurate HCC risk adjustment provides greater insight into high risk/high cost patients</li>
     </ul>
     </div> <!-- end middleMan -->
 </div> <!-- end output -->
