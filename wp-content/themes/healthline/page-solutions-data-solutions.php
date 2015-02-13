@@ -13,7 +13,7 @@ Template Name: Data Solutions Page Template
     <div class="row">
       <div class="span12">
         <h2 class="small">HealthDataEngine <strong>Unlock the Power of Unstructured Data</strong></h2>
-        <p class="lead border-top">Healthline sheds insight on the 80% of Health Care data that is not being considered.</p>
+        <p class="lead border-top">Healthline sheds insight on the 80% of health care data that is not being considered.</p>
       </div>
     </div><!--! .row -->
 
@@ -48,8 +48,8 @@ Template Name: Data Solutions Page Template
         </div>
       </div>
       <div class="span8">
-        <h3>Most Healthcare Data is Currenty Inaccessible for Analysis</h3>
-        <p class="lead">80% of the data in Electronic Health Records (EHRs) is unstrucutred - free-form text in physcian notes, scanend documents, patient complication histories, hospital admission and discharge summaries.</p>
+        <h3>Most Healthcare Data is Currently Inaccessible for Analysis</h3>
+        <p class="lead">80% of the data in Electronic Health Records (EHRs) is unstructured - free-form text in physcian notes, scanned documents, patient complication histories, hospital admission and discharge summaries.</p>
       </div>
     </div>
 
@@ -57,7 +57,7 @@ Template Name: Data Solutions Page Template
 </section>
 
 <section class="purple-bg-simple">
-  <h4 class="span8 span-m-12">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
+  <h4 class="span8 span-m-12 gold-EHR">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
   <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/">Download our whitepaper to find out.</a>
 </section>
 
@@ -72,7 +72,7 @@ Template Name: Data Solutions Page Template
     <h3 class="hd3">Integrate across the care continuum</h3>
     <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Rectangle-8-copy-7.png" class="data-sources">
     <div class="list-box">
-      <ul class="inputs-list">
+      <ul class="inputs-list app-time">
         <li>EHR / Clinical Data</li>
         <li>CCD / CCDA</li>
         <li>Claims Data </li>
@@ -86,7 +86,7 @@ Template Name: Data Solutions Page Template
     <h3 class="hd3">Extract, normalize, and enrich patient data</h3>
     <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy1.png" class="data-sources">
     <div class="list-box">
-      <ul class="inputs-list">
+      <ul class="inputs-list app-time">
         <li>Natural Language Processing</li>
         <li>Semantic Mapping</li>
         <li>HealthTaxonomy</li>
@@ -99,7 +99,7 @@ Template Name: Data Solutions Page Template
     <h3 class="hd3">Access data in a variety of formats</h3>
     <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL71.png" alt="output-image" class="data-sources">
     <div class="list-box">
-      <ul class="inputs-list">
+      <ul class="inputs-list app-time">
         <li>RESTful API</li>
         <li>XML</li>
         <li>HL7</li>

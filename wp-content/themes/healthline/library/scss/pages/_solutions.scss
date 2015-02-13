@@ -394,7 +394,10 @@ span {
     list-style-type: disc;
     list-style-position: inside;
   }
-
+.gold-EHR {
+  font-size: 1.2em;
+  padding-left: 5%;
+}
 .app-time {
   margin-top:3em;
 }
@@ -480,6 +483,11 @@ span {
   .teal .lead {
     font-size: 1.2em;
   }
+
+  .gold-EHR {
+    font-size: 1em;
+    padding-left: 5%;
+  }
 }
 
 @include breakpoint(medium) {
@@ -490,7 +498,6 @@ span {
       width: 40%;
     }
   }
-
 }
 
 // End John Styles

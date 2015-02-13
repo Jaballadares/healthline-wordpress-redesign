@@ -2460,6 +2460,10 @@ h1.brownie {
   list-style-type: disc;
   list-style-position: inside; }
 
+.gold-EHR {
+  font-size: 1.2em;
+  padding-left: 5%; }
+
 .app-time {
   margin-top: 3em; }
 
@@ -2530,7 +2534,11 @@ h1.brownie {
     font-size: 1.2em; }
 
   .teal .lead {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  .gold-EHR {
+    font-size: 1em;
+    padding-left: 5%; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .purple-bg-simple .btn-cta {
     display: inherit;
