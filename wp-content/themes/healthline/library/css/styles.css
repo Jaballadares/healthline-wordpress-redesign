@@ -2436,10 +2436,13 @@ span.type {
 .HDE-logo {
   max-width: 50%;
   margin: auto;
-  display: block; }
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 h1.brownie {
-  color: #85776f; }
+  color: #85776f;
+  padding-top: 30px; }
 
 .hd3 {
   color: #4d4541;
@@ -2469,6 +2472,9 @@ h1.brownie {
   .teal .lead {
     font-size: 1.86666em; }
 
+#HCC-coding {
+  padding-bottom: 0; }
+
 .hcc-today {
   padding: 25px;
   letter-spacing: .05em; }
@@ -2483,14 +2489,40 @@ h1.brownie {
   color: #322c29;
   width: 100%; }
 
+.insightIcon {
+  width: 35%; }
+
+.data-sources {
+  padding-top: 5%; }
+
+.row.mar-t.text-center.moveUp {
+  margin-top: 0; }
+
 @media (max-width: 767px) {
   .purple-bg-simple .btn-cta {
     width: 50%;
-    white-space: pre-line; } }
+    white-space: pre-line;
+    font-weight: 800;
+    border-bottom: 10px #8e4399 solid; }
+
+  .insightIcon {
+    width: 90%; }
+
+  .HDE-logo {
+    max-width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+  .callout-quote {
+    font-size: 1.2em; }
+
+  .teal .lead {
+    font-size: 1.2em; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .purple-bg-simple .btn-cta {
     display: inherit;
-    margin: 10px auto; } }
+    margin: 10px auto;
+    width: 40%; } }
 .img-wrap-building {
   position: relative;
   padding-bottom: 60px; }
@@ -3400,6 +3432,11 @@ i.white.on-top, .nav-main i.white.menu-item-227,
   background: #8e4399; }
   .btn-purple:hover, .form-template input[type=submit]:hover, .btn-purple:focus, .form-template input[type=submit]:focus {
     background: #a752b3; }
+
+.btn-green {
+  background: #7cc247; }
+  .btn-green:hover, .btn-green:focus {
+    background: #92cc66; }
 
 .btn-blue, .menu-item-240 a {
   background: #00abc7; }

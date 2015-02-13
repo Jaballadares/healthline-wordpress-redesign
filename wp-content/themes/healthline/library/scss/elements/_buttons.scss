@@ -53,6 +53,14 @@
   }
 }
 
+.btn-green {
+  background: $green;
+  &:hover,
+  &:focus {
+    background: lighten($green, 8%);
+  }
+}
+
 .btn-blue {
   background: $blue;
   &:hover,

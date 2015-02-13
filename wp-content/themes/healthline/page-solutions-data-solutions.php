@@ -58,19 +58,19 @@ Template Name: Data Solutions Page Template
 
 <section class="purple-bg-simple">
   <h4 class="span8 span-m-12">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
-  <button class="btn btn-cta">Download our whitepaper to find out.</button>
+  <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/">Download our whitepaper to find out.</a>
 </section>
 
-<div class="row">
+<div class="container">
 <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HealthDataEngine.png" class="HDE-logo">
 </div>
 
- <div class="row mar-t text-center">
+ <div class="row mar-t text-center moveUp">
 
     <div class="inputs span4 visible-check visible">
     <h1 class="brownie">Inputs</h1>
     <h3 class="hd3">Integrate across the care continuum</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Rectangle-8-copy-7.png">
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Rectangle-8-copy-7.png" class="data-sources">
     <div class="list-box">
       <ul class="inputs-list">
         <li>EHR / Clinical Data</li>
@@ -84,7 +84,7 @@ Template Name: Data Solutions Page Template
   <div class="engine span4 visible-check visible">
     <h1 class="brownie">Engine</h1>
     <h3 class="hd3">Extract, normalize, and enrich patient data</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy1.png">
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy1.png" class="data-sources">
     <div class="list-box">
       <ul class="inputs-list">
         <li>Natural Language Processing</li>
@@ -97,7 +97,7 @@ Template Name: Data Solutions Page Template
   <div class="output span4 visible-check visible">
     <h1 class="brownie">Output</h1>
     <h3 class="hd3">Access data in a variety of formats</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL71.png" alt="output-image" class="output-image">
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL71.png" alt="output-image" class="data-sources">
     <div class="list-box">
       <ul class="inputs-list">
         <li>RESTful API</li>
@@ -172,56 +172,21 @@ Template Name: Data Solutions Page Template
 
       <div class="row text-center">
         <div class="span12">
-          <a href="/early-adopters-program/" class="btn btn-blue btn-x-large">Get Started</a>
+          <a href="/early-adopters-program/" class="btn btn-green btn-x-large">Get Started</a>
         </div>
       </div>
 
     </div>
   </section>
 
-<section class="gray">
-  <div class="container">
+<!-- removed normalize, analyze, source -->
 
-    <div class="row text-center">
-      <div class="span12">
-        <p class="lead"><strong>Healthline’s HealthData Engine is powered by our industry-leading <span class="text-purple">Health Taxonomy.</span> Together with our proprietary natural <span class="text-purple">language processing</span> and <span class="text-purple">medically-guided search</span> capabilities, you can:</strong></p>
-      </div>
-    </div>
-
-    <div class="row text-center pad-t">
-      <div class="span4 visible-check">
-        <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/circle-icon-1.png" alt="Circle icon" class="pop-in delay-1">
-        <div class="border-box delay-1">
-          <p>Normalize and analyze both structured and unstructured data sets</p>
-        </div>
-      </div>
-      <div class="span4 visible-check">
-        <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/circle-icon-2.png" alt="Circle icon" class="pop-in delay-2">
-        <div class="border-box delay-2">
-          <p>Aggregate and rationalize data from disparate locations and in multiple formats</p>
-        </div>
-      </div>
-      <div class="span4 visible-check">
-        <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/circle-icon-3.png" alt="Circle icon" class="pop-in delay-3">
-        <div class="border-box delay-3">
-          <p><span class="break">Source data from</span> both internal and external portals</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="purple-bg">
+<section class="teal">
   <div class="container">
 
     <div class="row flex-v-align">
-      <div class="span2">
-        <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/plus-icon.png" alt="Plus icon">
-      </div>
-      <div class="span10">
-        <h4 class="text-white"><strong>Studies show that 38.1% of the diagnosed diabetic population did <span class="underlineMe">not</span> have diabetes diagnosis in their medical records and were only identified by the presence of diabetic medications - this type of data has been unstructured and unusable</strong></h4>
+      <div class="span12">
+       <h4 class="text-white callout-quote"><strong>"... 38.1% of the diagnosed diabetic population did <span class="underlineMe">not</span> have diabetes diagnosis in their medical records and were only identified by the presence of diabetic medications ..."</strong></h4>
       </div>
     </div>
 
@@ -234,118 +199,103 @@ Template Name: Data Solutions Page Template
 
     <div class="row text-center">
       <div class="span12 visible-check">
-        <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/Health_Data_Engine.png" alt="Readmissions Insight" class="logo-in">
+        <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Coding-InSight1.png" alt="Readmissions Insight" class="insightIcon">
       </div>
     </div>
-    <div class="row text-center pad-t--20 pad-b--20">
-      <div class="span12">
-        <div class="height visible-check">
-          <div class="height-inner">
-            <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/leaves-no-data-icon.png" alt="Leave no Data Behind">
-          </div>
-        </div>
-      </div>
-    </div>
+<!--    <div class="row text-center pad-t--20 pad-b--20">-->
+<!--      <div class="span12">-->
+<!--        <div class="height visible-check">-->
+<!--          <div class="height-inner">-->
+<!--            <img src="--><?php //bloginfo('template_directory'); ?><!--/library/img/solutions/data/leaves-no-data-icon.png" alt="Leave no Data Behind">-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
     <!-- check evernote for chunk i took out -->
   </div>
 </section>
 
 
-<section class="dark-gray">
-  <div class="container">
+<!--<section class="dark-gray">-->
+<!--  <div class="container">-->
+<!---->
+<!--    <div class="row text-center">-->
+<!--      <div class="span12">-->
+<!--        <a href="/early-adopters-program/" class="btn btn-blue btn-x-large">Learn More</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!---->
+<!--  </div>-->
+<!--</section>-->
 
-    <div class="row text-center">
-      <div class="span12">
-        <a href="/early-adopters-program/" class="btn btn-blue btn-x-large">Learn More</a>
-      </div>
+<! -- removed how does it work? / check evernote -->
+
+  <div class="row mar-t text-center">
+
+    <div class="time span4 visible-check visible">
+      <h1 class="brownie">Inputs</h1>
+      <h3 class="hd3">Integrate data across care continuum</h3>
+      <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Claims.png" class="data-sources">
+
+      <div class="list-box">
+        <ul class="inputs-list">
+
+          <li>EHR / Clinical Data</li>
+          <li>CCD / CCDA</li>
+          <li>Claims Data </li>
+          <li>Etc ..</li>
+        </ul>
+      </div> <!-- end list-box -->
     </div>
 
-  </div>
-</section>
+    <div class="reimbursement span4 visible-check visible">
+      <h1 class="brownie">Engine</h1>
+      <h3 class="hd3">Extract, normalize and enrich patient data</h3>
+      <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy-21.png" class="data-sources">
 
+      <div class="list-box">
+        <ul class="inputs-list">
 
-<section class="light-gray mobile-hide">
-  <div class="container">
+          <li>HealthData Engine</li>
+          <li>Risk Scoring Model</li>
+          <li>Code Optimization Rules</li>
+        </ul>
+      </div> <!-- end middleMan -->
+    </div> <!-- end engine -->
 
-    <div class="row text-center">
-      <div class="span12">
-        <h3 class="h2 text-green">How Does it Work?</h3>
-        <p class="lead">Unlocking the value of unstructured and structured clinical data</p>
-      </div>
-    </div>
+    <div class="theProcess span4 visible-check visible">
+      <h1 class="brownie">User Interface</h1>
+      <h3 class="hd3">Intuitive Dashboards</h3>
+      <img src="http://corp.healthline.com/wp-content/uploads/2015/02/3.png" class="data-sources">
 
-    <div class="row text-center">
-      <div class="span12">
+      <div class="list-box">
+        <ul class="inputs-list">
 
-        <div class="how-it-works">
-          <div class="input input-1 visible-check">
-            <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-input-1.png" alt="icon - input">
-            <p>Unstructure patient data</p>
-          </div>
-          <div class="input input-2 visible-check">
-            <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-input-2.png" alt="icon - input">
-            <p>Semi-structured patient data</p>
-          </div>
-          <div class="input input-3 visible-check">
-            <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-input-3.png" alt="icon - input">
-            <p>Structured patient data</p>
-          </div>
-          <div class="input input-circle visible-check">
-            <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-input-circle.png" alt="icon - input">
-          </div>
-          <div class="database">
-            <ul class="visible-check">
-              <li>Content Analytics</li>
-              <li>(NLP, Search, etc.),</li>
-              <li>Taxonomy,</li>
-              <li>Rules Engine</li>
-            </ul>
-          </div>
-          <div class="output visible-check">
-            <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/icon-output.png" alt="icon - output">
-            <p>Patient data extracted, normalized, categorized, and enriched.</p>
-          </div>
-          <div class="use-case use-case-1 visible-check">
-            <p>Hospital Readmissions</p>
-          </div>
-          <div class="use-case use-case-2 visible-check">
-            <p>Patient Risk Analysis</p>
-          </div>
-          <div class="use-case use-case-3 visible-check">
-            <p>Cohort<br> Creation</p>
-          </div>
-          <div class="use-case use-case-4 visible-check">
-            <p>Clinical Decision Support</p>
-          </div>
-          <img src="<?php bloginfo('template_directory'); ?>/library/img/solutions/data/how-it-works-base.png" alt="icon - lock" class="hiw-base visible-check">
+          <li>Configurable dashboards to easily identify the data most pertinent to your institution.</li>
+          <li>Increased workflow efficiency</li>
+        </ul>
+      </div> <!-- end middleMan -->
+    </div> <!-- end output -->
+    </div> <! -- end thing above -->
+
+  <section class="dark-gray">
+    <div class="container">
+
+      <div class="row text-center">
+        <div class="span12">
+          <a href="/get-started/" class="btn btn-x-large btn-blue">Get Started</a>
         </div>
-
       </div>
+
     </div>
-
-  </div>
-</section>
-
-
-<section>
-  <div class="container">
-
-    <div class="row text-center">
-      <div class="span12">
-        <a href="/get-started/" class="btn btn-x-large btn-blue">Get Started</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+  </section>
 
 <section class="light-gray">
   <div class="container">
 
     <div class="row mar-b">
       <div class="span10 offset1 text-center">
-        <h3>Introducing Healthline's HealthData Engine and its first app, Readmissions Risk InSight.</h3>
+        <h3>Introducing Healthline's HealthData Engine and its first app, Coding Insight.</h3>
       </div>
     </div>
 

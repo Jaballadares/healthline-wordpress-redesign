@@ -367,11 +367,14 @@ span {
   max-width: 50%;
   margin: auto;
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
  h1.brownie {
     color: $brown;
+   padding-top: 30px;
   }
 
 .hd3 {
@@ -406,7 +409,9 @@ span {
     font-size: 1.86666em;
   }
 }
-
+#HCC-coding {
+  padding-bottom:0;
+}
 .hcc-today {
   padding: 25px;
   letter-spacing: .05em;
@@ -424,14 +429,42 @@ span {
   color: darken($brown, 30%);
   width: 100%;
 }
+.insightIcon {
+  width: 35%;
+}
 
+.data-sources {
+  padding-top: 5%;
+}
+
+.row.mar-t.text-center.moveUp {
+  margin-top: 0;
+}
 
 @include breakpoint(small) {
   .purple-bg-simple {
     .btn-cta {
-    width: 50%;
-    white-space: pre-line;
+      width: 50%;
+      white-space: pre-line;
+      font-weight: 800;
+      border-bottom: 10px $purple solid;
     }
+  }
+  .insightIcon {
+    width: 90%;
+  }
+  .HDE-logo {
+    max-width: 90%;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+
+  .callout-quote {
+    font-size: 1.2em;
+  }
+
+  .teal .lead {
+    font-size: 1.2em;
   }
 }
 
@@ -440,6 +473,7 @@ span {
     .btn-cta {
     display: inherit;
     margin: 10px auto;
+      width: 40%;
     }
   }
 
