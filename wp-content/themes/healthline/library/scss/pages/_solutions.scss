@@ -371,6 +371,10 @@ span {
   padding-bottom: 10px;
 }
 
+#healthData-Engine {
+  padding-top:0;
+  padding-bottom: 0;
+}
 
  h1.brownie {
     color: $brown;
@@ -389,13 +393,19 @@ span {
 .inputs-list {
     list-style-type: disc;
     list-style-position: inside;
-}
+  }
 
+.app-time {
+  margin-top:3em;
+}
 .list-box {
-    padding: 30px;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: initial;
+    padding-bottom: 30px;
     position: relative;
     width: 80%;
-    margin: 40px auto 0;
+    margin: 0 auto 0;
     color: #464646;
     text-align: initial;
 }
@@ -408,6 +418,10 @@ span {
   .lead {
     font-size: 1.86666em;
   }
+}
+
+#hcc-now {
+  margin-top:0;
 }
 #HCC-coding {
   padding-bottom:0;

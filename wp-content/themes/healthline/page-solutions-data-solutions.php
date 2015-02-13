@@ -27,7 +27,7 @@ Template Name: Data Solutions Page Template
       <div class="span12">
         <nav class="nav-scroll btn-scroll">
           <ul class="list-inline">
-            <li><a href="#applications">HealthData Engine</a></li>
+            <li><a href="#healthData-Engine">HealthData Engine</a></li>
             <li><a href="#HCC-coding">HCC Coding InSight Application</a></li>
           </ul>
         </nav>
@@ -61,9 +61,9 @@ Template Name: Data Solutions Page Template
   <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/">Download our whitepaper to find out.</a>
 </section>
 
-<div class="container">
+<section class="container" id="healthData-Engine">
 <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HealthDataEngine.png" class="HDE-logo">
-</div>
+</section>
 
  <div class="row mar-t text-center moveUp">
 
@@ -127,10 +127,10 @@ Template Name: Data Solutions Page Template
    </div>
  </div>
 
-<div class="row mar-t text-center">
+<div class="row mar-t text-center clearfix" id="hcc-now">
 
   <div class="time span4 visible-check visible">
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-161.png">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/time.png">
 
   <div class="list-box">
     <ul class="inputs-list">
@@ -142,7 +142,7 @@ Template Name: Data Solutions Page Template
 </div>
 
 <div class="reimbursement span4 visible-check visible">
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Rectangle-8-copy.png" alt="charts">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/clipboard1.png" alt="charts">
 
   <div class="list-box">
         <ul class="inputs-list">
@@ -155,7 +155,7 @@ Template Name: Data Solutions Page Template
 </div> <!-- end engine -->
 
 <div class="identification span4 visible-check visible">
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-21.png" alt="output-image" class="output-image">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/people.png" alt="output-image" class="output-image">
 
   <div class="list-box">
     <ul class="inputs-list">
@@ -238,7 +238,7 @@ Template Name: Data Solutions Page Template
       <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Claims.png" class="data-sources">
 
       <div class="list-box">
-        <ul class="inputs-list">
+        <ul class="inputs-list app-time">
 
           <li>EHR / Clinical Data</li>
           <li>CCD / CCDA</li>
@@ -254,7 +254,7 @@ Template Name: Data Solutions Page Template
       <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy-21.png" class="data-sources">
 
       <div class="list-box">
-        <ul class="inputs-list">
+        <ul class="inputs-list app-time">
 
           <li>HealthData Engine</li>
           <li>Risk Scoring Model</li>
@@ -269,7 +269,7 @@ Template Name: Data Solutions Page Template
       <img src="http://corp.healthline.com/wp-content/uploads/2015/02/3.png" class="data-sources">
 
       <div class="list-box">
-        <ul class="inputs-list">
+        <ul class="inputs-list app-time">
 
           <li>Configurable dashboards to easily identify the data most pertinent to your institution.</li>
           <li>Increased workflow efficiency</li>
