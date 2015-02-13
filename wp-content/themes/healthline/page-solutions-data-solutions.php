@@ -48,7 +48,7 @@ Template Name: Data Solutions Page Template
         </div>
       </div>
       <div class="span8">
-        <h3>Most Healthcare Data is Currenty Unaccessible for Analysis</h3>
+        <h3>Most Healthcare Data is Currenty Inaccessible for Analysis</h3>
         <p class="lead">80% of the data in Electronic Health Records (EHRs) is unstrucutred - free-form text in physcian notes, scanend documents, patient complication histories, hospital admission and discharge summaries.</p>
       </div>
     </div>
