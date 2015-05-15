@@ -119,13 +119,23 @@ blockquote {
   padding-top: 8em;
   background: #00ABC9;
   height: 700px; }
+  @media (max-width: 767px) {
+    .salesTime {
+      padding-top: 2em; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .salesTime {
+      padding-top: 2em; } }
+
+.salesBlue {
+  text-align: right; }
 
 .confirmation {
   color: white;
   text-align: center;
   margin: 0;
   padding-bottom: .8em;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 2.2em; }
 
 .letUsKnow {
   text-align: center;
@@ -151,12 +161,32 @@ blockquote {
   text-align: left;
   border-radius: 10px; }
 
+#calendar::-webkit-input-placeholder::after {
+  font-family: fontAwesome;
+  content: '\f073';
+  text-align: right;
+  padding-left: 70%;
+  font-size: 1em; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    #calendar::-webkit-input-placeholder::after {
+      padding-left: 90%; } }
+
 #myForm {
   margin: 0 auto;
   background: #B3A59C;
   border: 2px solid #B3A59C;
   padding: 1em;
-  border-radius: 25px; }
+  border-radius: 25px;
+  display: flex; }
+
+input#submitTime {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 2%;
+  width: 40%;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto; }
 
 /**
  * Note: the root picker element should *NOT* be styled more than what’s here.

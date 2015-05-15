@@ -5,14 +5,24 @@
   padding-top: 8em;
   background: #00ABC9;
   height: 700px;
+  @include breakpoint(small) {
+    padding-top:2em;
+  }
+  @include breakpoint(medium) {
+    padding-top: 2em;
+  }
 }
 
+.salesBlue {
+  text-align: right;
+}
 .confirmation {
   color: white;
   text-align: center;
   margin: 0;
   padding-bottom: .8em;
   font-weight: bold;
+  font-size: 2.2em;
 }
 
 .letUsKnow {
@@ -43,6 +53,18 @@
   border-radius: 10px;
 }
 
+#calendar::-webkit-input-placeholder::after {
+  font-family: fontAwesome;
+  content: '\f073';
+  text-align: right;
+  padding-left: 70%;
+  font-size: 1em;
+  @include breakpoint(medium) {
+    padding-left:90%;
+  }
+
+}
+
 
 #myForm {
   margin: 0 auto;
@@ -50,6 +72,17 @@
   border: 2px solid #B3A59C;
   padding: 1em;
   border-radius: 25px;
+  display: flex;
+}
+
+input#submitTime {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 2%;
+  width: 40%;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto;
 }
 
 
