@@ -19,7 +19,7 @@ Template Name: Scheduler Landing Page Template
 
             <input type="text" name="preferred_day" class="picker fa fa-calendar" style="font-weight:100;"  placeholder="Preferred Day" id="calendar" />
 
-            <input type="text" name="preferred_time" class="timepicker" placeholder="Preferred Time &dtrif; " style="font-weight:normal;" id="myPicker"/>
+            <input type="text" name="preferred_time" class="timepicker" id="clock" placeholder="Preferred Time" style="font-weight:normal;" id="myPicker"/>
 
             <input type="text" name="first_name" placeholder="First Name" class="sudoPicker"/>
 

@@ -53,6 +53,14 @@
   border-radius: 10px;
 }
 
+#clock::-webkit-input-placeholder::after {
+  font-family: fontAwesome;
+  content: '\f017';
+  padding-left: 69%;
+  font-size: 1em;
+  text-align: right;
+}
+
 #calendar::-webkit-input-placeholder::after {
   font-family: fontAwesome;
   content: '\f073';
