@@ -12,8 +12,8 @@ Template Name: Data Solutions Page Template
 
     <div class="row">
       <div class="span12">
-        <h2 class="small">HealthDataEngine <strong>Unlock the Power of Unstructured Data</strong></h2>
-        <p class="lead border-top">Healthline sheds insight on the 80% of health care data that is not being considered.</p>
+        <h2 class="small">HealthData Engine <strong>Unlock the Power of Unstructured Data</strong></h2>
+        <p class="lead border-top">Healthline sheds insight on the 80% of healthcare data that is not being considered.</p>
       </div>
     </div><!--! .row -->
 
@@ -28,7 +28,7 @@ Template Name: Data Solutions Page Template
         <nav class="nav-scroll btn-scroll">
           <ul class="list-inline">
             <li><a href="#healthData-Engine">HealthData Engine</a></li>
-            <li><a href="#HCC-coding">HCC Coding InSight Application</a></li>
+            <!-- <li><a href="#HCC-coding">Coding InSight Application</a></li> -->
           </ul>
         </nav>
       </div>
@@ -61,8 +61,9 @@ Template Name: Data Solutions Page Template
   <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/">Download our whitepaper to find out.</a>
 </section>
 
-<section class="container" id="healthData-Engine">
+<section class="container" id="healthData-Engine" style="padding-top:25px; padding-bottom:35px;">
 <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HealthDataEngine.png" class="HDE-logo">
+<h2 class="text-green" style="text-align:center;">Transform Data Into Actionable Insight</h2>
 </section>
 
  <div class="row mar-t text-center moveUp">
@@ -97,7 +98,7 @@ Template Name: Data Solutions Page Template
   <div class="output span4 visible-check visible">
     <h1 class="brownie">Output</h1>
     <h3 class="hd3">Access data in a variety of formats</h3>
-    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL71.png" alt="output-image" class="data-sources">
+    <img src="http://corp.healthline.com/wp-content/uploads/2015/02/HL72.png" alt="output-image" class="data-sources">
     <div class="list-box">
       <ul class="inputs-list app-time">
         <li>RESTful API</li>
@@ -123,20 +124,19 @@ Template Name: Data Solutions Page Template
 
  <div class="row text-center hcc">
    <div class="span12">
-     <h2 class="text-green">The Challenges of HCC Coding Today</h3>
+     <h2 class="text-green hcc-challenges">What Can the HealthData Engine Do for You?</h3>
    </div>
  </div>
 
-<div class="row mar-t text-center clearfix" id="hcc-now">
+<div class="row mar-t text-center clearfix" id="hcc-now" style="margin-top: 0; margin-right: auto; margin-left: auto;">
 
   <div class="time span4 visible-check visible">
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/time.png">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/people.png">
 
   <div class="list-box">
     <ul class="inputs-list">
-    <h3 class="challenges">Labor Intensive and Time Consuming</h3>
-      <li>^3,500 ICD-9 codes > 70 HCCs: ICD-10 roll-out (11,000 codes) will further exacerbate the problem</li>
-      <li>Manually coding process is prone to error and ineffecient</li>
+    <h3 class="challenges">Cohort Creation</h3>
+      Correctly identify cohorts of similar patients to identify the population you want to analyze.
     </ul>
   </div> <!-- end list-box -->
 </div>
@@ -146,62 +146,45 @@ Template Name: Data Solutions Page Template
 
   <div class="list-box">
         <ul class="inputs-list">
-          <h3 class="challenges">Missed Reimbursement Opportunities</h3>
-      <li>Missed HCC Codes from past years</li>
-      <li>Missed ICD-9 codes within specialist or consult notes</li>
-      <li>Undocumented and/or un-coded pre-existing and chronic conditions</li>
+          <h3 class="challenges">Health Data Enrichment</h3>
+      Enrich the data in you electronic health records with industry standard codes, taxonomies to increase the accuracy of you analytics solutions through a richer and more compete clinical data set.
     </ul>
   </div> <!-- end middleMan -->
 </div> <!-- end engine -->
 
 <div class="identification span4 visible-check visible">
-  <img src="http://corp.healthline.com/wp-content/uploads/2015/02/people.png" alt="output-image" class="output-image">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/03/Target01.png" alt="output-image" class="output-image">
 
   <div class="list-box">
     <ul class="inputs-list">
-      <h3 class="challenges">Inaccurate High Risk Patient Identification</h3>
-      <li>Accurate HCC risk adjustment provides greater insight into high risk/high cost patients</li>
+      <h3 class="challenges">Risk Stratification</h3>
+      Accurately stratify risk and group patients to improve care and target scarce resources.
     </ul>
     </div> <!-- end middleMan -->
 </div> <!-- end output -->
 
 </div> <!-- end row mar-t && HDE overview -->
 
-  <section class="dark-gray">
-    <div class="container">
+<section class="purple-bg-simple">
+  <h4 class="span8 span-m-12 gold-EHR">Want to learn more about how we extract the value from unstructured data to solve these issues?</h4>
+  <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/">Sign Up for Our Newsletter</a>
+</section>
 
-      <div class="row text-center">
-        <div class="span12">
-          <a href="/early-adopters-program/" class="btn btn-green btn-x-large">Get Started</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
+<! ----- REMOVING GREEN BUTTON FOR TIME BEING Section dark gray class container ------------------------------->
 
 <!-- removed normalize, analyze, source -->
 
-<section class="teal">
-  <div class="container">
-
-    <div class="row flex-v-align">
-      <div class="span12">
-       <h4 class="text-white callout-quote"><strong>"... 38.1% of the diagnosed diabetic population did <span class="underlineMe">not</span> have diabetes diagnosis in their medical records and were only identified by the presence of diabetic medications ..."</strong></h4>
-      </div>
-    </div>
-
-  </div>
-</section>
+<!-- removed section teal -->
 
 
-<section class="graphic-shape-top" id="HCC-coding">
-  <div class="container">
+<!-- <section class="graphic-shape-top" id="HCC-coding"> -->
+<!--  <div class="container"> -->
 
-    <div class="row text-center">
-      <div class="span12 visible-check">
-        <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Coding-InSight1.png" alt="Readmissions Insight" class="insightIcon">
-      </div>
-    </div>
+<!--    <div class="row text-center"> -->
+<!--      <div class="span12 visible-check"> -->
+<!--        <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Coding-InSight1.png" alt="Readmissions Insight" class="insightIcon"> -->
+<!--      </div> -->
+<!--    </div> -->
 <!--    <div class="row text-center pad-t--20 pad-b--20">-->
 <!--      <div class="span12">-->
 <!--        <div class="height visible-check">-->
@@ -212,8 +195,8 @@ Template Name: Data Solutions Page Template
 <!--      </div>-->
 <!--    </div>-->
     <!-- check evernote for chunk i took out -->
-  </div>
-</section>
+<!--  </div> -->
+<!-- </section> -->
 
 
 <!--<section class="dark-gray">-->
@@ -230,78 +213,20 @@ Template Name: Data Solutions Page Template
 
 <! -- removed how does it work? / check evernote -->
 
-  <div class="row mar-t text-center">
-
-    <div class="time span4 visible-check visible">
-      <h1 class="brownie">Inputs</h1>
-      <h3 class="hd3">Integrate data across care continuum</h3>
-      <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Claims.png" class="data-sources">
-
-      <div class="list-box">
-        <ul class="inputs-list app-time">
-
-          <li>EHR / Clinical Data</li>
-          <li>CCD / CCDA</li>
-          <li>Claims Data </li>
-          <li>Etc ..</li>
-        </ul>
-      </div> <!-- end list-box -->
-    </div>
-
-    <div class="reimbursement span4 visible-check visible">
-      <h1 class="brownie">Engine</h1>
-      <h3 class="hd3">Extract, normalize and enrich patient data</h3>
-      <img src="http://corp.healthline.com/wp-content/uploads/2015/02/Shape-13-copy-21.png" class="data-sources">
-
-      <div class="list-box">
-        <ul class="inputs-list app-time">
-
-          <li>HealthData Engine</li>
-          <li>Risk Scoring Model</li>
-          <li>Code Optimization Rules</li>
-        </ul>
-      </div> <!-- end middleMan -->
-    </div> <!-- end engine -->
-
-    <div class="theProcess span4 visible-check visible">
-      <h1 class="brownie">User Interface</h1>
-      <h3 class="hd3">Intuitive Dashboards</h3>
-      <img src="http://corp.healthline.com/wp-content/uploads/2015/02/3.png" class="data-sources">
-
-      <div class="list-box">
-        <ul class="inputs-list app-time">
-
-          <li>Configurable dashboards to easily identify the data most pertinent to your institution.</li>
-          <li>Increased workflow efficiency</li>
-        </ul>
-      </div> <!-- end middleMan -->
-    </div> <!-- end output -->
-    </div> <! -- end thing above -->
-
-  <section class="dark-gray">
-    <div class="container">
-
-      <div class="row text-center">
-        <div class="span12">
-          <a href="/get-started/" class="btn btn-x-large btn-blue">Get Started</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
+<! -- check evernote titled data solutions 2/20/15 -->
 
 <section class="light-gray">
   <div class="container">
 
     <div class="row mar-b">
       <div class="span10 offset1 text-center">
-        <h3>Introducing Healthline's HealthData Engine and its first app, Coding Insight.</h3>
+        <h3>Introducing Healthline's HealthData Engine.</h3>
       </div>
     </div>
 
     <div class="row">
       <div class="span10 offset1">
-        <iframe width="887" height="505" src="//www.youtube.com/embed/UlGTQjqTVu4" frameborder="0" allowfullscreen></iframe>
+        <iframe width="882" height="496" src="https://www.youtube.com/embed/UlGTQjqTVu4?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
