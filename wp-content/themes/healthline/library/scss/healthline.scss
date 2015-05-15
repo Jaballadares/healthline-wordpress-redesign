@@ -4,7 +4,7 @@
   padding-bottom: 2em;
   padding-top: 9em;
   background: #00ABC9;
-  height: 500px;
+  height: 700px;
 }
 
 .confirmation {
@@ -33,9 +33,7 @@
   margin-top: 2em;
 }
 
-#myPicker {
-  margin-top: 2em;
-}
+
 
 #myForm {
   margin: 0 auto;
@@ -61,12 +59,23 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-weight: bold;
   text-align: center;
 }
 /**
  * The picker input element.
  */
+
+.special {
+  margin: 0;
+}
+
+.sudoPicker {
+  cursor: default;
+  position: inherit;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0 auto;
+}
 .picker__input {
   cursor: default;
   position: inherit;
