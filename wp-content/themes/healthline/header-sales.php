@@ -32,12 +32,9 @@
             <nav class="nav-main span12" role="navigation">
 
                 <h1>
-                    <a href="/"><img src="<?php bloginfo('template_directory'); ?>/library/img/structure/healthline.png" alt="Healthline" width="222" height="43"></a>
+                    <a href="/"><img src="http://corp.healthline.com/wp-content/uploads/2015/05/Coding-InSight.png" width="222" height="43"></a>
                 </h1>
 
-                <a href="#" class="mobile-nav">+ Menu</a>
-
-                <?php bones_main_nav(); ?>
 
             </nav>
         </div><!--! .row -->

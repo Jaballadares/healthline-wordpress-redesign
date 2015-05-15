@@ -5914,14 +5914,16 @@ blockquote {
 
 .salesTime {
   padding-bottom: 2em;
-  padding-top: 9em;
+  padding-top: 8em;
   background: #00ABC9;
   height: 700px; }
 
 .confirmation {
   color: white;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: .8em;
+  font-weight: bold; }
 
 .letUsKnow {
   text-align: center;
@@ -5939,11 +5941,20 @@ blockquote {
 .form-template2 {
   margin-top: 2em; }
 
+.form-template input {
+  width: 100%;
+  margin: 0 0 10px;
+  padding: .8em;
+  font-size: 1.3em;
+  text-align: left;
+  border-radius: 10px; }
+
 #myForm {
   margin: 0 auto;
-  padding-top: 2em;
-  background: white;
-  padding: 4em; }
+  background: #B3A59C;
+  border: 2px solid #B3A59C;
+  padding: 1em;
+  border-radius: 25px; }
 
 /**
  * Note: the root picker element should *NOT* be styled more than what’s here.
@@ -5967,11 +5978,15 @@ blockquote {
 .special {
   margin: 0; }
 
+.dateTitle {
+  font-size: 2em;
+  text-align: left; }
+
 .sudoPicker {
   cursor: default;
   position: inherit;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1em;
   margin: 0 auto; }
 
 .picker__input {
@@ -5979,7 +5994,7 @@ blockquote {
   position: inherit;
   text-align: center;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1em;
   margin: 0 auto; }
 
 /**
