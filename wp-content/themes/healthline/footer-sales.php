@@ -81,9 +81,9 @@
 </footer>
 
 <?php wp_footer(); ?>
-<script src="http://codepen.io/jaballadares/pen/25fba49523e4aa2f2b7cc000f1148f5c.js"></script>
-<script src="http://codepen.io/jaballadares/pen/61023a0ac05a819c26b1990d75a4a725.js"></script>
-<script src="http://codepen.io/jaballadares/pen/d5fbbb6fdec69d798309bd87394f9a66.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/library/js/vendor/picker.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/library/js/vendor/picker.date.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/library/js/vendor/picker.time.js"></script>
 <script>
     $('.picker').pickadate();
     $('.timepicker').pickatime();

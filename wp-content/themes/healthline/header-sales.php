@@ -25,17 +25,18 @@
 
 <body <?php body_class(); ?>>
 
-<header class="header-main">
+<header class="header-main2">
     <div class="container">
 
         <div class="row">
-            <nav class="nav-main span12" role="navigation" style="display:-webkit-box;">
+            <nav class="nav-main span12" role="navigation" style="display:-webkit-box; padding-top:0;">
 
                 <h1>
                     <a href="/"><img src="http://corp.healthline.com/wp-content/uploads/2015/05/Coding-InSight.png" width="222" height="43"></a>
                 </h1>
-
+        <div class="wrapMe2">
                 <a href="#form-section" class="btn btn-blue salesBlue">Get Started</a>
+        </div>
             </nav>
         </div><!--! .row -->
 

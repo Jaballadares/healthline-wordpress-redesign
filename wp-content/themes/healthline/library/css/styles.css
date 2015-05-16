@@ -5916,7 +5916,7 @@ blockquote {
   padding-bottom: 2em;
   padding-top: 8em;
   background: #00ABC9;
-  height: 700px; }
+  height: auto; }
   @media (max-width: 767px) {
     .salesTime {
       padding-top: 2em; } }
@@ -5934,6 +5934,92 @@ blockquote {
   padding-bottom: .8em;
   font-weight: bold;
   font-size: 2.2em; }
+  @media (max-width: 767px) {
+    .confirmation {
+      padding-top: 1.5em; } }
+  @media (max-width: 468px) {
+    .confirmation {
+      padding-top: 2.5em; } }
+
+.preferences {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.7em; }
+  @media (max-width: 468px) {
+    .preferences {
+      font-size: 1.4em; } }
+
+.labelEmail,
+.phoneChoice {
+  color: white;
+  font-weight: bold;
+  padding-left: .7em;
+  font-size: 1.2em;
+  white-space: nowrap; }
+  @media (max-width: 468px) {
+    .labelEmail,
+    .phoneChoice {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .labelEmail,
+    .phoneChoice {
+      width: 100%; } }
+
+.wrappingEmail {
+  display: flex;
+  display: -webkit-flex;
+  margin-right: 1em; }
+
+.easy {
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  font-size: 1.7em; }
+
+.checkBox-wrapper {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: .8em;
+  text-align: left;
+  border-radius: 10px; }
+
+#choice-contact-email,
+#choice-contact-phone {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  background: white;
+  overflow: hidden;
+  border-radius: 25px; }
+
+.best-way {
+  color: white;
+  word-wrap: nowrap;
+  width: 50%; }
+
+input[type="checkbox"]:checked ~ {
+  opacity: 1;
+  max-height: 100px;
+  padding: 10px 20px;
+  transform: scale(1);
+  overflow: visible; }
+
+#choice-contact-email:checked,
+#choice-contact-phone:checked {
+  background: #8e4399;
+  border: #8e4399; }
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s; }
+
+.revealingNow {
+  color: white; }
 
 .letUsKnow {
   text-align: center;
@@ -5965,6 +6051,15 @@ blockquote {
   padding-left: 69%;
   font-size: 1em;
   text-align: right; }
+  @media (max-width: 468px) {
+    #clock::-webkit-input-placeholder::after {
+      padding-left: 35%; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    #clock::-webkit-input-placeholder::after {
+      padding-left: 60%; } }
+  @media (max-width: 320px) {
+    #clock::-webkit-input-placeholder::after {
+      padding-left: 25%; } }
 
 #calendar::-webkit-input-placeholder::after {
   font-family: fontAwesome;
@@ -5972,9 +6067,34 @@ blockquote {
   text-align: right;
   padding-left: 70%;
   font-size: 1em; }
+  @media (max-width: 468px) {
+    #calendar::-webkit-input-placeholder::after {
+      padding-left: 38%; } }
   @media (min-width: 768px) and (max-width: 979px) {
     #calendar::-webkit-input-placeholder::after {
-      padding-left: 90%; } }
+      padding-left: 63%; } }
+  @media (max-width: 320px) {
+    #calendar::-webkit-input-placeholder::after {
+      padding-left: 30%; } }
+
+button::-webkit-input-placeholder, input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #706259;
+  font-weight: 300; }
+
+.wrapMe2 {
+  height: 0;
+  margin-left: 65%;
+  margin-top: 0; }
+
+.header-main2 {
+  padding: 20px 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 300;
+  background: #fff;
+  transition: padding .15s ease-in-out; }
 
 #myForm {
   margin: 0 auto;
@@ -6024,7 +6144,9 @@ input#submitTime {
   position: inherit;
   text-align: center;
   font-size: 1em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #706259;
+  font-weight: bold; }
 
 .picker__input {
   cursor: default;
@@ -6033,6 +6155,11 @@ input#submitTime {
   font-weight: bold;
   font-size: 1em;
   margin: 0 auto; }
+
+@media (max-width: 767px) {
+  #salesSubmit {
+    display: flex;
+    display: -webkit-flex; } }
 
 /**
  * When the picker is opened, the input element is “activated”.
