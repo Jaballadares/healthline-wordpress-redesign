@@ -21,6 +21,17 @@
 
     <script type="text/javascript" src="//use.typekit.net/mli0lbq.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <style>
+
+        label {
+            display: -webkit-inline-box;
+            display: inline-box;
+        }
+        label.error {
+            position: inherit;
+            display: -webkit-inline-box;
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>

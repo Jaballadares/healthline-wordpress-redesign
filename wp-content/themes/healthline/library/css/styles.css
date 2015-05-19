@@ -1565,23 +1565,23 @@ footer {
   padding: 170px 0 60px;
   position: relative; }
   .callout.bg-img {
-    background: #E9E8E8 url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png); }
+    background: #E9E8E8 url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png"); }
   .callout.bg-blog {
-    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png); }
+    background-image: url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png"); }
   .callout.bg-about {
-    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png); }
+    background-image: url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png"); }
   .callout.bg-developers {
-    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png); }
+    background-image: url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png"); }
   .callout.bg-solutions {
-    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png); }
+    background-image: url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png"); }
   .callout.bg-solutions-b {
-    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png); }
+    background-image: url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png"); }
   .callout.bg-solutions-c {
-    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png); }
+    background-image: url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png"); }
   .callout.bg-solutions-d {
-    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png); }
+    background-image: url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png"); }
   .callout.bg-platform {
-    background-image: url(../hl-background-patterns/diamond_upholstery/diamond_upholstery.png);
+    background-image: url("http://corp.healthline.com/wp-content/uploads/2015/05/diamond_upholstery.png");
     background-color: #ECECEC; }
   .callout.bg-border:after {
     content: " ";
@@ -5924,6 +5924,16 @@ blockquote {
     .salesTime {
       padding-top: 2em; } }
 
+#menu-item-2152 > a {
+  font-size: .8em;
+  color: #85776f; }
+  #menu-item-2152 > a:hover {
+    color: #8e4399; }
+
+@media (max-width: 468px) {
+  h4.preferences {
+    font-size: 1.3em; } }
+
 .salesBlue {
   text-align: right; }
 
@@ -5937,6 +5947,9 @@ blockquote {
   @media (max-width: 767px) {
     .confirmation {
       padding-top: 1.5em; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .confirmation {
+      padding-top: 1.4em; } }
   @media (max-width: 468px) {
     .confirmation {
       padding-top: 2.5em; } }
@@ -5947,6 +5960,12 @@ blockquote {
   font-weight: bold;
   font-size: 1.7em; }
   @media (max-width: 468px) {
+    .preferences {
+      font-size: 1.4em; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .preferences {
+      font-size: 1.5em; } }
+  @media (max-width: 828px) {
     .preferences {
       font-size: 1.4em; } }
 
@@ -6011,13 +6030,6 @@ input[type="checkbox"]:checked ~ {
   background: #8e4399;
   border: #8e4399; }
 
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: scale(0.8);
-  transition: 0.5s; }
-
 .revealingNow {
   color: white; }
 
@@ -6056,10 +6068,13 @@ input[type="checkbox"]:checked ~ {
       padding-left: 35%; } }
   @media (min-width: 768px) and (max-width: 979px) {
     #clock::-webkit-input-placeholder::after {
-      padding-left: 60%; } }
+      padding-left: 50%; } }
   @media (max-width: 320px) {
     #clock::-webkit-input-placeholder::after {
       padding-left: 25%; } }
+  @media (min-width: 980px) and (max-width: 1199px) {
+    #clock::-webkit-input-placeholder::after {
+      padding-left: 60%; } }
 
 #calendar::-webkit-input-placeholder::after {
   font-family: fontAwesome;
@@ -6072,10 +6087,13 @@ input[type="checkbox"]:checked ~ {
       padding-left: 38%; } }
   @media (min-width: 768px) and (max-width: 979px) {
     #calendar::-webkit-input-placeholder::after {
-      padding-left: 63%; } }
+      padding-left: 55%; } }
   @media (max-width: 320px) {
     #calendar::-webkit-input-placeholder::after {
       padding-left: 30%; } }
+  @media (min-width: 980px) and (max-width: 1199px) {
+    #calendar::-webkit-input-placeholder::after {
+      padding-left: 62%; } }
 
 button::-webkit-input-placeholder, input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #706259;
@@ -6699,6 +6717,64 @@ input#submitTime {
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+.prefered-phone:checked {
+  background: #8e4399; }
+
+.preferredContact {
+  display: flex; }
+
+input#want-phone {
+  position: absolute;
+  width: 80%;
+  bottom: 3.5em;
+  left: 3.5em;
+  font-size: 1.2em; }
+  @media (max-width: 767px) {
+    input#want-phone {
+      bottom: 5em; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    input#want-phone {
+      font-size: 1.2em; } }
+  @media (max-width: 468px) {
+    input#want-phone {
+      bottom: 6em;
+      l: 75%;
+      font-size: 1em;
+      width: 75%;
+      left: 4.5em; } }
+
+input#want-email {
+  position: absolute;
+  width: 80%;
+  bottom: 6.3em;
+  left: 3.5em;
+  margin-bottom: .8em;
+  font-size: 1.2em; }
+  @media (max-width: 767px) {
+    input#want-email {
+      font-size: 1em;
+      bottom: 8.7em;
+      left: 4.4em; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    input#want-email {
+      font-size: 1.2em; } }
+  @media (max-width: 468px) {
+    input#want-email {
+      bottom: 8.5em;
+      width: 75%;
+      left: 4em;
+      font-size: 1em; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    input#want-email {
+      position: absolute;
+      width: 80%;
+      bottom: 5.5em;
+      left: 3.5em; } }
+  @media only screen and (min-device-width: 465px) and (max-device-width: 766px) {
+    input#want-email {
+      font-size: 1.2em;
+      bottom: 7em; } }
+
 /**** import print styles ****/
 @media print {
   /* ==========================================================================

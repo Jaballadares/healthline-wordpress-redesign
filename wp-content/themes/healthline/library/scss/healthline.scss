@@ -13,6 +13,20 @@
   }
 }
 
+#menu-item-2152>a {
+  font-size: .8em;
+  color: $brown;
+  &:hover {
+    color: $purple;
+  }
+}
+
+h4.preferences {
+  @include breakpoint(xSmall) {
+    font-size: 1.3em;
+  }
+}
+
 .salesBlue {
   text-align: right;
 }
@@ -26,6 +40,9 @@
   @include breakpoint(small) {
     padding-top: 1.5em;
   }
+  @include breakpoint(medium) {
+    padding-top: 1.4em;
+  }
   @include breakpoint(xSmall) {
     padding-top: 2.5em;
   }
@@ -37,6 +54,12 @@
   font-weight: bold;
   font-size: 1.7em;
   @include breakpoint(xSmall) {
+    font-size: 1.4em;
+  }
+  @include breakpoint(medium) {
+    font-size: 1.5em;
+  }
+  @media (max-width: 828px) {
     font-size: 1.4em;
   }
 }
@@ -109,13 +132,6 @@ input[type="checkbox"]:checked ~  {
   background: $purple;
   border: $purple;
 }
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: scale(0.8);
-  transition: 0.5s;
-}
 
 .revealingNow {
   color: white;
@@ -159,10 +175,13 @@ input[type="checkbox"]:checked ~  {
     padding-left: 35%;
   }
   @include breakpoint(medium) {
-    padding-left: 60%;
+    padding-left: 50%;
   }
   @media (max-width: 320px) {
     padding-left: 25%;
+  }
+  @include breakpoint(large) {
+    padding-left: 60%;
   }
 }
 
@@ -176,12 +195,14 @@ input[type="checkbox"]:checked ~  {
     padding-left:38%;
   }
   @include breakpoint(medium) {
-    padding-left: 63%;
+    padding-left: 55%;
   }
   @media (max-width: 320px) {
     padding-left: 30%;
   }
-
+  @include breakpoint(large) {
+    padding-left: 62%;
+  }
 }
 
 button::-webkit-input-placeholder, input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -852,5 +873,68 @@ input#submitTime {
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em;
+  }
+}
+
+.prefered-phone:checked{
+  background: $purple;
+}
+
+.preferredContact {
+  display: flex;
+}
+
+input#want-phone {
+  position: absolute;
+  width: 80%;
+  bottom: 3.5em;
+  left: 3.5em;
+  font-size: 1.2em;
+  @include breakpoint(small) {
+    bottom: 5em;
+  }
+  @include breakpoint(medium) {
+    font-size: 1.2em;
+  }
+  @include breakpoint(xSmall) {
+      bottom: 6em;
+      l: 75%;
+      font-size: 1em;
+      width: 75%;
+      left: 4.5em;
+  }
+
+}
+
+input#want-email {
+  position: absolute;
+  width: 80%;
+  bottom: 6.3em;
+  left: 3.5em;
+  margin-bottom: .8em;
+  font-size: 1.2em;
+  @include breakpoint(small) {
+    font-size: 1em;
+    bottom: 8.7em;
+    left: 4.4em;
+  }
+  @include breakpoint(medium) {
+    font-size: 1.2em;
+  }
+  @include breakpoint(xSmall) {
+    bottom: 8.5em;
+    width: 75%;
+    left: 4em;
+    font-size: 1em;
+  }
+  @include breakpoint(medium) {
+    position: absolute;
+    width: 80%;
+    bottom: 5.5em;
+    left: 3.5em;
+  }
+  @media only screen and (min-device-width: 465px) and (max-device-width: 766px ) {
+    font-size: 1.2em;
+    bottom: 7em;
   }
 }
