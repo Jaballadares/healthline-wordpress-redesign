@@ -14,6 +14,15 @@
 }
 
 #menu-item-2152>a {
+  @include breakpoint(large) {
+    font-size: 12px;
+  }
+  @include breakpoint(medium) {
+    font-size: 12px;
+  }
+  @include breakpoint(small) {
+    color: white;
+  }
   font-size: .8em;
   color: $brown;
   &:hover {

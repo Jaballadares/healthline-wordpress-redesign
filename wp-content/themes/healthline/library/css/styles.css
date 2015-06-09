@@ -5928,6 +5928,15 @@ blockquote {
 #menu-item-2152 > a {
   font-size: .8em;
   color: #85776f; }
+  @media (min-width: 980px) and (max-width: 1199px) {
+    #menu-item-2152 > a {
+      font-size: 12px; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    #menu-item-2152 > a {
+      font-size: 12px; } }
+  @media (max-width: 767px) {
+    #menu-item-2152 > a {
+      color: white; } }
   #menu-item-2152 > a:hover {
     color: #8e4399; }
 
