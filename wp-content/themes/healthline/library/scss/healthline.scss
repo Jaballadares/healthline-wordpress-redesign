@@ -897,11 +897,10 @@ input#want-phone {
     font-size: 1.2em;
   }
   @include breakpoint(xSmall) {
-      bottom: 6em;
-      l: 75%;
-      font-size: 1em;
+      bottom: 7.5em;
+      font-size: .8em;
       width: 75%;
-      left: 4.5em;
+      left: 5em;
   }
 
 }
@@ -918,20 +917,18 @@ input#want-email {
     bottom: 8.7em;
     left: 4.4em;
   }
-  @include breakpoint(medium) {
-    font-size: 1.2em;
-  }
   @include breakpoint(xSmall) {
-    bottom: 8.5em;
+    bottom: 11em;
     width: 75%;
-    left: 4em;
-    font-size: 1em;
+    left: 5em;
+    font-size: .8em;
   }
   @include breakpoint(medium) {
     position: absolute;
     width: 80%;
-    bottom: 5.5em;
-    left: 3.5em;
+    bottom: 7.5em;
+    left: 4.2em;
+    font-size: 1em
   }
   @media only screen and (min-device-width: 465px) and (max-device-width: 766px ) {
     font-size: 1.2em;

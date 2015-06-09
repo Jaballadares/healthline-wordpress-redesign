@@ -2420,7 +2420,7 @@ span.type {
     margin: 0;
     color: #fff;
     font-weight: bold;
-    display: inline-flex;
+    display: -webkit-inline-flex;
     vertical-align: middle; }
   .purple-bg-simple .btn-cta {
     background: #00abc7;
@@ -6737,11 +6737,10 @@ input#want-phone {
       font-size: 1.2em; } }
   @media (max-width: 468px) {
     input#want-phone {
-      bottom: 6em;
-      l: 75%;
-      font-size: 1em;
+      bottom: 7.5em;
+      font-size: .8em;
       width: 75%;
-      left: 4.5em; } }
+      left: 5em; } }
 
 input#want-email {
   position: absolute;
@@ -6755,21 +6754,19 @@ input#want-email {
       font-size: 1em;
       bottom: 8.7em;
       left: 4.4em; } }
-  @media (min-width: 768px) and (max-width: 979px) {
-    input#want-email {
-      font-size: 1.2em; } }
   @media (max-width: 468px) {
     input#want-email {
-      bottom: 8.5em;
+      bottom: 11em;
       width: 75%;
-      left: 4em;
-      font-size: 1em; } }
+      left: 5em;
+      font-size: .8em; } }
   @media (min-width: 768px) and (max-width: 979px) {
     input#want-email {
       position: absolute;
       width: 80%;
-      bottom: 5.5em;
-      left: 3.5em; } }
+      bottom: 7.5em;
+      left: 4.2em;
+      font-size: 1em; } }
   @media only screen and (min-device-width: 465px) and (max-device-width: 766px) {
     input#want-email {
       font-size: 1.2em;
