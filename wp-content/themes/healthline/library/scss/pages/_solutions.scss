@@ -340,6 +340,9 @@ span {
 .purple-bg-simple {
   background: #8a4c97;
   background-size: cover;
+  @include breakpoint(small) {
+    text-align: center;
+  }
     h4 {
     margin: 0;
     color: #fff;
@@ -400,7 +403,7 @@ span {
   }
 .gold-EHR {
   font-size: 1.2em;
-  padding-left: 5%;
+  // padding-left: 5%;
 }
 .app-time {
   margin-top:3em;

@@ -2416,6 +2416,9 @@ span.type {
 .purple-bg-simple {
   background: #8a4c97;
   background-size: cover; }
+  @media (max-width: 767px) {
+    .purple-bg-simple {
+      text-align: center; } }
   .purple-bg-simple h4 {
     margin: 0;
     color: #fff;
@@ -2466,8 +2469,7 @@ h1.brownie {
   list-style-position: inside; }
 
 .gold-EHR {
-  font-size: 1.2em;
-  padding-left: 5%; }
+  font-size: 1.2em; }
 
 .app-time {
   margin-top: 3em; }
