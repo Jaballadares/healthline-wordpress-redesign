@@ -171,12 +171,27 @@ swapperSelector.on('click', function() {
 // Modal
 
 (function() {
-    var exit = document.getElementById('exit');
     var modalBar = document.getElementById('modal-bar');
+    var modality = document.getElementById('modality');
+    var modalOverlay = document.getElementById('modal__overlay');
 
-    exit.onclick = function() {
+
+
+$('#exit').click(function(){
         modalBar.style.display = 'none';
-    }
+});
+
 
 })();
 
+(function() {
+    document.forms[0].setAttribute('id', 'riseForm');
+    $('#riseForm').submit(function(e) {
+
+        $('.replace').hide();
+        $('.replace').after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
+    });
+
+
+    $('.modality').on()
+})();

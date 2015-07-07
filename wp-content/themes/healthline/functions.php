@@ -71,6 +71,8 @@ You can change the names and dimensions to whatever
 you like. Enjoy!
 */
 
+require_once('library/cookie-tracker/cookie-tracker.php');
+
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas

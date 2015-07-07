@@ -9,7 +9,6 @@ Template Name: Home Page Template
 
 <section class="callout bg-img bg-border">
 <div class="container">
-
   <div class="row">
     <div class="span12">
     <?php if( have_rows('header_content') ): while ( have_rows('header_content') ) : the_row(); ?>

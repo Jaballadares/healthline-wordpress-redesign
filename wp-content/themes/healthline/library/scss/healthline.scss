@@ -1080,8 +1080,26 @@ input#want-email {
   .modal__wrap {
     left: 50%;
     position: absolute;
-    top: -15%;
+    top: -35%;
     transform: translate(-50%, 80%);
+  }
+}
+
+@include breakpoint(small) {
+  .modal__wrap {
+    top: -20%;
+  }
+}
+
+@include breakpoint(medium) {
+  .modal__wrap {
+    top: -20%;
+  }
+}
+
+@include breakpoint(large) {
+  .modal__wrap {
+    top: -25%;
   }
 }
 .exit {
@@ -1107,7 +1125,7 @@ input#want-email {
   width: 1.5em;
 }
 
-.modal__wrap h2 {
+.modal__wrap h3 {
   color: white;
   margin-bottom: 1em;
   text-transform: uppercase;
@@ -1124,21 +1142,46 @@ input#want-email {
 
 /* our modal action styles */
 
-input {
+.modality {
   position: absolute;
   top: -1000px;
 }
 
 .modal__overlay {
   opacity: 0;
+  height: 0;
   z-index: -100;
   transform: scale(0.5);
-  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 1ms;
 }
 
-input:checked ~ .modal__overlay {
+input.modality:checked ~ .modal__overlay {
   opacity: 1;
+  height: auto;
   transform: scale(1);
   z-index: 800;
 }
 
+.riseSubmit {
+  background: $blue;
+  color: white;
+  border: 1px solid darken($blue, 5%);
+  font-weight: bold;
+  &:hover {
+    background: darken($blue,5%);
+    color: white;
+  }
+}
+
+.hideNow {
+  display: none;
+}
+
+.replacedWith {
+  padding-top: 3em;
+}
+
+.riseInsight {
+  color: white;
+  border-bottom: 1px solid $blue;
+}

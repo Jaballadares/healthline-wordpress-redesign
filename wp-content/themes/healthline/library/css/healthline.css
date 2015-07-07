@@ -1092,8 +1092,17 @@ li#menu-item-2152 a::before {
   .modal__wrap {
     left: 50%;
     position: absolute;
-    top: -15%;
+    top: -35%;
     transform: translate(-50%, 80%); } }
+@media (max-width: 767px) {
+  .modal__wrap {
+    top: -20%; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .modal__wrap {
+    top: -20%; } }
+@media (min-width: 980px) and (max-width: 1199px) {
+  .modal__wrap {
+    top: -25%; } }
 .exit {
   position: absolute;
   right: 2em;
@@ -1115,7 +1124,7 @@ li#menu-item-2152 a::before {
   top: .5em;
   width: 1.5em; }
 
-.modal__wrap h2 {
+.modal__wrap h3 {
   color: white;
   margin-bottom: 1em;
   text-transform: uppercase; }
@@ -1128,19 +1137,40 @@ li#menu-item-2152 a::before {
   transform: scale(0.97); }
 
 /* our modal action styles */
-input {
+.modality {
   position: absolute;
   top: -1000px; }
 
 .modal__overlay {
   opacity: 0;
+  height: 0;
   z-index: -100;
   transform: scale(0.5);
-  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 1ms; }
 
-input:checked ~ .modal__overlay {
+input.modality:checked ~ .modal__overlay {
   opacity: 1;
+  height: auto;
   transform: scale(1);
   z-index: 800; }
+
+.riseSubmit {
+  background: #00abc7;
+  color: white;
+  border: 1px solid #0095ae;
+  font-weight: bold; }
+  .riseSubmit:hover {
+    background: #0095ae;
+    color: white; }
+
+.hideNow {
+  display: none; }
+
+.replacedWith {
+  padding-top: 3em; }
+
+.riseInsight {
+  color: white;
+  border-bottom: 1px solid #00abc7; }
 
 /*# sourceMappingURL=healthline.css.map */

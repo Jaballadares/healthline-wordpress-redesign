@@ -25,6 +25,34 @@
   <body <?php body_class(); ?>>
 
   <header class="header-main">
+
+  <div class="modal" id="modal-bar">
+  <span class="exit" id="exit">&#10006;</span>
+  <input type="checkbox" id="modal__trigger" class="modality"/>
+  <label for="modal__trigger" class="modalCenter" id="modality"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/99201/7AAAAAElFTkSuQmCC.png" alt="" class="riseLogo"/>Set up sometime to chat with us at the Rise Conference - July 19-21, 2015</label>
+  <div class="modal__overlay" id="modal__overlay">
+    <div class="modal__wrap">
+      <label for="modal__trigger">&#10006;</label>
+      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" novalidate="novalidate">
+      <input type="hidden" name="oid" value="00DG0000000i5W2">
+      <input type="hidden" id="lead_
+      source" name="leadsource" value="RisePreShow">
+      <div class="replace">
+        <h3>Schedule Some Time to Chat With One of Our Team Members About <a href="http://corp.healthline.com/solutions/coding-insight/" class="riseInsight">Coding InSight</a></h3>
+
+        <label for="first_name" class="placeholder-hide"></label>
+        <input type="text" placeholder="Name" id="first_name" name="first_name" required>
+        <input type="hidden" name="last_name" id="last_name">
+        <label for="email" class="placeholder-hide"></label>
+        <input type="text" placeholder="E-mail" name="email" required>
+        <input type="submit" name="submit" value="Submit!" class="riseSubmit">
+      </div>
+     </form>
+    </div>
+  </div>
+</div>
+
+  <?php do_action('hl_ct_new_site_ad'); ?>
   <div class="container">
 
     <div class="row">

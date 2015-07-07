@@ -46,7 +46,7 @@
                     <a href="/"><img src="http://corp.healthline.com/wp-content/uploads/2015/05/Coding-InSight.png" width="222" height="43"></a>
                 </h1>
         <div class="wrapMe2">
-                <a href="#form-section" class="btn btn-blue salesBlue">Get Started</a>
+                <a href="http://corp.healthline.com/solutions/coding-insight/" class="btn btn-blue salesBlue">Learn More</a>
         </div>
             </nav>
         </div><!--! .row -->

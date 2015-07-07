@@ -88,7 +88,7 @@ Template Name: Coding InSight Page Template
 
 <section class="purple-bg-simple">
   <h4 class="span8 span-m-12 gold-EHR">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
-  <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/">Download our whitepaper to find out.</a>
+  <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/" id="testingGA">Download our whitepaper to find out.</a>
 </section>
 
 <section>
