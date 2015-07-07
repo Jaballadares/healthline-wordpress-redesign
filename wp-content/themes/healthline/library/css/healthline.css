@@ -1041,17 +1041,8 @@ li#menu-item-2152 {
 li#menu-item-2152 a::before {
   content: none; }
 
-.exit {
-  position: absolute;
-  right: 2em;
-  left: 0;
-  top: 10px;
-  text-align: right; }
-  .exit:hover {
-    cursor: pointer; }
-
 .modal {
-  background: #00abc7;
+  background: #8e4399;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   display: inline-block;
   padding: 0;
@@ -1101,8 +1092,17 @@ li#menu-item-2152 a::before {
   .modal__wrap {
     left: 50%;
     position: absolute;
-    top: 50%;
+    top: -15%;
     transform: translate(-50%, 80%); } }
+.exit {
+  position: absolute;
+  right: 2em;
+  left: 0;
+  top: 10px;
+  text-align: right; }
+  .exit:hover {
+    cursor: pointer; }
+
 .modal__wrap label {
   background: #7cc247;
   border-radius: 50%;
@@ -1122,12 +1122,13 @@ li#menu-item-2152 a::before {
 
 .modal__wrap p {
   color: white;
-  text-align: justify; }
+  text-align: center; }
 
 .modal input:focus ~ label {
   transform: scale(0.97); }
 
-.modality {
+/* our modal action styles */
+input {
   position: absolute;
   top: -1000px; }
 
@@ -1137,7 +1138,7 @@ li#menu-item-2152 a::before {
   transform: scale(0.5);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
-.modality:checked ~ .modal__overlay {
+input:checked ~ .modal__overlay {
   opacity: 1;
   transform: scale(1);
   z-index: 800; }
