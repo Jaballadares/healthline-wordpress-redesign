@@ -168,5 +168,15 @@ swapperSelector.on('click', function() {
 
 
 
+// Modal
 
+(function() {
+    var exit = document.getElementById('exit');
+    var modalBar = document.getElementById('modal-bar');
+
+    exit.onclick = function() {
+        modalBar.style.display = 'none';
+    }
+
+})();
 

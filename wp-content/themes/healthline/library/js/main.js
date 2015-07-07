@@ -388,3 +388,9 @@ $(function() {
 
 
 });
+
+$('#testingGA').on('click', function() {
+    _gaq.push(['_trackEvent', 'button', 'Clicked', 'Coding InSight']);
+});
+
+

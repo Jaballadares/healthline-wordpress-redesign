@@ -983,4 +983,163 @@ input#want-email {
       font-size: 1.2em;
       bottom: 7em; } }
 
+.thanks_header {
+  text-align: center;
+  background: #00abc7; }
+  .thanks_header h3, .thanks_header h4 {
+    color: white; }
+  .thanks_header .thanks_bottom {
+    padding: 1.5em;
+    margin-top: 2em; }
+    .thanks_header .thanks_bottom h5 {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 1em; }
+    .thanks_header .thanks_bottom a {
+      color: white;
+      font-size: 1.2em;
+      padding: .5em;
+      font-weight: bold;
+      margin-top: 1em; }
+
+#campaign1 {
+  border: 1px solid #ddd;
+  background: white;
+  box-sizing: border-box;
+  padding: 20px;
+  width: auto;
+  height: auto; }
+
+#landingPage {
+  display: block; }
+
+#yay {
+  margin-bottom: 15px;
+  color: white;
+  background: #8E4399;
+  border: none;
+  padding: 8px 18px 6px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: center;
+  width: 100%; }
+
+#nay {
+  margin-bottom: 15px;
+  color: white;
+  background: #706259;
+  border: none;
+  padding: 8px 18px 6px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: center;
+  width: 100%; }
+
+li#menu-item-2152 {
+  margin-left: 15%; }
+
+li#menu-item-2152 a::before {
+  content: none; }
+
+.exit {
+  position: absolute;
+  right: 2em;
+  left: 0;
+  top: 10px;
+  text-align: right; }
+  .exit:hover {
+    cursor: pointer; }
+
+.modal {
+  background: #00abc7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+  text-align: center; }
+
+@media (min-width: 43.75em) {
+  .modal {
+    padding: 0; } }
+.riseLogo {
+  vertical-align: middle; }
+
+.modal > label {
+  background: #8e4399;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.75em 1.5em;
+  text-shadow: 1px 1px 1px #fff;
+  transition: all 0.55s; }
+  .modal > label:hover {
+    transform: scale(0.97); }
+
+.modal__overlay {
+  background: #7cc247;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-shadow: none;
+  text-align: center;
+  top: 0;
+  z-index: 600; }
+
+.modal__wrap {
+  padding: 1em 0;
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 90%; }
+
+@media (min-width: 50em) {
+  .modal__wrap {
+    padding: 1.75em; } }
+@media (min-height: 37.5em) {
+  .modal__wrap {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, 80%); } }
+.modal__wrap label {
+  background: #7cc247;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  height: 1.5em;
+  line-height: 1.5;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  width: 1.5em; }
+
+.modal__wrap h2 {
+  color: white;
+  margin-bottom: 1em;
+  text-transform: uppercase; }
+
+.modal__wrap p {
+  color: white;
+  text-align: justify; }
+
+.modal input:focus ~ label {
+  transform: scale(0.97); }
+
+.modality {
+  position: absolute;
+  top: -1000px; }
+
+.modal__overlay {
+  opacity: 0;
+  z-index: -100;
+  transform: scale(0.5);
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.modality:checked ~ .modal__overlay {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 800; }
+
 /*# sourceMappingURL=healthline.css.map */
