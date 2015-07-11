@@ -1062,10 +1062,10 @@ li#menu-item-2152 a::before {
   display: inline-block;
   font-weight: bold;
   padding: 0.75em 1.5em;
-  text-shadow: 1px 1px 1px #fff;
   transition: all 0.55s; }
   .modal > label:hover {
-    transform: scale(0.97); }
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97); }
 
 .modal__overlay {
   background: #7cc247;
@@ -1092,21 +1092,22 @@ li#menu-item-2152 a::before {
   .modal__wrap {
     left: 50%;
     position: absolute;
-    top: -35%;
-    transform: translate(-50%, 80%); } }
+    top: -30%;
+    transform: translate(-50%, 80%);
+    -webkit-transform: translate(-50%, 80%); } }
 @media (max-width: 767px) {
   .modal__wrap {
-    top: -20%; } }
+    top: -15%;
+    padding: 4em 0; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .modal__wrap {
     top: -20%; } }
 @media (min-width: 980px) and (max-width: 1199px) {
   .modal__wrap {
-    top: -25%; } }
+    top: -20%; } }
 .exit {
   position: absolute;
   right: 2em;
-  left: 0;
   top: 10px;
   text-align: right; }
   .exit:hover {
@@ -1134,7 +1135,9 @@ li#menu-item-2152 a::before {
   text-align: center; }
 
 .modal input:focus ~ label {
-  transform: scale(0.97); }
+  transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97); }
 
 /* our modal action styles */
 .modality {
@@ -1146,12 +1149,15 @@ li#menu-item-2152 a::before {
   height: 0;
   z-index: -100;
   transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 1ms; }
 
 input.modality:checked ~ .modal__overlay {
   opacity: 1;
   height: auto;
   transform: scale(1);
+  -webkit-transform: scale(1);
   z-index: 800; }
 
 .riseSubmit {
@@ -1172,5 +1178,16 @@ input.modality:checked ~ .modal__overlay {
 .riseInsight {
   color: white;
   border-bottom: 1px solid #00abc7; }
+
+.replace input {
+  display: block;
+  margin: 10px auto; }
+
+.replace .error {
+  display: table;
+  position: inherit;
+  /* padding: 0; */
+  white-space: nowrap;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=healthline.css.map */

@@ -130,15 +130,15 @@ var sliderToggle = function() {
 setInterval(sliderToggle, 3000);
 
 var sliderContent = function() {
-  var contentItems = $('.swapper-content');
-  for (var i = 0; i < contentItems.length; i++) {
-    if ($(contentItems[i]).hasClass('show')) {
-        $(contentItems[i]).removeClass('show');
-        var proximo = $(contentItems[(i + 1) % 4]);
-        proximo.addClass('show');
-        break;
+    var contentItems = $('.swapper-content');
+    for (var i = 0; i < contentItems.length; i++) {
+        if ($(contentItems[i]).hasClass('show')) {
+            $(contentItems[i]).removeClass('show');
+            var proximo = $(contentItems[(i + 1) % 4]);
+            proximo.addClass('show');
+            break;
+        }
     }
-  }
 }
 setInterval(sliderContent, 3000);
 
@@ -167,7 +167,6 @@ swapperSelector.on('click', function() {
 
 
 
-
 // Modal
 
 (function() {
@@ -175,23 +174,64 @@ swapperSelector.on('click', function() {
     var modality = document.getElementById('modality');
     var modalOverlay = document.getElementById('modal__overlay');
 
+    var exit = $('.exit').next();
 
-
-$('#exit').click(function(){
+    $('#exit').click(function() {
         modalBar.style.display = 'none';
-});
+    });
 
 
 })();
 
 (function() {
-    document.forms[0].setAttribute('id', 'riseForm');
-    $('#riseForm').submit(function(e) {
 
-        $('.replace').hide();
-        $('.replace').after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
+    if (location.search.indexOf('thanks') > -1) {
+        $('.modalCenter').html("Thank you! See you at<img src='http://corp.healthline.com/wp-content/uploads/2015/07/RiseLogo.png' class='riseLogo'></img>");
+        $('.riseLogo').css("padding-left", ".5em");
+
+    }
+
+    $('#riseForm').submit(function(e) {
+        if ($('.riseForm').valid()) {
+            $('.replace').hide();
+            $('.replace').after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
+            return true;
+        } else {
+            e.preventDefault();
+        }
+    })
+
+})();
+
+$('.riseForm').validate({
+    rules: {
+        first_name: {
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        }
+    }
+});
+
+    $('#form-scheduler').submit(function(e) {
+        console.log("winning");
     });
 
-
-    $('.modality').on()
-})();
+ $('.form-scheduler').validate({
+        rules: {
+            first_name: {
+                required: true
+            },
+            last_name: {
+                required: true
+            },
+            'calendar': {
+                required: true
+            },
+            'time': {
+                required: true
+            }
+        }
+    });

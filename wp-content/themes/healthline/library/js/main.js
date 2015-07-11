@@ -133,9 +133,32 @@ $(function() {
         }
     });
 
-    // --------------------
-    // Mobile Nav Hide/Show
-    // --------------------
+    // $('.riseForm').validate({
+    //     rules: {
+    //         first_name: {
+    //             required: true
+    //         },
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     submitHandler: function(form) {
+    //         var replaceDiv = $('.replace');
+    //         replaceDiv.hide();
+    //         replaceDiv.after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
+    //         setTimeout(function() {
+    //             $(form).submit();
+    //         }, 1500);
+    //     }
+    // });
+
+
+    // might need to change 151 to submitAjax()
+
+        // --------------------
+        // Mobile Nav Hide/Show
+        // --------------------
 
     var mobileNav = $('a.mobile-nav');
 
@@ -289,7 +312,7 @@ $(function() {
 
         $(".swapper-content.show").removeClass("show")
             .next().addClass("show");
-    }
+    };
     setInterval(sliderToggle, 500);
     //
 
@@ -389,13 +412,43 @@ $(function() {
 
 });
 
-$('#testingGA').on('click', function() {
-    _gaq.push(['_trackEvent', 'button', 'Clicked', 'Coding InSight']);
-});
 
+// Overlay validation
+(function() {
+    // document.forms[0].setAttribute('id', 'riseForm');
+    // $('.form-scheduler').attr('id', 'datePicker');
 
-// Modal
+    if(location.search.indexOf('thanks') > -1){
+        $('.modalCenter').html("Thank you! See you at<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/99201/7AAAAAElFTkSuQmCC.png' class='riseLogo'></img>");
+        $('.riseLogo').css("padding-left", ".5em");
 
+    }
 
+    $('#riseForm').submit(function(e){
+        if($('.riseForm').valid()){
+            $('.replace').hide();
+            $('.replace').after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
+            return true;
+        } else {
+            e.preventDefault();
+        }
+    });
 
+    $('#datePicker').submit(function(e){
+        debugger;
+    })
+
+})();
+
+ $('.riseForm').validate({
+        rules: {
+            first_name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            }
+        }
+    });
 

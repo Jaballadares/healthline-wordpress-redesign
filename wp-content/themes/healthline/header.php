@@ -29,22 +29,26 @@
   <div class="modal" id="modal-bar">
   <span class="exit" id="exit">&#10006;</span>
   <input type="checkbox" id="modal__trigger" class="modality"/>
-  <label for="modal__trigger" class="modalCenter" id="modality"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/99201/7AAAAAElFTkSuQmCC.png" alt="" class="riseLogo"/>Set up sometime to chat with us at the Rise Conference - July 19-21, 2015</label>
+  <label for="modal__trigger" class="modalCenter" id="modality">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/07/RiseLogo.png" alt="" class="riseLogo"/>Set up sometime to chat with us at the Rise Conference - July 19-21, 2015</label>
   <div class="modal__overlay" id="modal__overlay">
     <div class="modal__wrap">
       <label for="modal__trigger">&#10006;</label>
-      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" novalidate="novalidate">
+      <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="riseForm">
       <input type="hidden" name="oid" value="00DG0000000i5W2">
       <input type="hidden" id="lead_
-      source" name="leadsource" value="RisePreShow">
+      source" name="lead_source" value="RisePreShow">
+       <input type="hidden" name="retURL" value="http://healthline.dev/?thanks">
+
       <div class="replace">
         <h3>Schedule Some Time to Chat With One of Our Team Members About <a href="http://corp.healthline.com/solutions/coding-insight/" class="riseInsight">Coding InSight</a></h3>
 
-        <label for="first_name" class="placeholder-hide"></label>
-        <input type="text" placeholder="Name" id="first_name" name="first_name" required>
+
+        <label for="first_name" class="placeholder-hide">Name</label>
+        <input type="text" placeholder="Name" id="first_name" name="first_name" maxlength="40" size="20">
         <input type="hidden" name="last_name" id="last_name">
         <label for="email" class="placeholder-hide"></label>
-        <input type="text" placeholder="E-mail" name="email" required>
+        <input type="text" placeholder="E-mail" name="email" id="email" required>
         <input type="submit" name="submit" value="Submit!" class="riseSubmit">
       </div>
      </form>
