@@ -270,7 +270,7 @@ Template Name: About Page Template
 
     <div class="row">
       <div class="span6">
-        <h3>Media Coverage</h3>
+        <h3>News</h3>
         <ul>
         <?php $query = queryPost('news', 3); ?>
         <?php if ( $query->have_posts() ) : while ($query->have_posts()) : $query->the_post(); ?>

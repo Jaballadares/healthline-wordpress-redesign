@@ -26,7 +26,7 @@
 
   <header class="header-main">
 
-  <div class="modal" id="modal-bar">
+  <!-- <div class="modal" id="modal-bar">
   <span class="exit" id="exit">&#10006;</span>
   <input type="checkbox" id="modal__trigger" class="modality"/>
   <label for="modal__trigger" class="modalCenter" id="modality">
@@ -54,7 +54,7 @@
      </form>
     </div>
   </div>
-</div>
+</div> -->
 
   <?php do_action('hl_ct_new_site_ad'); ?>
   <div class="container">

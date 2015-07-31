@@ -1,413 +1,476 @@
+$(document).ready(function() {
+  $('#item1').addClass('current');
+});
+
 $(function() {
 
-    /*jshint devel:true */
-    /*global Modernizr:true */
+  /*jshint devel:true */
+  /*global Modernizr:true */
 
 
 
-    // --------------------
-    // SVG Fallback
-    // --------------------
+  // --------------------
+  // SVG Fallback
+  // --------------------
 
-    if (!Modernizr.svg) {
-        $('img[src*="svg"]').attr('src', function() {
-            return $(this).attr('src').replace('.svg', '.png');
-        });
+  if (!Modernizr.svg) {
+    $('img[src*="svg"]').attr('src', function() {
+      return $(this).attr('src').replace('.svg', '.png');
+    });
+  }
+
+  if (window.location.hash && $(window.location.hash).length) {
+    setTimeout(function() {
+      var $element = $(window.location.hash);
+      var offset = $element.css("padding-top").replace('px', '');
+      var position = $element.offset().top;
+      window.scrollTo(0, (position - (100 - offset)));
+    }, 300);
+  }
+
+  $(document).ready(function() {
+    $('#item1').addClass('current');
+  });
+  // --------------------
+  // Form Validation
+  // --------------------
+
+  $('.form-get-started').validate({
+    rules: {
+      first_name: {
+        required: true
+      },
+      last_name: {
+        required: true
+      },
+      company: {
+        required: true
+      },
+      title: {
+        required: true
+      },
+      city: {
+        required: true
+      },
+      state: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      postal_code: {
+        required: true
+      }
+    }
+  });
+
+
+  $('.form-login').validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    }
+  });
+
+  $('.form-newsletter').validate({
+    rules: {
+      first_name: {
+        required: true
+      },
+      last_name: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    }
+  });
+
+
+  $('.landing-page-form form').validate({
+    rules: {
+      first_name: {
+        required: true
+      },
+      last_name: {
+        required: true
+      },
+      company: {
+        required: true
+      },
+      title: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true
+      }
+    }
+  });
+
+  $('.form-general').validate({
+    rules: {
+      first_name: {
+        required: true
+      },
+      last_name: {
+        required: true
+      },
+      company: {
+        required: true
+      },
+      title: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true
+      }
+    }
+  });
+
+  // $('.riseForm').validate({
+  //     rules: {
+  //         first_name: {
+  //             required: true
+  //         },
+  //         email: {
+  //             required: true,
+  //             email: true
+  //         }
+  //     },
+  //     submitHandler: function(form) {
+  //         var replaceDiv = $('.replace');
+  //         replaceDiv.hide();
+  //         replaceDiv.after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
+  //         setTimeout(function() {
+  //             $(form).submit();
+  //         }, 1500);
+  //     }
+  // });
+
+
+  // might need to change 151 to submitAjax()
+
+  // --------------------
+  // Mobile Nav Hide/Show
+  // --------------------
+
+  var mobileNav = $('a.mobile-nav');
+
+  mobileNav.on('click', function(e) {
+    e.preventDefault();
+    $('ul.nav').toggleClass('show');
+  });
+
+
+  // --------------------
+  // Header Squeeze
+  // --------------------
+
+  var squeeze = function() {
+    var $mainHeader = $('.header-main');
+    var position = $(window).scrollTop();
+    var scrollOffset = 50;
+
+    if (position >= $mainHeader.outerHeight() + scrollOffset && !$mainHeader.hasClass('sqeeze') && $('body').css('margin-bottom') !== '1px') {
+      $mainHeader.addClass('squeeze');
+    } else {
+      $mainHeader.removeClass('squeeze');
     }
 
-    if (window.location.hash && $(window.location.hash).length) {
-        setTimeout(function() {
-            var $element = $(window.location.hash);
-            var offset = $element.css("padding-top").replace('px', '');
-            var position = $element.offset().top;
-            window.scrollTo(0, (position - (100 - offset)));
-        }, 300);
+    // if nav-spy exists use scrollspy -- doesn't work well outside of SQUEEZE function
+
+    if ($('nav').hasClass('nav-spy')) {
+      $('body').scrollspy({
+        target: '.nav-spy',
+        offset: 200
+      });
     }
 
+  };
 
-    // --------------------
-    // Form Validation
-    // --------------------
+  $(window).scroll($.throttle(50, squeeze));
 
-    $('.form-get-started').validate({
-        rules: {
-            first_name: {
-                required: true
-            },
-            last_name: {
-                required: true
-            },
-            company: {
-                required: true
-            },
-            title: {
-                required: true
-            },
-            city: {
-                required: true
-            },
-            state: {
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            postal_code: {
-                required: true
-            }
-        }
+
+  // --------------------
+  // Check if element is onscreen
+  // --------------------
+
+  var $onScreen = $('.visible-check');
+
+  var isVisible = function() {
+    $onScreen.each(function() {
+
+      if ($(this).isOnScreen()) {
+        $(this).addClass('visible');
+      }
+
+    });
+  };
+
+  if ($onScreen.length) {
+    isVisible();
+
+    $(window).scroll($.throttle(50, isVisible));
+  }
+
+
+  // --------------------
+  // Carousel Setup
+  // --------------------
+
+  var slider = $('.slider'),
+    sliderPrev = $('.prev'),
+    sliderNext = $('.next');
+
+  if ($('body').css('padding-bottom') !== '1px') {
+    $(slider).jcarousel();
+  }
+
+  $(sliderPrev)
+    .on('jcarouselcontrol:active', function() {
+      $(this).removeClass('inactive');
+    })
+    .on('jcarouselcontrol:inactive', function() {
+      $(this).addClass('inactive');
+    })
+    .jcarouselControl({
+      target: '-=1'
+    });
+
+  $(sliderNext)
+    .on('jcarouselcontrol:active', function() {
+      $(this).removeClass('inactive');
+    })
+    .on('jcarouselcontrol:inactive', function() {
+      $(this).addClass('inactive');
+    })
+    .jcarouselControl({
+      target: '+=1'
     });
 
 
-    $('.form-login').validate({
-        rules: {
-            email: {
-                required: true,
-                email: true
-            }
-        }
-    });
+  // --------------------
+  // Carousel Pagination
+  // --------------------
 
-    $('.form-newsletter').validate({
-        rules: {
-            first_name: {
-                required: true
-            },
-            last_name: {
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            }
-        }
-    });
+  var carouselPag = $('.carousel-pagination');
 
+  if ($('body').css('padding-bottom') !== '1px') {
 
-    $('.landing-page-form form').validate({
-        rules: {
-            first_name: {
-                required: true
-            },
-            last_name: {
-                required: true
-            },
-            company: {
-                required: true
-            },
-            title: {
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            phone: {
-                required: true
-            }
-        }
-    });
-
-    $('.form-general').validate({
-        rules: {
-            first_name: {
-                required: true
-            },
-            last_name: {
-                required: true
-            },
-            company: {
-                required: true
-            },
-            title: {
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            phone: {
-                required: true
-            }
-        }
-    });
-
-    // $('.riseForm').validate({
-    //     rules: {
-    //         first_name: {
-    //             required: true
-    //         },
-    //         email: {
-    //             required: true,
-    //             email: true
-    //         }
-    //     },
-    //     submitHandler: function(form) {
-    //         var replaceDiv = $('.replace');
-    //         replaceDiv.hide();
-    //         replaceDiv.after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
-    //         setTimeout(function() {
-    //             $(form).submit();
-    //         }, 1500);
-    //     }
-    // });
-
-
-    // might need to change 151 to submitAjax()
-
-        // --------------------
-        // Mobile Nav Hide/Show
-        // --------------------
-
-    var mobileNav = $('a.mobile-nav');
-
-    mobileNav.on('click', function(e) {
+    $(carouselPag)
+      .on('jcarouselpagination:active', 'li', function() {
+        $(this).addClass('active');
+      })
+      .on('jcarouselpagination:inactive', 'li', function() {
+        $(this).removeClass('active');
+      })
+      .on('click', function(e) {
         e.preventDefault();
-        $('ul.nav').toggleClass('show');
-    });
-
-
-    // --------------------
-    // Header Squeeze
-    // --------------------
-
-    var squeeze = function() {
-        var $mainHeader = $('.header-main');
-        var position = $(window).scrollTop();
-        var scrollOffset = 50;
-
-        if (position >= $mainHeader.outerHeight() + scrollOffset && !$mainHeader.hasClass('sqeeze') && $('body').css('margin-bottom') !== '1px') {
-            $mainHeader.addClass('squeeze');
-        } else {
-            $mainHeader.removeClass('squeeze');
+      })
+      .jcarouselPagination({
+        perPage: 1,
+        item: function(page) {
+          return '<li><a href="#' + page + '"><i class="fa fa-circle"></i></a></li>';
         }
+      });
 
-        // if nav-spy exists use scrollspy -- doesn't work well outside of SQUEEZE function
-
-        if ($('nav').hasClass('nav-spy')) {
-            $('body').scrollspy({
-                target: '.nav-spy',
-                offset: 200
-            });
-        }
-
-    };
-
-    $(window).scroll($.throttle(50, squeeze));
+  }
 
 
-    // --------------------
-    // Check if element is onscreen
-    // --------------------
+  var checkPagination = function() {
+    var slide = $('.slider-wrap').find('.slide');
+    var slideCount = $(slide).length;
 
-    var $onScreen = $('.visible-check');
-
-    var isVisible = function() {
-        $onScreen.each(function() {
-
-            if ($(this).isOnScreen()) {
-                $(this).addClass('visible');
-            }
-
-        });
-    };
-
-    if ($onScreen.length) {
-        isVisible();
-
-        $(window).scroll($.throttle(50, isVisible));
+    if (slideCount <= 1) {
+      $(carouselPag).remove();
     }
 
+  };
 
-    // --------------------
-    // Carousel Setup
-    // --------------------
+  checkPagination();
 
-    var slider = $('.slider'),
-        sliderPrev = $('.prev'),
-        sliderNext = $('.next');
 
-    if ($('body').css('padding-bottom') !== '1px') {
-        $(slider).jcarousel();
+  // --------------------
+  // Content Swapper
+  // --------------------
+
+  var swapperSelector = $('.swapper-selector').find('li'),
+    swapperWrap = $('.swapper-wrap'),
+    swapperContent = swapperWrap.find('.swapper-content');
+
+  var sliderToggle = function() {
+    var items = $('.switch-item');
+    for (var i = 0; i < items.length; i++) {
+      if ($(items[i]).hasClass('current')) {
+        $(items[i]).removeClass('current');
+        var next = $(items[(i + 1) % items.length]);
+        next.addClass('current');
+        break;
+      }
+    }
+  };
+  var sliderToggleInterval = setInterval(sliderToggle, 3000);
+
+  var sliderContent = function() {
+    var contentItems = $('.swapper-content');
+    for (var i = 0; i < contentItems.length; i++) {
+      if ($(contentItems[i]).hasClass('show')) {
+        $(contentItems[i]).removeClass('show');
+
+        var proximo = $(contentItems[(i + 1) % contentItems.length]);
+        proximo.addClass('show');
+        break;
+      }
+    }
+  };
+  var sliderContentInterval = setInterval(sliderContent, 3000);
+
+
+  swapperSelector.on('click', function() {
+
+    clearInterval(sliderContentInterval);
+    clearInterval(sliderToggleInterval);
+
+    var target = $(this).attr('data-target');
+    target = swapperWrap.find('div.swapper-content[data-title=' + target + ']');
+    var preVideo = swapperWrap.find('div.swapper-content.show iframe');
+
+    swapperSelector.removeClass('current');
+    $(this).addClass('current');
+
+    swapperContent.removeClass('show');
+    $(target).addClass('show');
+
+    /*if (preVideo.length) {
+      preVideo.each(function() {
+        var src = $(this).attr('src');
+        $(this).attr('src', '');
+        $(this).attr('src', src);
+      });
+    }*/
+
+  });
+
+
+  /*var swapperSelector = $('.swapper-selector').find('li'),
+      swapperWrap = $('.swapper-wrap'),
+      swapperContent = swapperWrap.find('.swapper-content');
+
+  // Auto Tab Through Tabs
+
+  var sliderToggle = function() {
+      $(".swapper-selector li.current").removeClass("current")
+          .next().add('swapper-selector li:first').last().addClass("current");
+
+      $(".swapper-content.show").removeClass("show")
+          .next().addClass("show");
+  };
+  setInterval(sliderToggle, 5000);
+  //
+
+  swapperSelector.on('click', function() {
+
+      var target = $(this).attr('data-target');
+      target = swapperWrap.find('div.swapper-content[data-title=' + target + ']');
+      var preVideo = swapperWrap.find('div.swapper-content.show iframe');
+
+      swapperSelector.removeClass('current');
+      $(this).addClass('current');
+
+      swapperContent.removeClass('show');
+      $(target).addClass('show');
+
+      if (preVideo.length) {
+          preVideo.each(function() {
+              var src = $(this).attr('src');
+              $(this).attr('src', '');
+              $(this).attr('src', src);
+          });
+      }
+
+  });*/
+
+
+  // --------------------
+  // Scroll To Sections
+  // --------------------
+
+  var scrollNav = $('nav.nav-scroll').find('a').not('.download'),
+    el;
+
+  var scrollPage = function() {
+
+    var target = $('section' + el);
+    var position = target.offset().top - 70;
+
+    if ($('body').css('margin-bottom') === '1px') {
+      position = target.offset().top - 20;
     }
 
-    $(sliderPrev)
-        .on('jcarouselcontrol:active', function() {
-            $(this).removeClass('inactive');
-        })
-        .on('jcarouselcontrol:inactive', function() {
-            $(this).addClass('inactive');
-        })
-        .jcarouselControl({
-            target: '-=1'
-        });
+    $('html, body').animate({
+      scrollTop: position
+    }, 500);
 
-    $(sliderNext)
-        .on('jcarouselcontrol:active', function() {
-            $(this).removeClass('inactive');
-        })
-        .on('jcarouselcontrol:inactive', function() {
-            $(this).addClass('inactive');
-        })
-        .jcarouselControl({
-            target: '+=1'
-        });
+  };
 
 
-    // --------------------
-    // Carousel Pagination
-    // --------------------
+  scrollNav.on('click', function(e) {
+    e.preventDefault();
+    el = $(this).attr('href');
+    scrollPage(el);
+  });
 
-    var carouselPag = $('.carousel-pagination');
 
-    if ($('body').css('padding-bottom') !== '1px') {
 
-        $(carouselPag)
-            .on('jcarouselpagination:active', 'li', function() {
-                $(this).addClass('active');
-            })
-            .on('jcarouselpagination:inactive', 'li', function() {
-                $(this).removeClass('active');
-            })
-            .on('click', function(e) {
-                e.preventDefault();
-            })
-            .jcarouselPagination({
-                perPage: 1,
-                item: function(page) {
-                    return '<li><a href="#' + page + '"><i class="fa fa-circle"></i></a></li>';
-                }
-            });
+  // --------------------
+  // Call Socialite.js on Blog
+  // --------------------
 
+  if ($('body.single').length) {
+    Socialite.load();
+  }
+
+
+
+  // --------------------
+  // Call Equal Height Plugin (not on mobile)
+  // --------------------
+
+  if ($('body').css('padding-bottom') !== '1px') {
+    $('.row').eqHeight('.equal-height');
+  }
+
+
+
+  // --------------------
+  // Run Skrollr on Data Page (not on mobile)
+  // --------------------
+
+  var skrollrTest = function() {
+
+    if ($('body').css('margin-bottom') !== '1px' && $('body').hasClass('page-template-page-solutions-data-solutions-php')) {
+      skrollr.init();
     }
 
+  };
 
-    var checkPagination = function() {
-        var slide = $('.slider-wrap').find('.slide');
-        var slideCount = $(slide).length;
+  skrollrTest();
 
-        if (slideCount <= 1) {
-            $(carouselPag).remove();
-        }
-
-    };
-
-    checkPagination();
-
-
-    // --------------------
-    // Content Swapper
-    // --------------------
-
-    var swapperSelector = $('.swapper-selector').find('li'),
-        swapperWrap = $('.swapper-wrap'),
-        swapperContent = swapperWrap.find('.swapper-content');
-
-    // Auto Tab Through Tabs
-
-    var sliderToggle = function() {
-        $(".swapper-selector li.current").removeClass("current")
-            .next().add('swapper-selector li:first').last().addClass("current");
-
-        $(".swapper-content.show").removeClass("show")
-            .next().addClass("show");
-    };
-    setInterval(sliderToggle, 500);
-    //
-
-    swapperSelector.on('click', function() {
-
-        var target = $(this).attr('data-target');
-        target = swapperWrap.find('div.swapper-content[data-title=' + target + ']');
-        var preVideo = swapperWrap.find('div.swapper-content.show iframe');
-
-        swapperSelector.removeClass('current');
-        $(this).addClass('current');
-
-        swapperContent.removeClass('show');
-        $(target).addClass('show');
-
-        if (preVideo.length) {
-            preVideo.each(function() {
-                var src = $(this).attr('src');
-                $(this).attr('src', '');
-                $(this).attr('src', src);
-            });
-        }
-
-    });
-
-
-
-    // --------------------
-    // Scroll To Sections
-    // --------------------
-
-    var scrollNav = $('nav.nav-scroll').find('a').not('.download'),
-        el;
-
-    var scrollPage = function() {
-
-        var target = $('section' + el);
-        var position = target.offset().top - 70;
-
-        if ($('body').css('margin-bottom') === '1px') {
-            position = target.offset().top - 20;
-        }
-
-        $('html, body').animate({
-            scrollTop: position
-        }, 500);
-
-    };
-
-
-    scrollNav.on('click', function(e) {
-        e.preventDefault();
-        el = $(this).attr('href');
-        scrollPage(el);
-    });
-
-
-
-    // --------------------
-    // Call Socialite.js on Blog
-    // --------------------
-
-    if ($('body.single').length) {
-        Socialite.load();
-    }
-
-
-
-    // --------------------
-    // Call Equal Height Plugin (not on mobile)
-    // --------------------
-
-    if ($('body').css('padding-bottom') !== '1px') {
-        $('.row').eqHeight('.equal-height');
-    }
-
-
-
-    // --------------------
-    // Run Skrollr on Data Page (not on mobile)
-    // --------------------
-
-    var skrollrTest = function() {
-
-        if ($('body').css('margin-bottom') !== '1px' && $('body').hasClass('page-template-page-solutions-data-solutions-php')) {
-            skrollr.init();
-        }
-
-    };
-
+  $(window).resize(function() {
     skrollrTest();
-
-    $(window).resize(function() {
-        skrollrTest();
-    });
+  });
 
 
 });
@@ -415,40 +478,37 @@ $(function() {
 
 // Overlay validation
 (function() {
-    // document.forms[0].setAttribute('id', 'riseForm');
-    // $('.form-scheduler').attr('id', 'datePicker');
+  // document.forms[0].setAttribute('id', 'riseForm');
+  // $('.form-scheduler').attr('id', 'datePicker');
 
-    if(location.search.indexOf('thanks') > -1){
-        $('.modalCenter').html("Thank you! See you at<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/99201/7AAAAAElFTkSuQmCC.png' class='riseLogo'></img>");
-        $('.riseLogo').css("padding-left", ".5em");
+  if (location.search.indexOf('thanks') > -1) {
+    $('.modalCenter').html("Thank you! See you at<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/99201/7AAAAAElFTkSuQmCC.png' class='riseLogo'></img>");
+    $('.riseLogo').css("padding-left", ".5em");
 
+  }
+
+  $('#riseForm').submit(function(e) {
+    if ($('.riseForm').valid()) {
+      $('.replace').hide();
+      $('.replace').after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
+      return true;
+    } else {
+      e.preventDefault();
     }
+  });
 
-    $('#riseForm').submit(function(e){
-        if($('.riseForm').valid()){
-            $('.replace').hide();
-            $('.replace').after("<h3 class='replacedWith'>Thanks! We will be in touch shortly!");
-            return true;
-        } else {
-            e.preventDefault();
-        }
-    });
 
-    $('#datePicker').submit(function(e){
-        debugger;
-    })
 
 })();
 
- $('.riseForm').validate({
-        rules: {
-            first_name: {
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            }
-        }
-    });
-
+$('.riseForm').validate({
+  rules: {
+    first_name: {
+      required: true
+    },
+    email: {
+      required: true,
+      email: true
+    }
+  }
+});

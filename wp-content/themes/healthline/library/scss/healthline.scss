@@ -1153,7 +1153,7 @@ input#want-email {
 
 .modal__overlay {
   opacity: 0;
-  height: 0;
+  height: 100%;
   z-index: -100;
   transform: scale(0.5);
   -webkit-transform: scale(0.5);

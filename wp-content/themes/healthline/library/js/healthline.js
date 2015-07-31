@@ -1,6 +1,6 @@
-// $(document).ready(function() {
-//     $('#item1').addClass('current');
-// });
+$(document).ready(function() {
+   $('#item1').addClass('current');
+});
 
 
 
@@ -112,7 +112,7 @@
 // // Content Swapper
 // // --------------------
 
-var swapperSelector = $('.swapper-selector').find('li'),
+/*var swapperSelector = $('.swapper-selector').find('li'),
     swapperWrap = $('.swapper-wrap'),
     swapperContent = swapperWrap.find('.swapper-content');
 
@@ -121,29 +121,32 @@ var sliderToggle = function() {
     for (var i = 0; i < items.length; i++) {
         if ($(items[i]).hasClass('current')) {
             $(items[i]).removeClass('current');
-            var next = $(items[(i + 1) % 4]);
+            var next = $(items[(i + 1) % items.length]);
             next.addClass('current');
             break;
         }
     }
-}
-setInterval(sliderToggle, 3000);
+};
+var sliderToggleInterval = setInterval(sliderToggle, 3000);
 
 var sliderContent = function() {
     var contentItems = $('.swapper-content');
     for (var i = 0; i < contentItems.length; i++) {
         if ($(contentItems[i]).hasClass('show')) {
             $(contentItems[i]).removeClass('show');
-            var proximo = $(contentItems[(i + 1) % 4]);
+            var proximo = $(contentItems[(i + 1) % contentItems.length]);
             proximo.addClass('show');
             break;
         }
     }
-}
-setInterval(sliderContent, 3000);
+};
+var sliderContentInterval = setInterval(sliderContent, 3000);
 
 
 swapperSelector.on('click', function() {
+
+    clearInterval(sliderContentInterval);
+    clearInterval(sliderToggleInterval);
 
     var target = $(this).attr('data-target');
     target = swapperWrap.find('div.swapper-content[data-title=' + target + ']');
@@ -163,8 +166,8 @@ swapperSelector.on('click', function() {
         });
     }
 
-});
-
+});*/
+/**/
 
 
 // Modal
@@ -199,7 +202,7 @@ swapperSelector.on('click', function() {
         } else {
             e.preventDefault();
         }
-    })
+    });
 
 })();
 
