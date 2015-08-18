@@ -402,8 +402,17 @@ span {
     list-style-position: inside;
   }
 .gold-EHR {
-  font-size: 1.2em;
-  // padding-left: 5%;
+  font-size: 1.5em;
+  text-align:center;
+  @include breakpoint(large) {
+    font-size: 1.23em;
+  }
+  @include breakpoint(medium) {
+    font-size: 1.2em;
+  }
+  @include breakpoint(small) {
+    font-size: 1.2em;
+  }
 }
 .app-time {
   margin-top:3em;

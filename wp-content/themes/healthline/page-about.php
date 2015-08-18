@@ -282,7 +282,8 @@ Template Name: About Page Template
             <a href="<?php echo get_field('article_link'); ?>" target="_blank"><?php the_title(); ?></a>
             <?php } else { ?>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            <?php } ?>
+            <?php } ?><br>
+            <?php echo get_field('publication'); ?>
           </li>
 
         <?php endwhile; endif; ?>

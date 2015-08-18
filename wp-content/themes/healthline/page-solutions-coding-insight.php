@@ -13,21 +13,37 @@ Template Name: Coding InSight Page Template
     <div class="row">
       <div class="span12">
         <h2 class="small">Coding InSight <strong>Integrated Risk Adjustment Solution for Health Plans and Providers</strong></h2>
-
-
-
+        <p class="lead border-top">
+          <span class="break">Better Identify Coding Opportunities at the Point of Care</span>
+        </p>
       </div>
+
     </div><!--! .row -->
 
   </div>
 </section>
 
-<section class="container" id="healthData-Engine" style="padding-top:25px; padding-bottom:35px;">
-<img src="http://corp.healthline.com/wp-content/uploads/2015/04/Coding-InSight.png" class="HDE-logo">
-<h2 class="text-purple" style="text-align:center;">Better Identify Coding Opportunities at the Point of Care by Leveraging Unstructured Data.</h2>
+<section style="padding-top: 25px;">
+<h3 class="text-blue insight-header" style="text-align: center;">What you can expect from Coding InSight</h3>
 
-<p style="text-align:center;">Coding InSight leverages the HealthData Engine’s unique data mining capabilities, combined with statistical models and advanced clinical rules, to help clinicians and coders easily identify miscoded or un-coded information in patient charts. By analyzing meaningful information often hidden in unstructured patient data, Coding InSight helps healthcare institutions improve efficiency, reduce costs and accurately realize reimbursements, while also optimizing risk scoring of patients and facilitating timely interventions for improved outcomes.</p>
+<!-- <div class="text-center">
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/08/graph.png" alt="">
+<span style="font-weight: bold; font-size: 3em;"></span>
+</div> -->
+<div class="img-wrapper text-center">
 
+
+
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/08/Coding-Insight-STATS-01.png" alt="Coding InSight ROI" class="span5 left-img">
+
+  <img src="http://corp.healthline.com/wp-content/uploads/2015/08/Coding-Insight-STATS-02.png" alt="Coding InSight Improved RAF Score" class="span5 right-img">
+
+</div>
+</section>
+
+<section class="purple-bg-simple">
+  <h4 class="span8 span-m-12 gold-EHR">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
+  <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/" id="testingGA">Download our whitepaper to find out.</a>
 </section>
 
  <div class="row mar-t text-center moveUp">
@@ -86,10 +102,7 @@ Template Name: Coding InSight Page Template
   </div> <!-- end output -->
 </div> <!-- end row mar-t && HDE overview -->
 
-<section class="purple-bg-simple">
-  <h4 class="span8 span-m-12 gold-EHR">Is Your Healthcare Analytics System Missing the Gold in Your EHRs?</h4>
-  <a class="btn btn-cta" href="http://corp.healthline.com/big-data-whitepaper/" id="testingGA">Download our whitepaper to find out.</a>
-</section>
+
 
 <section>
   <div class="container">

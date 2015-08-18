@@ -18,8 +18,8 @@
 
     <?php wp_head(); ?>
 
-    <script type="text/javascript" src="//use.typekit.net/mli0lbq.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="//use.typekit.net/gpy1eil.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
 
   <body <?php body_class(); ?>>
