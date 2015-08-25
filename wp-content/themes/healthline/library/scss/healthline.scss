@@ -1222,3 +1222,22 @@ input.modality:checked ~ .modal__overlay {
 .right-img {
   padding-left: 2.5em;
 }
+
+
+// Party Time RSVP Page
+.rsvp_header {
+  background: #00ABC7;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.rsvp-img-wrapper {
+  text-align: center;
+  padding-top: 4em;
+  width: 100%;
+  img {
+    width: 15%;
+    height: auto;
+  }
+}
